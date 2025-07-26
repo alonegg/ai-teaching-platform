@@ -1,0 +1,53 @@
+# 忽略大于25MB的文件
+# 视频文件
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# 大型可执行文件
+*.exe
+*.pkg
+*.dmg
+*.msi
+
+# 大型压缩文件
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# 大型演示文稿
+*.pptx
+*.ppt
+
+# 大型PDF文件（如果超过25MB）
+# *.pdf
+
+# 临时文件
+.DS_Store
+.Thumbs.db
+
+# IDE文件
+.vscode/
+.idea/
+
+# 日志文件
+*.log
+
+# 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 特定大文件（根据实际情况调整）
+Project1_Course_Design_and_Games/Course_Design_and_Prompts/0727_Course\ design\ examples.pptx
+Project3_Software_Development/Sentiment_Analysis_Tool/BFSU_SentSentiment.exe
+Project3_Software_Development/Sentiment_Analysis_Tool/BFSU_SentSentiment2.exe
+Project3_Software_Development/Sentiment_Analysis_Tool/背景文件及资料/build/sentsentiment2/sentsentiment2.pkg
+Supplementary_Materials/Videos/Video01_Labubu\ mania.mp4
+Supplementary_Materials/Videos/Video02_Xixia_Imperial_Tombs.mp4
+Supplementary_Materials/Videos/Video03_Welcome_to_Rome.mp4
