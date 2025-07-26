@@ -1,0 +1,402 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Deng, L
+AF Deng, Lin
+TI Culture's Representation in Van Gulik's Transcreated Novel <i>The
+   Chinese Maze Murders</i>: A Multimodal Corpus Approach
+SO SAGE OPEN
+AB The Chinese Maze Murders, a Chinese culture-based detective novel transcreated by Dutch sinologist Robert Hans van Gulik, represents Chinese cultures multimodally and reconciles Chinese-English cultural gaps effectively. Figuring out what cross-cultural functions and contributions of illustration-text multimodal combinations in The Chinese Maze Murders make would be inspiring for effectively promoting and applying multimodal ways in Chinese-English cultural translation. Yet, there is a scarcity of translation studies investigating it directly. This multimodal corpus-based study first identifies the different culture-representing features of the illustration-text multimodal combinations in the Chinese and English versions of The Chinese Maze Murders quantitatively, and then proposes the fundamental functions and contributions of illustration-text combinations that could facilitate cross-cultural translation qualitatively. The corpus textual statistics show that the Chinese version comprises 23.04% material cultural elements and 76.96% non-material cultural elements. While the English version comprises 36.58% material cultural elements and 63.42% non-material cultural elements. The different type-allocation of textually represented cultural elements in two language versions is regarded as an operating result of the mechanism of illustration-text multimodal combinations. Based on further retroductive corpus statistics-derived example analysis, it is argued that illustration-text multimodal combinations could facilitate cross-cultural translation in (a) transforming abstract cultural elements into concrete cultural elements, (b) integrating cultural elements as "meaning wholes," and (c) visualizing cultural implications. This study sheds new light on the cultural functions of illustration-text multimodal combinations in translation, which provides practical implications for mitigating the cultural incommensurability of Chinese-English translation.
+OI Deng, Lin/0000-0003-3271-3219
+SN 2158-2440
+PD JAN
+PY 2024
+VL 14
+IS 1
+AR 21582440231223481
+DI 10.1177/21582440231223481
+UT WOS:001140753700001
+ER
+
+PT J
+AU Riggs, A
+AF Riggs, Ashley
+TI Verbal and visual communication in constructive news across cultures: A
+   case study of a bilingual English-Spanish corpus with a focus on
+   metaphor
+SO LANGUAGE & COMMUNICATION
+AB A global but under -recognized phenomenon, constructive news is an alternative to predominantly negative news. While it is known to have positive effects on readers, the nuts and bolts of the language and images that achieve these effects are under -researched. Drawing on theories and approaches from metaphor studies, news translation studies and (multimodal) discourse analysis, this article compares the use of verbal and visual/ multimodal metaphor and visual metonymy in a bilingual corpus of UK and Spanish online constructive news, also considering them in the light of an interview with an employee of the Spanish news outlet. The findings shed light on how constructive news is 'done' across languages and cultures and suggest ways in which news translation studies and metaphor studies may benefit from each other's approaches. (c) 2024 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY -NC -ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+OI Riggs, Ashley/0000-0002-9674-5909
+SN 0271-5309
+EI 1873-3395
+PD MAY
+PY 2024
+VL 96
+BP 26
+EP 41
+DI 10.1016/j.langcom.2024.02.001
+EA MAR 2024
+UT WOS:001205809600001
+ER
+
+PT J
+AU Zhao, Q
+   Zheng, ZZ
+AF Zhao, Qian
+   Zheng, Zezhi
+TI Knowledge-Building in Classroom: A Multimodal Semantic Wave Model
+SO SAGE OPEN
+AB The generation of meaning in discourse is regarded as the process of knowledge-building, which can be analyzed by semantic waves. Combining the deep learning systems and polynomial fitting method, we present a method to compute multimodal semantic waves. With this method, four representative examples are discussed for the knowledge-building of Chinese, English, Mathematics and Science subjects in Chinese primary schools. From the multimodal semantic waves of these subjects, we can clearly observe the differences between the processes of knowledge-building. Besides, it is advantageous for the proposed method that the value of multimodal semantic waves at any given future time can be predicted by an nth-order polynomial, which may help to study practical classroom discourse.
+   This work aims to explore the process of knowledge-building in classroom discourse through multimodal semantic waves. Based on the deep learning systems and polynomial fitting method, a computational method is presented to study multimodal semantic waves, which may provide reliable data for multimodal corpora. This method is implemented by extracting multimodal values from classroom videos and plotting the multimodal semantic wave by an nth-order polynomial. The limitation of this work is that the authors only investigate the multimodal semantic waves in the classrooms of primary schools in China.
+RI Zhao, Qian/HGB-6124-2022
+OI Zhao, Qian/0000-0003-1760-249X
+SN 2158-2440
+PD APR
+PY 2024
+VL 14
+IS 2
+AR 21582440241239773
+DI 10.1177/21582440241239773
+UT WOS:001195037900001
+ER
+
+PT J
+AU Yu, J
+   Zhu, YF
+AF Yu, Jun
+   Zhu, Yifan
+TI Culture-specific "items" in multimodal translation: translating Spring
+   Festival traditions into LEGO bricks
+SO SOCIAL SEMIOTICS
+AB This paper investigates how Chinese Spring Festival traditions, as culture-specific items, are represented and translated through various semiotic resources in LEGO playsets. The study employs a social semiotic multimodal approach to examine the translation of culture-specific items by toy designers and players. The aim of this study is to explore whether and how translating culture-specific items is different in the scope of intersemiotic translation when the sense of touch is involved. It concludes that buildable toys present a kind of participatory multimodal translation, in which meanings are negotiated and constructed with a tactile mediation that empowers not only the designers/translators but also the players/translators, and makes the translation of culture-specific items more flexible and direct.
+OI Zhu, Yifan/0000-0002-9141-5409
+SN 1035-0330
+EI 1470-1219
+PD 2024 MAR 5
+PY 2024
+DI 10.1080/10350330.2024.2325978
+EA MAR 2024
+UT WOS:001174995900001
+ER
+
+PT J
+AU Hodge, B
+AF Hodge, Bob
+TI Motivated signs and multimodal analysis in Gunther Kress's semiotics
+SO TEXT & TALK
+AB This article addresses the issue of motivated signs in semiotic theory and practice. It examines two influential versions of the term, Saussure's and Kress's, focussing on and triggered by Kress's influence. It claims Kress's importance lies not so much in theory as such, as in his analytic practice, multimodal analysis, as underpinned by this theory. Accordingly, it deploys a version of this practice on Kress as he is 'doing theory'. It uses his late work Multimodality (Kress, Gunther. 2010. Multimodality. London: Bloomsbury) as the main source of examples of theory and objects of analysis, and applies a similar approach to Saussure. The outcome is a theoretically-informed corpus including many examples of motivated signs in use. From this empirical corpus the article makes some indicative generalizations about the role of these signs in semiotic practice. It shows how pervasive these signs are, and how important these are for analysis. It connects them with a crucial but under-researched aspect of all social uses of meaning, the modality meta-function (checking validity/modality of all semiotic acts), in which motivated signs play an essential role. It reveals a more complex Saussure, more complementary to Kress, and enables more powerful multimodal analyses of social meanings and functions of text and talk.
+SN 1860-7330
+EI 1860-7349
+PD 2024 JAN 12
+PY 2024
+DI 10.1515/text-2022-0064
+EA JAN 2024
+UT WOS:001140244300001
+ER
+
+PT J
+AU Kuroki , GH Jr
+   Gottschalg-Duque, C
+AF Kuroki Junior, George Hideyuki
+   Gottschalg-Duque, Claudio
+TI Data and Knowledge Organization for Natural Language Processing:
+   Searching and Identifying Better Arrangements of Texts Based on
+   Multimodal Information Architecture
+SO SAGE OPEN
+AB Processing texts of multiple knowledge areas is a hard task. This article presents an Information Science contribution to natural language processing based on artificial neural networks through data arrangement. An extended concept of Information architecture was used, aggregating a multimodal view of organizing data. The Multimodal Information Architecture definition served as foundations for a five-step procedure to design, analyze and transform data used for artificial neural networks training and learning methods, complementing gaps identified by authors focused on Computer Science implementations. The proposal was validated with three datasets formed by texts coming from 16 knowledge areas. Results obtained through the usage of pre-processed data and raw data where compared. In each of the three datasets, the method identified arrangements which led to better and worst results, separating which corpus samples are more susceptible for knowledge extraction.
+SN 2158-2440
+PD JAN
+PY 2024
+VL 14
+IS 1
+AR 21582440231177042
+DI 10.1177/21582440231177042
+UT WOS:001183741000001
+ER
+
+PT J
+AU Alghamdi, EA
+AF Alghamdi, Emad A.
+TI What makes video-based academic lectures difficult for language learners
+   to comprehend? The role of multimodal complexity
+SO FOREIGN LANGUAGE ANNALS
+AB By taking a multidisciplinary, evidence-based approach to modeling video difficulty, this study investigates the impact of multimodal complexity on language learners' self-ratings of video difficulty, while simultaneously accounting for the effects of learner differences and video production styles. A set of 320 instructional videos from the corpus of second language video complexity were analyzed using sophisticated natural language processing and computer vision algorithms to extract and compute a wide range of multimodal complexity indices. The results of a linear mixed-effects model demonstrated that pitch variation and academic spoken formulaic sequences helped to facilitate viewing comprehension, whereas infrequent words, image clutter, the number of visual objects, salient objects, visual texts, shots, and moving objects all impeded viewing comprehension. This study concludes by presenting a number of practical implications that can prove useful for English as a Foreign Language teachers and practitioners alongside a comprehensive agenda for future research in this area.
+   The value and necessity of understanding the difficulties faced by learners with regard to video comprehension is abundantly clear. However, in spite of this pressing need, a clear consensus has yet to be reached on how video difficulty can be theoretically conceptualized and empirically investigated. By employing a multidisciplinary, evidence-based approach to modeling video difficulty, this study investigates the impact of multimodal complexity on language learners' self-ratings of video difficulty while also accounting for the effects of learner differences and video production styles.
+OI Alghamdi, Emad A./0000-0002-2316-3457
+SN 0015-718X
+EI 1944-9720
+PD 2024 JAN 23
+PY 2024
+DI 10.1111/flan.12747
+EA JAN 2024
+UT WOS:001147130900001
+ER
+
+PT J
+AU Hara, Y
+AF Hara, Yoshiyuki
+TI Prompting learners to use target language forms: Elicitation practices
+   in one-on-one instructional sessions
+SO LINGUISTICS AND EDUCATION
+AB This paper explores instructor elicitation practices used in mandatory one-on-one instructional sessions to prompt learners of Japanese to incorporate specific linguistic items in their responses. Specifically, the study is based on a corpus of 15 h of video-recorded interactions in a study abroad program in Japan. Drawing on multimodal conversation analysis, the study investigates: (1) how instructors design and sequentially place elicitations to prompt learners to use a specific target language form while engaging in meaning-focused activities; and (2) how these elicitation designs and placements affect the accomplishment of the intended pedagogical goal. The findings contribute to the understanding of elicitation practices for specific pedagogical purposes and yield empirically based insights that can inform interactional decisions.
+SN 0898-5898
+EI 1873-1864
+PD APR
+PY 2024
+VL 80
+AR 101288
+DI 10.1016/j.linged.2024.101288
+EA APR 2024
+UT WOS:001215759200001
+ER
+
+PT J
+AU Shuttleworth, L
+   Okonkwo, K
+   Bremner, F
+   Mondon, A
+AF Shuttleworth, Luke
+   Okonkwo, Kevin
+   Bremner, Flo
+   Mondon, Aurelien
+TI The far and extreme right in documentaries: euphemisation,
+   exceptionalisation, and humanisation
+SO ETHNIC AND RACIAL STUDIES
+AB Much debate has taken place recently on the way in which far and extreme right actors are portrayed by mainstream media. Building on an international corpus of 30 documentaries, we combine discourse theory, corpus linguistics, and multimodal critical discourse analysis to examine how far and extreme right actors are portrayed in documentaries, a format of growing discursive importance which has been under-researched thus far. Our analysis contributes in particular to the fledgling literature on the role played by the media in the mainstreaming of racism and the far right. Crucially, it illuminates how processes of euphemisation, exceptionalisation and humanisation can lead to the legitimisation of politics otherwise opposed by the filmmakers. Beyond mapping such processes and building on more positive approaches in the field, we formulate recommendations for best practices when engaging with the far and extreme right in documentaries.
+OI Mondon, Aurelien/0000-0002-3453-7821; Bremner, Flo/0000-0001-7452-5860;
+   Shuttleworth, Luke/0009-0005-4731-5725
+SN 0141-9870
+EI 1466-4356
+PD 2024 FEB 9
+PY 2024
+DI 10.1080/01419870.2024.2307394
+EA FEB 2024
+UT WOS:001157606000001
+ER
+
+PT J
+AU Zhang, LL
+   Smith, CA
+AF Zhang, Lili
+   Smith, Christopher A.
+TI Neoliberal, trouble-free worlds for an aspirational middle-class in
+   Chinese EFL publications: A multimodal critical discourse analysis
+SO DISCOURSE & COMMUNICATION
+AB For most English language learning engagements in expanding circle countries, textbooks play a key role in defining a syllabus and corralling students toward some measure of completion in a course of study. While scholars have shown how English is broadly seen as a prestigious skill, connected with upward socio-economic mobility, less work has been done on the discourses and ideologies carried by the textbooks, even though this is a billion-dollar-a-year industry with titles selling in the millions. Research clearly raises the need for further investigations of the discourses and world views that they carry as they appear in different territories. In this paper, using Multimodal Critical Discourse Analysis, we analyze a corpus of texts books produced domestically within China. In China, English language learning has become a fundamental part of the aspirations of the emerging middle classes, who also tend to consume Western-style products and increasingly take on more individualistic Western-style values. Analysis shows that these textbooks carry language learning activities which combine a gloss of signifiers of more local, cultural ideas embedded in a privileged world inhabited by an aspirational, international middle-class.
+SN 1750-4813
+EI 1750-4821
+PD 2024 APR 3
+PY 2024
+DI 10.1177/17504813241237377
+EA APR 2024
+UT WOS:001196644300001
+ER
+
+PT J
+AU Wu, ZW
+AF Wu, Zhiwei
+TI Towards a corpus-based approach to graphic elements in creative
+   subtitling
+SO BABEL-REVUE INTERNATIONALE DE LA TRADUCTION-INTERNATIONAL JOURNAL OF
+   TRANSLATION
+AB This article explores how a corpus-based approach allows us to describe and analyze the multimodal complexity of graphic elements in creative subtitling. To this end, the article focuses on a YouTube channel, Apenjie with Dawang, featuring a dog and its owner. This channel's subtitling strategies were experimental with multiple graphic elements (colors, positions, font sizes, and emojis). Informed by a social semiotic approach to multimodality, a corpus of 1,155 coupled pairs of Chinese-English subtitles was annotated for modal shifts and metafunctional shifts. Some major findings include: (a) emojis were much more likely to be added to the target subtitles for the animals than for the humans; (b) speaker-identifying graphic elements (color and position) were lost in the target subtitles, but emojis were systematically added to mark animals as the speakers; (c) the addition of emojis evoked complementary-interpersonal meanings, suggesting that the subtitlers might have prioritized audience engagement over textual fidelity; (d) although the target subtitles used fewer graphic elements, the semiotic meanings could be similar or complementary to those of the source subtitles. Based on these findings, the article also discusses the opportunities and challenges of a corpus-based approach to graphic elements in creative subtitling.
+   Notre article se propose d'explorer la maniere dont l'approche par corpus permet d'analyser la complexite multimodale des elements graphiques du sous-titrage creatif. Pour ce faire, on a opte pour Apenjie with Dawang, un videoblog, representant un chien et sa maitresse, dans lequel sont experimentees des strategies de sous-titrage touchant de multiples elements graphiques (couleurs, positions, tailles des caracteres et emojis). Dans la perspective de la multimodalite percue par la semiotique sociale, nous avons annote 1155 sous-titres chinois-anglais pour noter les transformations modales et meta-fonctionnelles. Il en ressort que, dans les sous-titres, (a) on a ajoute plus d'emojis pour les animaux que pour les humains, (b) on a perdu couleurs et positions identifiant le locuteur meme si des emojis ont ete systematiquement ajoutes pour indiquer les animaux comme locuteurs, (c) en ajoutant des emojis pour marquer du sens interpersonnel-complementaire, les sous-titreurs ont sans doute eu davantage le souci de l'engagement du public que la fidelite au texte, (d) le sens semiotique pourrait etre similaire ou complementaire de celui des sous-titres de depart, meme si les sous-titres d'arrivee ont eu recours a moins d'elements graphiques. A partir de ces resultats, l'article discute des opportunites et defis de l'approche par corpus des elements graphiques dans le sous-titrage creatif.
+SN 0521-9744
+EI 1569-9668
+PD FEB 29
+PY 2024
+VL 70
+IS 1-2
+BP 138
+EP 163
+DI 10.1075/babel.00382.wu
+UT WOS:001178917800001
+ER
+
+PT J
+AU Guerrero, BM
+AF Guerrero, Beatriz Mendez
+TI A pragmatic vision of silence in current Spanish
+SO CIRCULO DE LINGUISTICA APLICADA A LA COMUNICACION
+AB Silence is a discursive element little investigated in pragmatics. It has communicative value, but its functions are yet to be determined in many contexts. There are typological, methodological and sociocultural reasons that explain the scant attention received by these signs in orality (Mendez and Camargo, 2015a). To better understand these reasons, it is necessary to know the linguistic studies from the 50s of the last 20th century, where the phenomenon began to be treated, until today. This paper presents the evolution of the study of silence in linguistics in recent decades. It starts from the interdisciplinary position adopted in the first studies until arriving at the most recent pragmatic investigations and the corpus and multimodal studies of today. All this with a fundamental objective: to know the point at which studies are today and to trace the possible lines of research for the future.
+SN 1576-4737
+PY 2024
+IS 97
+BP 49
+EP 58
+DI 10.5209/clac.93489
+UT WOS:001163579000008
+ER
+
+PT J
+AU ter Bekke, M
+   Drijvers, L
+   Holler, J
+AF ter Bekke, Marlijn
+   Drijvers, Linda
+   Holler, Judith
+TI Hand Gestures Have Predictive Potential During Conversation: An
+   Investigation of the Timing of Gestures in Relation to Speech
+SO COGNITIVE SCIENCE
+AB During face-to-face conversation, transitions between speaker turns are incredibly fast. These fast turn exchanges seem to involve next speakers predicting upcoming semantic information, such that next turn planning can begin before a current turn is complete. Given that face-to-face conversation also involves the use of communicative bodily signals, an important question is how bodily signals such as co-speech hand gestures play into these processes of prediction and fast responding. In this corpus study, we found that hand gestures that depict or refer to semantic information started before the corresponding information in speech, which held both for the onset of the gesture as a whole, as well as the onset of the stroke (the most meaningful part of the gesture). This early timing potentially allows listeners to use the gestural information to predict the corresponding semantic information to be conveyed in speech. Moreover, we provided further evidence that questions with gestures got faster responses than questions without gestures. However, we found no evidence for the idea that how much a gesture precedes its lexical affiliate (i.e., its predictive potential) relates to how fast responses were given. The findings presented here highlight the importance of the temporal relation between speech and gesture and help to illuminate the potential mechanisms underpinning multimodal language processing during face-to-face conversation.
+OI ter Bekke, Marlijn/0000-0002-4029-4993
+SN 0364-0213
+EI 1551-6709
+PD JAN
+PY 2024
+VL 48
+IS 1
+AR e13407
+DI 10.1111/cogs.13407
+UT WOS:001150145900001
+PM 38279899
+ER
+
+PT J
+AU Núñez-Román, F
+   Gómez-Camacho, A
+   Fernández-Juliá, O
+   Quintero-Rodríguez, I
+AF Nunez-Roman, Francisco
+   Gomez-Camacho, Alejandro
+   Fernandez-Julia, Olga
+   Quintero-Rodriguez, Ivan
+TI English Code-Mixings in WhatsApp interactions among Spanish adolescents
+   and their orthographic competence
+SO INTERNATIONAL JOURNAL OF BILINGUALISM
+AB Aims: The widespread use of computer-mediated communication (CMC) among adolescents has favored the creation of a newly written code called digitalk. This new code includes, among other characteristics, the use of foreign words as textisms, mainly anglicisms. These textisms also serve as a mark of identity among young speakers. The aim of this paper is twofold: first, to describe which are the more frequent anglicisms used by Spanish adolescents in their CMC and the code-mixing pathways of inclusion; second, to examine the possible influence between the use of anglicisms in the CMC of Spanish adolescents and their orthographic competence.Method: Based on an exploratory methodology, a corpus of interactions through WhatsApp of a group of adolescents attending Compulsory Secondary Education in a region of southern Spain has been analyzed.Data analysis: Sketch Engine software was used for corpus analysis, presenting the normalized frequency (1/1,000) of textisms, misspellings, and multimodal elements. Finally, for the descriptive statistical analysis of the data and for the bivariate correlation analysis applying Pearson's coefficient, IBM SPSS v.26 software was used.Findings: The results indicate that young people use English Code-Mixings (ECM) as discursive framers with an expressive aim and as a sign of belonging to a specific community of speakers. Moreover, no positive correlation is observed between the use of these ECMs and a lower orthographic competence.Implications: ECMs show an important pragmatic function in CMC among Spanish adolescents. Furthermore, they are one of the elements that have been incorporated into the digital norm of Spanish and can be used in Compulsory Education as a resource for the acquisition of communicative competence in adolescents along with other textisms.Originality: This is the first research that analyzes the frequency and function of anglicisms in Spanish CMC and their impact on the orthographic competence of Spanish adolescents.
+RI Núñez-Román, Francisco/JDV-5053-2023
+OI Núñez-Román, Francisco/0000-0002-2943-1037; Quintero-Rodriguez,
+   Ivan/0000-0003-1391-6301
+SN 1367-0069
+EI 1756-6878
+PD 2024 FEB 12
+PY 2024
+DI 10.1177/13670069241229397
+EA FEB 2024
+UT WOS:001161887600001
+ER
+
+PT J
+AU Lautenbacher, OP
+AF Lautenbacher, Olli Philippe
+TI Translating what the image conveys or what it arouses?
+SO BABEL-REVUE INTERNATIONALE DE LA TRADUCTION-INTERNATIONAL JOURNAL OF
+   TRANSLATION
+AB An ideal strongly anchored in the realm of translation is that of "translating without additions or modifications." However, with multimodal texts, one is confronted with the problem posed by the image, its reading, and its interpretation. This article aims to better delineate the interpretative threshold between the global meaning that a still image might convey in and of itself, on the one hand, and the more personal interpretations that this image can arouse in its receiver (including the translator) on the other. In passing, the article also aims to suggest new ways of sensitizing translation students to the existence of such a threshold. The principle, based on Sperber and Wilson's relevance theory and its strong vs. weak implicature continuum, is that the visual and compositional cues of the image, their relative salience, and their eventual semantic convergence, combined with contextual factors in the initial production of the visual document, would constitute the fundamental semiotic data to be considered in the translation process. Conversely, any projection of meaning external to the image, and emanating from the translator-interpreter himself, would have to be treated with more circumspection within that process, since it would amount to recontextualizing the original visual message by coloring it with a particular meaning, in other words modifying it through added meanings. The corpus used for the observations consists of analyses of a photographic image made by MA-level students in Translation Studies.
+   Un ideal fortement ancre dans le domaine de la traduction est celui de << traduire sans ajouts ni modifications >>. Cependant, avec les textes multimodaux, on est confronte au probleme de l'image, de sa lecture et de son interpretation. L'objectif de cet article est de mieux cerner le seuil interpretatif entre le sens global qu'une image fixe peut vehiculer en elle-meme, d'une part, et les interpretations plus personnelles que cette image peut susciter chez son recepteur (y compris le traducteur), d'autre part. Incidemment, l'article suggerera de nouvelles pistes pour sensibiliser les etudiants en traduction a l'existence d'un tel seuil. Le principe, base sur la theorie de la pertinence de Sperber et Wilson et le continuum implicature forte - implicature faible qu'elle introduit, est que les indices visuels et compositionnels de l'image, leur saillance relative et leur convergence semantique eventuelle, combines aux facteurs contextuels lies a la production initiale du document visuel, constitueraient les donnees semiotiques fondamentales a prendre en compte dans le processus de traduction. En revanche, toute projection de sens exterieure a l'image et emanant du traducteur-interprete lui-meme devrait etre traitee avec plus de circonspection, dans la mesure ou elle equivaudrait a recontextualiser le message visuel original en le colorant d'un sens particulier, c'est-a-dire a le modifier par ajout de significations. Le corpus etudie ici est constitue d'analyses d'une image photographique realisees par des etudiants en master de traduction.
+OI Lautenbacher, Olli Philippe/0000-0001-5093-8310
+SN 0521-9744
+EI 1569-9668
+PD FEB 29
+PY 2024
+VL 70
+IS 1-2
+BP 164
+EP 185
+DI 10.1075/babel.00381.lau
+UT WOS:001178917800010
+ER
+
+PT J
+AU Harrison, S
+AF Harrison, Simon
+TI 'This you may NNNNNNEVER have heard before': initial lengthening of
+   accented negative items as vocal-entangled gestures
+SO LANGUAGE AND COGNITION
+AB Movement scientists have proposed to ground the relation between prosody and gesture in 'vocal-entangled gestures', defined as biomechanical linkages between upper limb movement and the respiratory-vocal system. Focusing on spoken language negation, this article identifies an acoustic profile with which gesture is plausibly entangled, specifically linking the articulatory behaviour of onset consonant lengthening with forelimb gesture preparation and facial deformation. This phenomenon was discovered in a video corpus of accented negative utterances from English-language televised dialogues. Eight target examples were selected and examined using visualization software to analyse the correspondence of gesture phase structures (preparation, stroke, holds) with the negation word's acoustic signal (duration, pitch and intensity). The results show that as syllable-onset consonant lengthens (voiced alveolar /n/ = 300 ms on average) with pitch and intensity increasing (e.g. 'NNNNNNEVER'), the speaker's humerus is rotating with palm pronating/adducing while his or her face is distorting. Different facial distortions, furthermore, were found to be entangled with different post-onset phonetic profiles (e.g. vowel rounding). These findings illustrate whole-bodily dynamics and multiscalarity as key theoretical proposals within ecological and enactive approaches to language. Bringing multimodal and entangled treatments of utterances into conversation has important implications for gesture studies.
+SN 1866-9808
+EI 1866-9859
+PD 2024 MAY 30
+PY 2024
+DI 10.1017/langcog.2024.26
+EA MAY 2024
+UT WOS:001235246600001
+ER
+
+PT J
+AU Bae, EB
+   Han, KM
+AF Bae, Eun Bit
+   Han, Kyu-Man
+TI A structural equation modeling approach using behavioral and
+   neuroimaging markers in major depressive disorder
+SO JOURNAL OF PSYCHIATRIC RESEARCH
+AB Major depressive disorder (MDD) has consistently proven to be a multifactorial and highly comorbid disease. Despite recent depression-related research demonstrating causalities between MDD-related factors and a small number of variables, including brain structural changes, a high-statistical power analysis of the various factors is yet to be conducted. We retrospectively analyzed data from 155 participants (84 healthy controls and 71 patients with MDD). We used magnetic resonance imaging and diffusion tensor imaging data, scales assessing childhood trauma, depression severity, cognitive dysfunction, impulsivity, and suicidal ideation. To simultaneously evaluate the causalities between multivariable, we implemented two types of MDD-specified structural equation models (SEM), the behavioral and neurobehavioral models. Behavioral SEM showed significant results in the MDD group: Comparative Fit Index [CFI] = 1.000, Root Mean Square Error of Approximation [RMSEA]) = 0.000), with a strong correlation in the scales for childhood trauma, depression severity, suicidal ideation, impulsivity, and cognitive dysfunction. Based on behavioral SEM, we established neurobehavioral models showing the best-fit in MDD, especially including the right cingulate cortex, central to the posterior corpus callosum, right putamen, pallidum, whole brainstem, and ventral diencephalon, including the thalamus (CFI >0.96, RMSEA <0.05). Our MDD-specific model revealed that the limbic-associated regions are strongly connected with childhood trauma rather than depression severity, and that they independently affect suicidal ideation and cognitive dysfunction. Furthermore, cognitive dysfunction could affect impulsivity.
+OI Bae, Eun Bit/0000-0002-6148-9909; Han, Kyu-Man/0000-0002-1982-4216
+SN 0022-3956
+EI 1879-1379
+PD MAR
+PY 2024
+VL 171
+BP 246
+EP 255
+DI 10.1016/j.jpsychires.2024.02.014
+EA FEB 2024
+UT WOS:001178547700001
+PM 38325105
+ER
+
+PT J
+AU Anton, A
+AF Anton, Anca
+TI "Other Customer" Perception as Strategic Insight into Gen Z
+   Consumer-Brand Identification and Purchase Behavior: A Mixed-Methods
+   Approach
+SO AMERICAN BEHAVIORAL SCIENTIST
+AB This study addresses the knowledge and research gaps regarding the "other customer" concept within the consumer-brand identification paradigm, drawing on branding and consumer behavior theories. We consider the "other customer" as the other customers of a brand from the perspective of an individual (focal customer) using or simply assessing the brand. We take into account both how the focal customer is influenced by other customers and how the focal customer perceives those other customers. While the concept is traditionally associated with the service industries, we expand its relevance to product brands. We use Social Identity Theory, Social Comparison Theory, and Other Customer Perception to identify how Gen Z focal consumers construct the image of other consumers of international brands at national level. A mixed-method approach was developed, bringing together MMCA (multimodal content analysis), perceptual mapping regarding brand image, and other customer perceived attributes, as well as a survey addressing (a) focal customer-other customer-brand identification perceived similarity and (b) perceived influence of sustainability on purchase behavior. MMCA was performed on a corpus of 236 other customer profiles of Nike and Adidas, consisting of a visual component and a textual description. The profiles were developed by a convenience sample of 147 Romanian Gen Z young adults. The results show that: (a) The national specificity and history of the brand can lead to diverging, local other customer profiles that might be accepted or rejected based on the desirability and similarity perceived by the focal customer; (b) The other customer is used as a form of self-evaluation carried out by the focal customer (Gen Z consistently evaluates downward some of the other customers as a way to curate self-esteem and avoid identification with profiles they consider undesirable or unsuitable for their own self-image); and (3) The connection perceivable at international level between brand sustainability as a purchase pre-condition and Gen Z customers is not universal and should be re-evaluated based on local realities. At theoretical level, this study contributes to the advancement of the "other customer" concept; at a practical level, it advocates for the inclusion of an "other customer communication strategy" into the marketing communication mix.
+RI Anton, Anca/AFF-8973-2022
+OI Anton, Anca/0000-0003-0201-197X
+SN 0002-7642
+EI 1552-3381
+PD 2024 MAR 7
+PY 2024
+DI 10.1177/00027642241235838
+EA MAR 2024
+UT WOS:001180700000001
+ER
+
+PT J
+AU Videtta, G
+   Squarcina, L
+   Prunas, C
+   Brambilla, P
+   Delvecchio, G
+AF Videtta, Giovanni
+   Squarcina, Letizia
+   Prunas, Cecilia
+   Brambilla, Paolo
+   Delvecchio, Giuseppe
+TI White matter integrity and medication response to antidepressants in
+   major depressive disorder: a review of the literature
+SO FRONTIERS IN PSYCHIATRY
+AB Major Depressive Disorder (MDD) is a severe psychiatric disorder characterized by selective impairments in mood regulation, cognition and behavior. Although it is well-known that antidepressants can effectively treat moderate to severe depression, the biochemical effects of these medications on white matter (WM) integrity are still unclear. Therefore, the aim of the study is to review the main scientific evidence on the differences in WM integrity in responders and non-responders to antidepressant medications. A record search was performed on three datasets (PubMed, Scopus and Web of Science) and ten records matched our inclusion criteria. Overall, the reviewed studies highlighted a good efficacy of antidepressants in MDD treatment. Furthermore, there were differences in WM integrity between responders and non-responders, mainly localized in cingulate cortices, hippocampus and corpus callosum, where the former group showed higher fractional anisotropy and lower axial diffusivity values. Modifications in WM integrity might be partially explained by branching and proliferation as well as neurogenesis of axonal fibers mediated by antidepressants, which in turn may have positively affected brain metabolism and increase the quantity of the serotonergic neurotransmitter within synaptic clefts. However, the reviewed studies suffer from some limitations, including the heterogeneity in treatment duration, antidepressant administration, medical posology, and psychiatric comorbidities. Therefore, future studies are needed to reduce confounding effects of antidepressant medications and to adopt longitudinal and multimodal approaches in order to better characterize the differences in WM integrity between responders and non-responders.
+RI Squarcina, Letizia/ISS-8010-2023
+OI Squarcina, Letizia/0000-0001-6209-4629
+SN 1664-0640
+PD FEB 1
+PY 2024
+VL 14
+AR 1335706
+DI 10.3389/fpsyt.2023.1335706
+UT WOS:001161353300001
+PM 38361831
+ER
+
+PT J
+AU Svensson, H
+AF Svensson, Hanna
+TI Requesting another to taste: Passing food and the distribution of agency
+   in the organization of bodily trajectories
+SO DISCOURSE STUDIES
+AB This paper offers an analysis of the organizational features of passing food objects as a commonplace embodied social practice to accomplish requests to another to taste food during joint cooking activities. Situated within the cognate frameworks of Conversation Analysis and Ethnomethodology, the sequential, multimodal analysis details and explains the formal features of passing food from hand to hand and from hand to mouth as distinct practices with distinct micro-sequential organizations. The study draws on a corpus of 14 hours of video-recordings of naturally occurring joint cooking activities in which the participants speak German, Swedish, and English. Focusing on the projectable aspects of bodily trajectories, the analysis reveals how the request sequences are achieved through the participants' early projection of how to pass the food objects and their stepwise mutual adjustments to their conjoint action trajectory. In progressively establishing who does what next and how during the food transfer, the participants orient to the relevance and distribution of interactional agency. When the normative organization of the step-by-step transfer is disregarded, an ambiguity emerges concerning what action the practice is doing, which prompts the participants to engage in significant interactional work to re-negotiate on what terms the transfer can resume. This shows how issues of interactional agency are exerted and exhibited in and through the sequential organization of social interaction. The results contribute to, and elaborate, prior findings on requests and advances our understanding for the close attention that participants to interaction pay to the detailed aspects of multimodally formatted actions and the normative expectancies that make up to their intelligibility, reflexively elaborating each other.
+SN 1461-4456
+EI 1461-7080
+PD 2024 MAY 6
+PY 2024
+DI 10.1177/14614456241242945
+EA MAY 2024
+UT WOS:001216205500001
+ER
+
+EF

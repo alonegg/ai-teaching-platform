@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI大富翁·西安文旅探索</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei';
+            background: url('background.jpg'); /* 替换为你的背景图片 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* 整体布局 */
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 棋盘区域 */
+        #board-container {
+            width: 800px;
+            height: 800px;
+            margin: 0;
+            background: url('board-bg.jpg'); /* 替换为你的棋盘背景图片 */
+            background-size: cover;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border: 5px solid #8B4513;
+        }
+
+        /* 棋盘格子 */
+        .board-node {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #666;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+
+        .board-node:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 150, 0.5);
+        }
+
+        /* 特殊格子样式 */
+        .start-node {
+            background: rgba(144, 238, 144, 0.8);
+        }
+
+        .end-node {
+            background: rgba(255, 160, 122, 0.8);
+        }
+
+        .attraction-node {
+            background: rgba(173, 216, 230, 0.8);
+        }
+
+        .event-node {
+            background: rgba(255, 218, 185, 0.8);
+        }
+
+        /* 景点特效 */
+        .node-effect {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 15px rgba(0, 0, 150, 0.5);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* 玩家棋子 */
+        .player {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            background-size: cover;
+            z-index: 10;
+            transition: all 0.5s ease;
+            animation: bounce 0.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(-5px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        #player1 {
+            background: url('player1.png'); /* 替换为你的玩家1图片 */
+            border: 2px solid #3498db;
+        }
+
+        #player2 {
+            background: url('player2.png'); /* 替换为你的玩家2图片 */
+            border: 2px solid #e74c3c;
+        }
+
+        /* 操作面板 */
+        #control-panel {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .dice-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dice-btn {
+            width: 120px;
+            height: 120px;
+            background: #3498db;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 5px 0 #2980b9;
+            transition: all 0.1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dice-btn:active {
+            transform: translateY(5px);
+            box-shadow: 0 0 0 #2980b9;
+        }
+
+        .dice-result {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* 玩家信息面板 */
+        .player-info-panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .player-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            border: 2px solid #ddd;
+        }
+
+        .player-card.active {
+            border-color: #2ecc71;
+            box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
+        }
+
+        /* AI任务卡 */
+        .task-card {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+            max-width: 600px;
+            width: 90%;
+            border-radius: 15px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .task-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .task-content {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .task-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+        .task-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .task-btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .task-btn-secondary {
+            background: #ecf0f1;
+            color: #333;
+        }
+
+        .task-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 资源卡片 */
+        .resource-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+        }
+
+        .resource-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .resource-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* 视频弹窗 */
+        .video-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+
+        .video-popup video {
+            width: 600px;
+            height: auto;
+        }
+
+        /* 动画效果 */
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 0.5s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 棋盘区域 -->
+        <div id="board-container">
+            <!-- 起点 -->
+            <div class="board-node start-node" style="left: 350px; top: 10px;" data-node="start">
+                <div class="node-title">起点</div>
+                <div class="node-info">开始你的西安之旅</div>
+            </div>
+
+            <!-- 兵马俑 -->
+            <div class="board-node attraction-node node-effect" style="left: 550px; top: 150px;" data-node="terracotta">
+                <img src="attractions/terracotta.jpg" alt="兵马俑" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">兵马俑</div>
+            </div>
+
+            <!-- 博物馆 -->
+            <div class="board-node attraction-node node-effect" style="left: 650px; top: 350px;" data-node="museum">
+                <img src="attractions/museum.jpg" alt="陕西历史博物馆" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">陕历博</div>
+            </div>
+
+            <!-- 城墙 -->
+            <div class="board-node attraction-node node-effect" style="left: 550px; top: 550px;" data-node="citywall">
+                <img src="attractions/citywall.jpg" alt="西安城墙" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">城墙</div>
+            </div>
+
+            <!-- 回民街 -->
+            <div class="board-node attraction-node node-effect" style="left: 350px; top: 650px;" data-node="foodstreet">
+                <img src="attractions/foodstreet.jpg" alt="回民街" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">回民街</div>
+            </div>
+
+            <!-- 钟楼 -->
+            <div class="board-node attraction-node node-effect" style="left: 150px; top: 550px;" data-node="belltower">
+                <img src="attractions/belltower.jpg" alt="钟楼" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">钟楼</div>
+            </div>
+
+            <!-- 大雁塔 -->
+            <div class="board-node attraction-node node-effect" style="left: 150px; top: 350px;" data-node="dayanta">
+                <img src="attractions/dayanta.jpg" alt="大雁塔" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">大雁塔</div>
+            </div>
+
+            <!-- 碑林 -->
+            <div class="board-node attraction-node node-effect" style="left: 250px; top: 150px;" data-node="stele">
+                <img src="attractions/stele.jpg" alt="碑林博物馆" width="80" height="60"
+                    style="border-radius: 5px; margin-bottom: 5px;">
+                <div class="node-title">碑林</div>
+            </div>
+
+            <!-- 随机事件格子 -->
+            <div class="board-node event-node" style="left: 450px; top: 250px;" data-node="event1">
+                <div class="node-title">AI挑战</div>
+                <div class="node-info">随机任务</div>
+            </div>
+
+            <div class="board-node event-node" style="left: 550px; top: 450px;" data-node="event2">
+                <div class="node-title">语言考验</div>
+                <div class="node-info">随机任务</div>
+            </div>
+
+            <div class="board-node event-node" style="left: 450px; top: 550px;" data-node="event3">
+                <div class="node-title">文化问答</div>
+                <div class="node-info">随机任务</div>
+            </div>
+
+            <div class="board-node event-node" style="left: 250px; top: 450px;" data-node="event4">
+                <div class="node-title">思辨时刻</div>
+                <div class="node-info">随机任务</div>
+            </div>
+
+            <div class="board-node event-node" style="left: 350px; top: 350px;" data-node="event5">
+                <div class="node-title">创意挑战</div>
+                <div class="node-info">随机任务</div>
+            </div>
+
+            <!-- 终点 -->
+            <div class="board-node end-node" style="left: 350px; top: 250px;" data-node="end">
+                <div class="node-title">终点</div>
+                <div class="node-info">完成旅行</div>
+            </div>
+
+            <!-- 玩家棋子 -->
+            <div class="player" id="player1" style="left: 350px; top: 10px;"></div>
+            <div class="player" id="player2" style="left: 350px; top: 50px;"></div>
+        </div>
+
+        <!-- 控制面板 -->
+        <div id="control-panel">
+            <h2 class="text-center">AI大富翁·西安文旅探索</h2>
+
+            <!-- 骰子区域 -->
+            <div class="dice-container">
+                <button class="dice-btn" onclick="rollDice()">掷骰子</button>
+                <div class="dice-result" id="dice-result">0</div>
+            </div>
+
+            <!-- 游戏状态 -->
+            <div class="game-status">
+                <h3>游戏状态</h3>
+                <div id="game-message" class="animate-fade-in">
+                    玩家1的回合，请掷骰子
+                </div>
+            </div>
+
+            <!-- 玩家信息 -->
+            <div class="player-info-panel">
+                <div class="player-card active" id="player1-info">
+                    <h4>玩家1</h4>
+                    <div>当前位置：<span id="player1-position">起点</span></div>
+                    <div>能量值：<span id="player1-score">0</span></div>
+                    <div>已解锁景点：<span id="player1-attractions">0/7</span></div>
+                </div>
+                <div class="player-card" id="player2-info">
+                    <h4>玩家2</h4>
+                    <div>当前位置：<span id="player2-position">起点</span></div>
+                    <div>能量值：<span id="player2-score">0</span></div>
+                    <div>已解锁景点：<span id="player2-attractions">0/7</span></div>
+                </div>
+            </div>
+
+            <div class="doubao-api-container">
+                <h3>豆包AI助手</h3>
+                <div id="doubao-chat" class="resource-card">
+                    <div class="resource-title">豆包对话</div>
+                    <div class="resource-content">
+                        <div id="doubao-messages" style="min-height: 100px; margin-bottom: 10px; max-height: 200px;
+                            overflow-y: auto;"></div>
+                        <div class="input-group">
+                            <input type="text" id="doubao-input" placeholder="向豆包提问..." style="width: 80%; padding: 5px;">
+                            <button onclick="sendToDoubao()" style="width: 18%; padding: 5px;">发送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源卡片 -->
+            <div class="resources">
+                <h3>豆包工具指南</h3>
+                <div class="resource-card">
+                    <div class="resource-title">豆包</div>
+                    <div class="resource-content">用于口语练习、景点知识查询、文本分析和创意写作。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI任务卡 -->
+    <div class="task-card" id="task-card">
+        <div class="task-header">
+            <div class="task-title" id="task-title">任务卡</div>
+            <div class="task-type" id="task-type">豆包挑战</div>
+        </div>
+        <div class="task-content" id="task-content">
+            任务内容将在这里显示...
+        </div>
+        <div class="task-actions">
+            <button class="task-btn task-btn-secondary" onclick="skipTask()">跳过</button>
+            <button class="task-btn task-btn-primary" onclick="completeTask()">完成任务</button>
+        </div>
+    </div>
+
+    <!-- 视频弹窗 -->
+    <div class="video-popup" id="video-popup">
+        <video id="video-player" controls></video>
+        <button onclick="closeVideoPopup()">关闭</button>
+    </div>
+
+    <script>
+        // 玩家状态
+        const players = [
+            { id: 'player1', position: 0, score: 0, attractions: [] },
+            { id: 'player2', position: 0, score: 0, attractions: [] }
+        ];
+
+        // 当前玩家索引
+        let currentPlayerIndex = 0;
+
+        // 游戏是否在进行中
+        let isGameInProgress = false;
+
+        // 节点配置
+        const nodes = [
+            { name: 'start', type: 'start', position: { x: 350, y: 10 }, task: null },
+            { name: 'terracotta', type: 'attraction', position: { x: 550, y: 150 }, task: {
+                title: "兵马俑探秘",
+                type: "豆包挑战",
+                content: "豆包模拟考古学家提问：\"Why were the warriors made with different facial expressions?\"<br>请用豆包搜索关键词组织回答，并使用豆包的口语评测功能检查发音。"
+            }, video: 'videos/terracotta.mp4' },
+            { name: 'event1', type: 'event', position: { x: 450, y: 250 }, task: {
+                title: "AI创意挑战",
+                type: "豆包",
+                content: "使用豆包生成一段宣传语，向外国游客介绍西安的历史魅力。要求包含至少3个历史景点名称。"
+            } },
+            { name: 'museum', type: 'attraction', position: { x: 650, y: 350 }, task: {
+                title: "博物馆珍宝",
+                type: "豆包",
+                content: "豆包已生成一件文物的描述：\"A bronze vessel from the Zhou Dynasty with intricate patterns\".<br>请用豆包补全这件文物的英文介绍，包括年代、用途和历史价值。"
+            }, video: 'videos/museum.mp4' },
+            { name: 'event2', type: 'event', position: { x: 550, y: 450 }, task: {
+                title: "语言大师",
+                type: "豆包",
+                content: "豆包将模拟一位迷路的外国游客，你需要用英语帮助他找到去钟楼的路。请使用以下词汇：straight ahead, turn left, about 500 meters."
+            } },
+            { name: 'citywall', type: 'attraction', position: { x: 550, y: 550 }, task: {
+                title: "城墙辩论",
+                type: "豆包",
+                content: "使用豆包分析辩论题：\"Should the city wall be open 24 hours for tourists?\"<br>请组织正反方观点，并使用豆包统计关键词（如'safety', 'cultural preservation'）出现的频率。"
+            }, video: 'videos/citywall.mp4' },
+            { name: 'event3', type: 'event', position: { x: 450, y: 550 }, task: {
+                title: "美食大使",
+                type: "豆包",
+                content: "豆包虚拟点餐场景：你是回民街的服务员，用英语推荐3道特色美食（如肉夹馍、凉皮）。要求使用礼貌用语，并描述食物特点。"
+            } },
+            { name: 'foodstreet', type: 'attraction', position: { x: 350, y: 650 }, task: {
+                title: "美食探索",
+                type: "豆包",
+                content: "使用豆包生成一篇英文短文，介绍回民街的美食文化。要求包含至少5个描述食物口味的形容词。"
+            }, video: 'videos/foodstreet.mp4' },
+            { name: 'event4', type: 'event', position: { x: 250, y: 550 }, task: {
+                title: "文化问答",
+                type: "豆包",
+                content: "豆包将提供一个关于西安文化的问题（如：\"What is the significance of the Big Wild Goose Pagoda?\"）<br>请用英文回答，并使用豆包检查语法错误。"
+            } },
+            { name: 'belltower', type: 'attraction', position: { x: 150, y: 550 }, task: {
+                title: "钟楼传说",
+                type: "豆包",
+                content: "使用豆包创作一个关于钟楼的英文传说故事，包含角色、情节和寓意。"
+            }, video: 'videos/belltower.mp4' },
+            { name: 'dayanta', type: 'attraction', position: { x: 150, y: 350 }, task: {
+                title: "大雁塔之谜",
+                type: "豆包",
+                content: "使用豆包研究大雁塔的历史背景，然后用英文写一篇导游词，向外国游客介绍其建筑特色和文化意义。"
+            }, video: 'videos/dayanta.mp4' },
+            { name: 'event5', type: 'event', position: { x: 350, y: 350 }, task: {
+                title: "旅行计划",
+                type: "综合任务",
+                content: "假设你是西安旅游局的AI顾问，使用豆包设计一个为期2天的英文旅行路线，涵盖至少4个景点，并说明每个景点的推荐理由。"
+            } },
+            { name: 'stele', type: 'attraction', position: { x: 250, y: 150 }, task: {
+                title: "碑林探秘",
+                type: "豆包",
+                content: "碑林博物馆以书法石碑闻名。使用豆包查询3种中国古代书法字体（如楷书、行书），并用英文描述它们的特点。"
+            }, video: 'videos/stele.mp4' },
+            { name: 'end', type: 'end', position: { x: 350, y: 250 }, task: {
+                title: "旅行总结",
+                type: "综合任务",
+                content: "恭喜你完成西安之旅！使用豆包，撰写一篇英文旅行总结，包括最喜欢的景点、学到的历史知识和推荐给未来游客的建议。"
+            } }
+        ];
+
+        // 豆包知识库 - 用于模拟豆包API返回的内容
+        const doubaoKnowledgeBase = {
+            "兵马俑": "兵马俑是秦始皇陵的陪葬坑，建于公元前246年至公元前208年，历时39年。每个陶俑都有独特的面部表情，据推测是模仿当时真实的士兵塑造的。这些不同的表情不仅体现了工匠的高超技艺，也反映了秦军的多样性和真实性。",
+            "城墙": "西安城墙是中国现存规模最大、保存最完整的古城墙之一，建于明朝初期（1370 - 1378年）。关于是否应该24小时开放的问题，支持者认为可以让更多游客体验城墙夜景，提升旅游体验；反对者则担心开放时间过长会增加城墙维护压力，同时也存在安全隐患。",
+            "回民街": "回民街是西安著名的美食街区，有着浓郁的伊斯兰文化氛围。这里的美食以牛羊肉为主，口味浓郁、香辣。推荐美食包括：肉夹馍（Roujiamo） - 外酥里嫩的馍夹着炖煮入味的肉；凉皮（Cold Noodles） - 清爽可口的凉拌面；羊肉泡馍（Yangrou Paomo） - 掰碎的馍泡在浓郁的羊肉汤里。",
+            "钟楼": "钟楼位于西安市中心，建于明朝洪武十七年（1384年），是中国现存钟楼中形制最大、保存最完整的一座。关于钟楼的传说有很多，其中一个传说是钟楼的大钟是为了镇住地下的蛟龙，防止它引发水灾。",
+            "大雁塔": "大雁塔建于唐代永徽三年（652年），是为了保存玄奘法师从印度带回的佛经而建造的。它是佛教建筑艺术的杰出代表，也是中印文化交流的重要象征。大雁塔高64.5米，共有7层，造型古朴庄重，是西安的标志性建筑之一。",
+            "碑林": "碑林博物馆以收藏和展示中国古代碑刻而闻名，始建于北宋元祐二年（1087年）。这里收藏了从汉朝到清朝的各种碑刻2300余件，是中国最大的石质书库。著名的碑刻包括《开成石经》、《大秦景教流行中国碑》等。",
+            "书法字体": "中国古代有许多著名的书法字体，其中最具代表性的有：1. 楷书（Regular Script） - 结构规整，笔画平直，是现代汉字的基础；2. 行书（Running Script） - 介于楷书和草书之间，书写流畅，实用性强；3. 草书（Cursive Script） - 笔画连缀，自由奔放，注重意境和情感表达。",
+            "博物馆": "陕西历史博物馆是中国第一座大型现代化国家级博物馆，被誉为'古都明珠，华夏宝库'。馆藏文物上起远古人类初始阶段使用的简单石器，下至1840年前社会生活中的各类器物，时间跨度长达一百多万年。",
+            "美食文化": "西安的美食文化源远流长，融合了汉族和多个少数民族的饮食特色。回民街的美食以清真风味为主，口味偏重，讲究料香。这里的小吃不仅美味可口，而且具有深厚的文化底蕴，是了解西安历史和文化的重要窗口。",
+            "旅行路线": "以下是一个西安2日游的英文旅行路线推荐：Day 1: Start at the Terracotta Army in the morning, then visit the Shaanxi History Museum in the afternoon. End your day at the City Wall, where you can enjoy the beautiful sunset. Day 2: Begin with a visit to the Big Wild Goose Pagoda, followed by a stroll through the Muslim Quarter to experience the local food culture. Finally, visit the Bell Tower and Drum Tower in the evening to see the city lights.",
+            "兵马俑英文介绍": "The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting the emperor in his afterlife. The figures vary in height according to their roles, with the tallest being the generals. The figures include warriors, chariots and horses. Estimates from 2007 were that the three pits containing the Terracotta Army held more than 8,000 soldiers, 130 chariots with 520 horses and 150 cavalry horses, the majority of which remained buried in the pits near Xi'an.",
+            "欢迎西安": "Welcome to Xi'an, a city steeped in history and culture! Explore the magnificent Terracotta Army, marvel at the ancient City Wall, and immerse yourself in the vibrant atmosphere of the Muslim Quarter. Don't miss the Big Wild Goose Pagoda, a symbol of Buddhist heritage, and the Shaanxi History Museum, home to countless treasures from China's past. Xi'an awaits you with open arms!"
+        };
+
+        // 初始化游戏
+        function initGame() {
+            updatePlayerInfo();
+            // 显示欢迎消息
+            addDoubaoMessage("欢迎来到AI大富翁·西安文旅探索！我是豆包，你可以向我询问任何关于西安景点、历史、美食的问题，也可以让我帮你完成游戏中的任务。");
+        }
+
+        // 掷骰子
+        function rollDice() {
+            if (isGameInProgress) return;
+
+            isGameInProgress = true;
+
+            const diceResult = document.getElementById('dice-result');
+            const currentPlayer = players[currentPlayerIndex];
+
+            // 随机生成骰子结果
+            const step = Math.floor(Math.random() * 6) + 1;
+            diceResult.textContent = step;
+
+            // 移动玩家
+            movePlayer(currentPlayer, step);
+        }
+
+        // 移动玩家
+        function movePlayer(player, step) {
+            const startPosition = player.position;
+            const endPosition = Math.min(player.position + step, nodes.length - 1);
+
+            // 记录移动路径
+            const path = [];
+            for (let i = startPosition; i <= endPosition; i++) {
+                path.push(i);
+            }
+
+            // 动画移动
+            let currentStep = 0;
+            const moveInterval = setInterval(() => {
+                if (currentStep < path.length) {
+                    player.position = path[currentStep];
+                    updatePosition(player);
+                    currentStep++;
+                } else {
+                    clearInterval(moveInterval);
+                    player.position = endPosition;
+                    updatePosition(player);
+                    checkNodeTask(player);
+                    isGameInProgress = false;
+                    switchPlayer();
+                }
+            }, 500);
+        }
+
+        // 更新玩家位置
+        function updatePosition(player) {
+            const node = nodes[player.position];
+            const elem = document.getElementById(player.id);
+
+            // 更新棋子位置
+            elem.style.left = `${node.position.x - 20}px`;
+            elem.style.top = `${node.position.y - 20}px`;
+
+            // 更新玩家信息面板
+            updatePlayerInfo();
+        }
+
+        // 检查节点任务
+        function checkNodeTask(player) {
+            const currentNode = nodes[player.position];
+
+            // 更新游戏消息
+            const gameMessage = document.getElementById('game-message');
+            gameMessage.textContent = `${player.id === 'player1' ? '玩家1' : '玩家2'} 到达 ${currentNode.name === 'start' ? '起点' : currentNode.name === 'end' ? '终点' : getNodeDisplayName(currentNode.name)}`;
+            gameMessage.classList.add('animate-fade-in');
+            setTimeout(() => gameMessage.classList.remove('animate-fade-in'), 500);
+
+            // 如果是景点且未解锁，则解锁
+            if (currentNode.type === 'attraction' && !player.attractions.includes(currentNode.name)) {
+                player.attractions.push(currentNode.name);
+                player.score += 10; // 解锁景点获得10分
+            }
+
+            // 如果有任务，显示任务卡
+            if (currentNode.task) {
+                setTimeout(() => {
+                    showTaskCard(currentNode.task);
+                }, 1000);
+            }
+
+            // 如果是景点且有视频，播放视频
+            if (currentNode.type === 'attraction' && currentNode.video) {
+                showVideoPopup(currentNode.video);
+            }
+        }
+
+        // 显示任务卡
+        function showTaskCard(task) {
+            const taskCard = document.getElementById('task-card');
+            document.getElementById('task-title').textContent = task.title;
+            document.getElementById('task-type').textContent = task.type;
+            document.getElementById('task-content').innerHTML = task.content;
+            taskCard.style.display = 'block';
+        }
+
+        // 完成任务
+        function completeTask() {
+            const currentPlayer = players[currentPlayerIndex];
+            currentPlayer.score += 5; // 完成任务获得5分
+
+            document.getElementById('task-card').style.display = 'none';
+
+            // 更新游戏消息
+            const gameMessage = document.getElementById('game-message');
+            gameMessage.textContent = `${currentPlayer.id === 'player1' ? '玩家1' : '玩家2'} 成功完成任务，获得5能量值！`;
+            gameMessage.classList.add('animate-slide-up');
+            setTimeout(() => gameMessage.classList.remove('animate-slide-up'), 1000);
+        }
+
+        // 跳过任务
+        function skipTask() {
+            document.getElementById('task-card').style.display = 'none';
+
+            // 更新游戏消息
+            const gameMessage = document.getElementById('game-message');
+            gameMessage.textContent = `${players[currentPlayerIndex].id === 'player1' ? '玩家1' : '玩家2'} 跳过任务`;
+            gameMessage.classList.add('animate-slide-up');
+            setTimeout(() => gameMessage.classList.remove('animate-slide-up'), 1000);
+        }
+
+        // 切换玩家
+        function switchPlayer() {
+            // 更新玩家信息面板样式
+            document.getElementById('player1-info').classList.remove('active');
+            document.getElementById('player2-info').classList.remove('active');
+
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+            document.getElementById(players[currentPlayerIndex].id + '-info').classList.add('active');
+
+            // 更新游戏消息
+            const gameMessage = document.getElementById('game-message');
+            gameMessage.textContent = `${players[currentPlayerIndex].id === 'player1' ? '玩家1' : '玩家2'} 的回合，请掷骰子`;
+            gameMessage.classList.add('animate-fade-in');
+            setTimeout(() => gameMessage.classList.remove('animate-fade-in'), 500);
+        }
+
+        // 更新玩家信息
+        function updatePlayerInfo() {
+            players.forEach(player => {
+                const node = nodes[player.position];
+                document.getElementById(`${player.id}-position`).textContent =
+                    node.name === 'start' ? '起点' :
+                    node.name === 'end' ? '终点' :
+                    getNodeDisplayName(node.name);
+                document.getElementById(`${player.id}-score`).textContent = player.score;
+                document.getElementById(`${player.id}-attractions`).textContent = `${player.attractions.length}/7`;
+            });
+        }
+
+        // 获取节点显示名称
+        function getNodeDisplayName(nodeName) {
+            const names = {
+                'terracotta': '兵马俑',
+                'museum': '陕西历史博物馆',
+                'citywall': '西安城墙',
+                'foodstreet': '回民街',
+                'belltower': '钟楼',
+                'dayanta': '大雁塔',
+                'stele': '碑林博物馆'
+            };
+            return names[nodeName] || nodeName;
+        }
+
+        // 豆包API交互部分
+        function sendToDoubao() {
+            const input = document.getElementById('doubao-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            // 显示用户消息
+            const messages = document.getElementById('doubao-messages');
+            messages.innerHTML += `<div><strong>你:</strong> ${message}</div>`;
+
+            // 清空输入
+            input.value = '';
+
+            // 显示加载状态
+            messages.innerHTML += `<div><strong>豆包:</strong> <span class="doubao-loading"></span></div>`;
+
+            // 滚动到底部
+            messages.scrollTop = messages.scrollHeight;
+
+            // 模拟豆包API响应
+            setTimeout(() => {
+                // 移除加载状态
+                messages.innerHTML = messages.innerHTML.replace('<span class="doubao-loading"></span>', '');
+
+                // 查找知识库中是否有相关内容
+                let responseMessage = "抱歉，我没有找到相关信息。";
+                for (const [key, value] of Object.entries(doubaoKnowledgeBase)) {
+                    if (message.toLowerCase().includes(key.toLowerCase())) {
+                        responseMessage = value;
+                        break;
+                    }
+                }
+
+                // 显示回复
+                messages.innerHTML += `<div><strong>豆包:</strong> ${responseMessage}</div>`;
+
+                // 滚动到底部
+                messages.scrollTop = messages.scrollHeight;
+            }, 1000);
+        }
+
+        // 添加豆包消息
+        function addDoubaoMessage(message) {
+            const messages = document.getElementById('doubao-messages');
+            messages.innerHTML += `<div><strong>豆包:</strong> ${message}</div>`;
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        // 显示视频弹窗
+        function showVideoPopup(videoUrl) {
+            const videoPopup = document.getElementById('video-popup');
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.src = videoUrl;
+            videoPlayer.load();
+            videoPlayer.play();
+            videoPopup.style.display = 'block';
+        }
+
+        // 关闭视频弹窗
+        function closeVideoPopup() {
+            const videoPopup = document.getElementById('video-popup');
+            const videoPlayer = document.getElementById('video-player');
+            videoPlayer.pause();
+            videoPopup.style.display = 'none';
+        }
+
+        // 初始化游戏
+        initGame();
+    </script>
+</body>
+
+</html>
+    

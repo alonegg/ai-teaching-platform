@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Expression Bingo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ffde7d;
+            margin-bottom: 5px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(0, 50, 100, 0.6);
+            border-radius: 12px;
+            border: 1px solid #2a9df4;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .stat-title {
+            font-size: 1rem;
+            color: #aaccff;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+        }
+        
+        #timer {
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff8c00, #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+        
+        .instructions {
+            background: rgba(0, 50, 100, 0.6);
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            border: 1px solid #2a9df4;
+        }
+        
+        .instructions p {
+            margin-bottom: 10px;
+        }
+        
+        .bingo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .bingo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .bingo-cell {
+            aspect-ratio: 1;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 2px solid #3a8bbb;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .bingo-cell:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .bingo-cell.selected {
+            background: rgba(58, 139, 187, 0.5);
+            border-color: #ffcc00;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+        }
+        
+        .bingo-cell.bingo {
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            border-color: #ffffff;
+            color: white;
+            animation: bingo-pulse 1s infinite;
+        }
+        
+        @keyframes bingo-pulse {
+            0% { box-shadow: 0 0 5px #4CAF50; }
+            50% { box-shadow: 0 0 20px #8BC34A; }
+            100% { box-shadow: 0 0 5px #4CAF50; }
+        }
+        
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        button {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(to right, #ffcc00, #ff9900);
+            color: #1a1a1a;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            min-width: 180px;
+            margin: 5px;
+        }
+        
+        #startBtn {
+            background: linear-gradient(to right, #4CAF50, #2E8B57);
+            color: white;
+            font-size: 1.3rem;
+            padding: 15px 40px;
+        }
+        
+        #pauseBtn {
+            background: linear-gradient(to right, #4286f4, #373bff);
+            color: white;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+        
+        #message {
+            font-size: 1.8rem;
+            margin-top: 25px;
+            min-height: 50px;
+            text-align: center;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .get-started {
+            font-size: 2rem;
+            text-align: center;
+            margin: 20px 0;
+            color: #ffcc00;
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            animation: pulse-text 2s infinite;
+        }
+        
+        @keyframes pulse-text {
+            0% { transform: scale(1); color: #ffcc00; }
+            50% { transform: scale(1.05); color: #ff6600; }
+            100% { transform: scale(1); color: #ffcc00; }
+        }
+        
+        .expressions-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .target, .distractors {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+            border-radius: 12px;
+        }
+        
+        .target {
+            background: rgba(76, 175, 80, 0.25);
+            border: 1px solid #4CAF50;
+        }
+        
+        .distractors {
+            background: rgba(244, 67, 54, 0.25);
+            border: 1px solid #F44336;
+        }
+        
+        .target h3, .distractors h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .target li:before {
+            content: "✓";
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .distractors li:before {
+            content: "✗";
+            color: #F44336;
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .bingo-grid {
+                max-width: 400px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .expressions-info {
+                flex-direction: column;
+            }
+            
+            #timer {
+                font-size: 1.8rem;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .bingo-grid {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 300px;
+            }
+            
+            .bingo-cell {
+                aspect-ratio: 1.2;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                min-width: 140px;
+            }
+            
+            #message {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .timer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .timer-result {
+            font-size: 5rem;
+            color: #ffcc00;
+            text-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .start-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .start-content {
+            text-align: center;
+            max-width: 600px;
+            padding: 30px;
+            background: rgba(30, 30, 70, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 255, 0.5);
+        }
+        
+        .start-title {
+            font-size: 3rem;
+            color: #ffcc00;
+            margin-bottom: 30px;
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+        }
+        
+        .start-instructions {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: #e6e6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="start-overlay" id="startOverlay">
+        <div class="start-content">
+            <h2 class="start-title">Future Expression Bingo</h2>
+            <div class="start-instructions">
+                <p>Your goal is to find and select expressions that indicate FUTURE actions</p>
+                <p>Click on <strong style="color:#4CAF50;">future expressions</strong> to select them</p>
+                <p>Avoid clicking on <strong style="color:#F44336;">expressions that refer to past, habits, or present</strong></p>
+                <p>Connect <strong style="color:#ffcc00;">4 future expressions</strong> in a straight line (row, column, or diagonal)</p>
+            </div>
+            <button id="playBtn" style="background: linear-gradient(to right, #ffcc00, #ff9900);
+            color: #1a1a1a; font-size: 1.5rem; padding: 15px 50px;">START PLAYING</button>
+        </div>
+    </div>
+    
+    <header>
+        <h1>Future Expression Bingo</h1>
+        <p class="subtitle">Match future tense expressions to win!</p>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-title">TIME</div>
+                <div id="timer" class="stat-value">00:00.00</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-title">SELECTED</div>
+                <div id="selectedCount" class="stat-value">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-title">ATTEMPTS</div>
+                <div id="attemptsCount" class="stat-value">0</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="instructions">
+            <p>🔍 Find and select expressions that indicate future actions</p>
+            <p>🎯 Goal: Connect 4 future expressions in a line (row, column, or diagonal)</p>
+            <p>⏱️ Timer: Starts when you begin playing</p>
+            <p>⚠️ Avoid expressions that refer to past, habits, or present!</p>
+        </div>
+        
+        <div class="bingo-container">
+            <div class="bingo-grid" id="bingoGrid">
+                <!-- Bingo cells will be generated by JavaScript -->
+            </div>
+            
+            <div id="message">
+                <div class="get-started">Click "START GAME" to begin!</div>
+            </div>
+            
+            <div class="controls">
+                <button id="startBtn">START GAME</button>
+                <button id="newGameBtn">New Game</button>
+                <button id="pauseBtn">Pause Timer</button>
+                <button id="checkBtn">Check for Bingo</button>
+            </div>
+        </div>
+        
+        <div class="expressions-info">
+            <div class="target">
+                <h3>Future Expressions (Target)</h3>
+                <ul>
+                    <li>be going to</li>
+                    <li>will do</li>
+                    <li>hope to</li>
+                    <li>intend to</li>
+                    <li>plan to</li>
+                    <li>wish to</li>
+                    <li>want to</li>
+                    <li>mean to</li>
+                    <li>would like to</li>
+                    <li>schedule to</li>
+                </ul>
+            </div>
+            
+            <div class="distractors">
+                <h3>Other Expressions (Distractors)</h3>
+                <ul>
+                    <li>used to (Habit)</li>
+                    <li>yesterday (Past)</li>
+                    <li>every day (Habit)</li>
+                    <li>was/were doing (Past)</li>
+                    <li>at the moment (Present)</li>
+                    <li>currently (Present)</li>
+                    <li>often (Habit)</li>
+                    <li>last week (Past)</li>
+                    <li>right now (Present)</li>
+                    <li>usually (Habit)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bingoGrid = document.getElementById('bingoGrid');
+            const messageEl = document.getElementById('message');
+            const newGameBtn = document.getElementById('newGameBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const startBtn = document.getElementById('startBtn');
+            const checkBtn = document.getElementById('checkBtn');
+            const timerEl = document.getElementById('timer');
+            const selectedCountEl = document.getElementById('selectedCount');
+            const attemptsCountEl = document.getElementById('attemptsCount');
+            const playBtn = document.getElementById('playBtn');
+            const startOverlay = document.getElementById('startOverlay');
+            
+            // 修复开始按钮：移动DOM元素以使其能被正确获取
+            startOverlay.style.display = 'block';
+            
+            // Future expressions to include
+            const futureExpressions = [
+                'be going to', 'will do', 'hope to', 'intend to',
+                'plan to', 'wish to', 'want to', 'mean to',
+                'would like to', 'schedule to'
+            ];
+            
+            // Distraction expressions (past, habitual, present)
+            const distractionExpressions = [
+                'used to', 'yesterday', 'every day', 'was/were doing',
+                'at the moment', 'currently', 'often', 'last week',
+                'right now', 'usually', 'previously', 'always',
+                'in the past', 'regularly', 'now', 'frequently',
+                'habitually', 'just now', 'in those days'
+            ];
+            
+            // Game state variables
+            let gameBoard = [];
+            let selectedCells = Array(16).fill(false);
+            let targetPositions = [];
+            let winLine = [];
+            let bingoAchieved = false;
+            let timer = 0;
+            let timerInterval;
+            let selectedCount = 0;
+            let attemptsCount = 0;
+            let bestTime = parseFloat(localStorage.getItem('bestTime')) || null;
+            let isPaused = true;
+            let gameStarted = false;
+            
+            // Initialize the game (without starting)
+            function initGame() {
+                bingoGrid.innerHTML = '';
+                messageEl.innerHTML = '<div class="get-started">Click "START GAME" to begin!</div>';
+                selectedCells = Array(16).fill(false);
+                bingoAchieved = false;
+                selectedCount = 0;
+                updateSelectedCount();
+                attemptsCount = 0;
+                updateAttemptsCount();
+                pauseBtn.textContent = "Pause Timer";
+                isPaused = true;
+                
+                // Reset timer
+                resetTimer();
+                
+                // Generate a new game board
+                generateBoard();
+                
+                // Create cells
+                for (let i = 0; i < 16; i++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('bingo-cell');
+                    cell.textContent = gameBoard[i];
+                    cell.dataset.index = i;
+                    
+                    cell.addEventListener('click', () => {
+                        if (gameStarted && !bingoAchieved) {
+                            // Only count clicks on target positions toward attempts
+                            if (targetPositions.includes(i)) {
+                                attemptsCount++;
+                                updateAttemptsCount();
+                            }
+                            toggleCellSelection(i, cell);
+                        }
+                    });
+                    
+                    bingoGrid.appendChild(cell);
+                }
+            }
+            
+            // Start the game
+            function startGame() {
+                if (!gameStarted) {
+                    gameStarted = true;
+                    messageEl.innerHTML = 'Click on a <strong style="color:#4CAF50;">future expression</strong> to begin!';
+                }
+            }
+            
+            // Generate a new game board
+            function generateBoard() {
+                // Reset variables
+                gameBoard = Array(16).fill('');
+                targetPositions = [];
+                winLine = [];
+                
+                // Select 5-6 future expressions to use as targets
+                const shuffledFuture = [...futureExpressions].sort(() => Math.random() - 0.5);
+                const numTargets = Math.floor(Math.random() * 2) + 5; // 5 or 6
+                const selectedTargets = shuffledFuture.slice(0, numTargets);
+                
+                // Choose a random win line (row, column, or diagonal)
+                const lines = [
+                    // Rows
+                    [0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15],
+                    // Columns
+                    [0, 4, 8, 12], [1, 5, 9, 13], [2, 6, 10, 14], [3, 7, 11, 15],
+                    // Diagonals
+                    [0, 5, 10, 15], [3, 6, 9, 12]
+                ];
+                
+                winLine = lines[Math.floor(Math.random() * lines.length)];
+                
+                // Place future expressions in the win line positions
+                const targetsToPlace = [...selectedTargets];
+                for (const position of winLine) {
+                    if (targetsToPlace.length > 0) {
+                        // Place a future expression
+                        const expression = targetsToPlace.shift();
+                        gameBoard[position] = expression;
+                        targetPositions.push(position);
+                    }
+                }
+                
+                // Place additional targets (if any) in random non-line positions
+                const nonLinePositions = Array.from({length: 16}, (_, i) => i)
+                    .filter(pos => !winLine.includes(pos));
+                
+                while (targetsToPlace.length > 0 && nonLinePositions.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * nonLinePositions.length);
+                    const position = nonLinePositions.splice(randomIndex, 1)[0];
+                    const expression = targetsToPlace.shift();
+                    gameBoard[position] = expression;
+                    targetPositions.push(position);
+                }
+                
+                // Fill remaining positions with distraction expressions
+                const shuffledDistractors = [...distractionExpressions].sort(() => Math.random() - 0.5);
+                for (let i = 0; i < 16; i++) {
+                    if (!gameBoard[i]) {
+                        const distractor = shuffledDistractors.pop() || 'expression';
+                        gameBoard[i] = distractor;
+                    }
+                }
+            }
+            
+            // Toggle cell selection
+            function toggleCellSelection(index, cell) {
+                // Start timer on first selection
+                if (isPaused && selectedCount === 0 && gameStarted) {
+                    togglePauseTimer();
+                }
+                
+                // Only allow selecting cells that are in target positions
+                if (!targetPositions.includes(index)) {
+                    messageEl.innerHTML = 'That\'s <strong style="color:#F44336;">not a future expression</strong>!<br>Try again!';
+                    return;
+                }
+                
+                // Toggle selection
+                selectedCells[index] = !selectedCells[index];
+                cell.classList.toggle('selected', selectedCells[index]);
+                
+                // Update selected count
+                selectedCount = selectedCells.filter(val => val).length;
+                updateSelectedCount();
+                
+                // Check for bingo
+                if (checkForBingo()) {
+                    return;
+                }
+                
+                // Remove bingo highlights if the win line is broken
+                if (bingoAchieved && !checkWinLineComplete()) {
+                    resetBingoHighlights();
+                    messageEl.innerHTML = 'Continue playing...';
+                }
+            }
+            
+            // Update selected count display
+            function updateSelectedCount() {
+                selectedCountEl.textContent = selectedCount;
+            }
+            
+            // Update attempts count display
+            function updateAttemptsCount() {
+                attemptsCountEl.textContent = attemptsCount;
+            }
+            
+            // Check for a winning line
+            function checkForBingo() {
+                if (bingoAchieved) {
+                    return true;
+                }
+                
+                if (checkWinLineComplete()) {
+                    bingoAchieved = true;
+                    highlightWinLine();
+                    stopTimer();
+                    showWinResult();
+                    return true;
+                }
+                
+                return false;
+            }
+            
+            // Check if the win line is complete
+            function checkWinLineComplete() {
+                return winLine.every(index => selectedCells[index]);
+            }
+            
+            // Highlight the winning line
+            function highlightWinLine() {
+                winLine.forEach(index => {
+                    const cell = document.querySelector(`.bingo-cell[data-index="${index}"]`);
+                    cell.classList.add('bingo');
+                });
+            }
+            
+            // Reset bingo highlights
+            function resetBingoHighlights() {
+                const cells = document.querySelectorAll('.bingo-cell');
+                cells.forEach(cell => {
+                    cell.classList.remove('bingo');
+                });
+                bingoAchieved = false;
+            }
+            
+            // Timer functions
+            function startTimer() {
+                if (timerInterval) return;
+                
+                isPaused = false;
+                pauseBtn.textContent = "Pause Timer";
+                
+                // If this is the first time starting, set up interval
+                if (!timerInterval) {
+                    timerInterval = setInterval(() => {
+                        if (!isPaused) {
+                            timer += 1;
+                            updateTimerDisplay();
+                        }
+                    }, 10);
+                }
+            }
+            
+            function stopTimer() {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                isPaused = true;
+                pauseBtn.textContent = "Resume Timer";
+                
+                // Update best time if applicable
+                if (!bestTime || timer < bestTime) {
+                    bestTime = timer;
+                    localStorage.setItem('bestTime', bestTime.toString());
+                }
+            }
+            
+            function resetTimer() {
+                if (timerInterval) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                }
+                timer = 0;
+                updateTimerDisplay();
+            }
+            
+            function togglePauseTimer() {
+                if (!timerInterval) {
+                    // Starting from zero
+                    startTimer();
+                    return;
+                }
+                
+                isPaused = !isPaused;
+                pauseBtn.textContent = isPaused ? "Resume Timer" : "Pause Timer";
+            }
+            
+            function updateTimerDisplay() {
+                // Convert timer to minutes:seconds:centiseconds
+                const minutes = Math.floor(timer / 6000);
+                const seconds = Math.floor((timer % 6000) / 100);
+                const centiseconds = timer % 100;
+                
+                // Format to two digits
+                const display = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}.${centiseconds.toString().padStart(2, '0')}`;
+                timerEl.textContent = display;
+            }
+            
+            // Show win result with time
+            function showWinResult() {
+                messageEl.innerHTML = `<strong style="font-size:2rem;">BINGO!</strong><br>Completion Time: <strong>${timerEl.textContent}</strong>`;
+                messageEl.style.color = "#4CAF50";
+                
+                // Show win overlay
+                const overlay = document.createElement('div');
+                overlay.className = 'timer-overlay';
+                
+                const result = document.createElement('div');
+                result.className = 'timer-result';
+                result.textContent = timerEl.textContent;
+                
+                const label = document.createElement('div');
+                label.style.fontSize = '2rem';
+                label.style.color = '#4CAF50';
+                label.textContent = 'Completion Time';
+                
+                const bestTimeElement = document.createElement('div');
+                bestTimeElement.style.fontSize = '1.5rem';
+                bestTimeElement.style.color = '#ffcc00';
+                bestTimeElement.style.marginTop = '20px';
+                
+                if (bestTime !== null) {
+                    const bestMinutes = Math.floor(bestTime / 6000);
+                    const bestSeconds = Math.floor((bestTime % 6000) / 100);
+                    const bestCentiseconds = bestTime % 100;
+                    const bestDisplay = `${bestMinutes.toString().padStart(2, '0')}:${bestSeconds.toString().padStart(2, '0')}.${bestCentiseconds.toString().padStart(2, '0')}`;
+                    
+                    if (timer <= bestTime) {
+                        bestTimeElement.textContent = `🎉 New Best Time! 🎉`;
+                    } else {
+                        bestTimeElement.textContent = `Best Time: ${bestDisplay}`;
+                    }
+                } else {
+                    bestTimeElement.textContent = `First Recorded Time!`;
+                }
+                
+                const closeButton = document.createElement('button');
+                closeButton.textContent = "Continue Playing";
+                closeButton.style.marginTop = '30px';
+                closeButton.style.background = 'linear-gradient(to right, #ff9900, #ff6600)';
+                closeButton.style.fontSize = '1.5rem';
+                closeButton.style.padding = '15px 35px';
+                
+                closeButton.addEventListener('click', () => {
+                    document.body.removeChild(overlay);
+                });
+                
+                overlay.appendChild(result);
+                overlay.appendChild(label);
+                overlay.appendChild(bestTimeElement);
+                overlay.appendChild(closeButton);
+                document.body.appendChild(overlay);
+            }
+            
+            // Button event listeners
+            newGameBtn.addEventListener('click', function() {
+                initGame();
+                gameStarted = false;
+                startBtn.textContent = "START GAME";
+                messageEl.innerHTML = '<div class="get-started">Click "START GAME" to begin!</div>';
+            });
+            
+            startBtn.addEventListener('click', function() {
+                startGame();
+                startBtn.textContent = "Game Started";
+                setTimeout(() => {
+                    startBtn.textContent = "Restart?";
+                }, 1000);
+            });
+            
+            pauseBtn.addEventListener('click', function() {
+                if (gameStarted) {
+                    togglePauseTimer();
+                } else {
+                    alert("Please start the game first!");
+                }
+            });
+            
+            checkBtn.addEventListener('click', function() {
+                if (gameStarted && !bingoAchieved) {
+                    if (checkForBingo()) {
+                        messageEl.textContent = "BINGO!";
+                        messageEl.style.color = "#4CAF50";
+                    } else {
+                        messageEl.innerHTML = 'No BINGO yet!<br>Keep looking for <strong style="color:#4CAF50;">future expressions</strong>.';
+                        messageEl.style.color = "#ffcc00";
+                    }
+                } else if (!gameStarted) {
+                    alert("Please start the game first!");
+                }
+            });
+            
+            // 修复开始按钮事件监听器
+            playBtn.addEventListener('click', function() {
+                startOverlay.style.display = 'none';
+                initGame();
+            });
+            
+            // Initialize the game board (but don't start the game)
+            initGame();
+        });
+    </script>
+</body>
+</html>

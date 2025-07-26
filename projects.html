@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目案例 - AI教学资源整合平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .projects-page {
+            padding-top: 100px;
+            min-height: 100vh;
+            background: #f9fafb;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .project-detail {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            padding: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .project-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+        
+        .meta-item i {
+            color: #2563eb;
+        }
+        
+        .project-description {
+            font-size: 1.125rem;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .project-content {
+            padding: 2rem;
+        }
+        
+        .content-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section-title i {
+            color: #2563eb;
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-item {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .feature-item h4 {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .code-block {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #374151;
+        }
+        
+        .code-title {
+            color: #f59e0b;
+            font-weight: 600;
+        }
+        
+        .copy-code-btn {
+            background: #374151;
+            color: #d1d5db;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: background 0.3s ease;
+        }
+        
+        .copy-code-btn:hover {
+            background: #4b5563;
+        }
+        
+        .screenshot-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .screenshot {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .screenshot-caption {
+            background: #f3f4f6;
+            padding: 0.75rem;
+            font-size: 0.875rem;
+            color: #374151;
+            text-align: center;
+        }
+        
+        .download-section {
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .download-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .download-btn.secondary {
+            background: #6b7280;
+        }
+        
+        .download-btn.secondary:hover {
+            background: #4b5563;
+        }
+        
+        .usage-guide {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .usage-guide h4 {
+            color: #92400e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .usage-guide ol {
+            color: #92400e;
+            padding-left: 1.5rem;
+        }
+        
+        .usage-guide li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .project-title {
+                font-size: 1.5rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .project-meta {
+                justify-content: center;
+            }
+            
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                AI教学资源平台
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="prompts.html" class="nav-link">提示词库</a></li>
+                <li><a href="index.html#tools" class="nav-link">AI工具</a></li>
+                <li><a href="index.html#resources" class="nav-link">教学资源</a></li>
+                <li><a href="projects.html" class="nav-link">项目案例</a></li>
+                <li><a href="index.html#docs" class="nav-link">文档</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">项目案例展示</h1>
+            <p class="page-subtitle">探索我们的实际教学项目，了解AI技术在教育领域的创新应用</p>
+        </div>
+    </div>
+
+    <!-- 项目详情 -->
+    <div class="projects-page">
+        <div class="container">
+            <!-- 项目1：情感分析工具 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <div class="project-title">
+                        <div class="project-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        情感分析工具
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-code"></i>
+                            Python
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-desktop"></i>
+                            桌面应用
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-chart-line"></i>
+                            数据可视化
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            教学工具
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        一个功能完整的情感分析桌面应用程序，支持文本情感分析、批量处理、结果可视化和数据导出。专为教学和研究设计，提供直观的图形界面和详细的分析报告。
+                    </p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-star"></i>
+                            核心功能
+                        </h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>文本情感分析</h4>
+                                <p>支持中英文文本的情感极性分析，提供详细的情感得分和分类结果</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>批量文件处理</h4>
+                                <p>可同时处理多个文本文件，支持TXT、CSV等常见格式</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>可视化图表</h4>
+                                <p>生成情感分布图、趋势图和对比图，直观展示分析结果</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>结果导出</h4>
+                                <p>支持将分析结果导出为Excel、CSV和图片格式</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>用户友好界面</h4>
+                                <p>基于Tkinter的直观GUI，操作简单，适合教学演示</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>实时预览</h4>
+                                <p>实时显示分析进度和结果，提供即时反馈</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            技术栈
+                        </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python 3.8+</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">TextBlob</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">PyInstaller</span>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-code"></i>
+                            核心代码示例
+                        </h3>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-title">sentiment_analyzer.py</span>
+                                <button class="copy-code-btn" onclick="copyCode(this)">复制代码</button>
+                            </div>
+                            <pre><code>import tkinter as tk
+from tkinter import ttk, filedialog, messagebox
+from textblob import TextBlob
+import matplotlib.pyplot as plt
+import pandas as pd
+
+class SentimentAnalyzer:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("情感分析工具")
+        self.root.geometry("800x600")
+        
+        # 创建主界面
+        self.create_widgets()
+        
+    def analyze_sentiment(self, text):
+        """分析文本情感"""
+        blob = TextBlob(text)
+        polarity = blob.sentiment.polarity
+        subjectivity = blob.sentiment.subjectivity
+        
+        if polarity > 0.1:
+            sentiment = "积极"
+        elif polarity < -0.1:
+            sentiment = "消极"
+        else:
+            sentiment = "中性"
+            
+        return {
+            'sentiment': sentiment,
+            'polarity': polarity,
+            'subjectivity': subjectivity
+        }
+    
+    def process_files(self):
+        """批量处理文件"""
+        files = filedialog.askopenfilenames(
+            title="选择文本文件",
+            filetypes=[("文本文件", "*.txt"), ("所有文件", "*.*")]
+        )
+        
+        if files:
+            results = []
+            for file_path in files:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    result = self.analyze_sentiment(content)
+                    result['file'] = file_path.split('/')[-1]
+                    results.append(result)
+            
+            self.display_results(results)
+            self.create_visualization(results)
+    
+    def create_visualization(self, results):
+        """创建可视化图表"""
+        df = pd.DataFrame(results)
+        
+        plt.figure(figsize=(12, 8))
+        
+        # 情感分布饼图
+        plt.subplot(2, 2, 1)
+        sentiment_counts = df['sentiment'].value_counts()
+        plt.pie(sentiment_counts.values, labels=sentiment_counts.index, autopct='%1.1f%%')
+        plt.title('情感分布')
+        
+        # 情感极性分布
+        plt.subplot(2, 2, 2)
+        plt.hist(df['polarity'], bins=20, alpha=0.7)
+        plt.xlabel('情感极性')
+        plt.ylabel('频次')
+        plt.title('情感极性分布')
+        
+        # 文件情感对比
+        plt.subplot(2, 1, 2)
+        plt.bar(range(len(df)), df['polarity'])
+        plt.xlabel('文件')
+        plt.ylabel('情感极性')
+        plt.title('各文件情感对比')
+        plt.xticks(range(len(df)), df['file'], rotation=45)
+        
+        plt.tight_layout()
+        plt.show()</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-play"></i>
+                            使用指南
+                        </h3>
+                        <div class="usage-guide">
+                            <h4><i class="fas fa-info-circle"></i>快速开始</h4>
+                            <ol>
+                                <li>下载并解压项目文件</li>
+                                <li>安装Python 3.8或更高版本</li>
+                                <li>运行 <code>pip install -r requirements.txt</code> 安装依赖</li>
+                                <li>执行 <code>python sentiment_analyzer.py</code> 启动程序</li>
+                                <li>选择文本文件进行分析</li>
+                                <li>查看分析结果和可视化图表</li>
+                                <li>导出结果到Excel或图片格式</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="download-section">
+                        <h3 class="download-title">下载项目资源</h3>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn" onclick="downloadFile('sentiment_analysis_tool.zip')">
+                                <i class="fas fa-download"></i>
+                                下载源代码
+                            </a>
+                            <a href="#" class="download-btn secondary" onclick="downloadFile('sentiment_analyzer.exe')">
+                                <i class="fas fa-desktop"></i>
+                                下载可执行文件
+                            </a>
+                            <a href="#" class="download-btn secondary" onclick="downloadFile('user_manual.pdf')">
+                                <i class="fas fa-book"></i>
+                                用户手册
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目2：AI写作助手 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <div class="project-title">
+                        <div class="project-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        AI学术写作助手
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-language"></i>
+                            多语言支持
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            学术写作
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-robot"></i>
+                            AI驱动
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-check-circle"></i>
+                            语法检查
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        基于先进AI技术的学术写作辅助工具，提供实时语法检查、写作建议、引用格式化和文档结构优化等功能，帮助学生和研究者提高写作质量。
+                    </p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-star"></i>
+                            主要特性
+                        </h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>智能语法检查</h4>
+                                <p>实时检测语法错误、拼写错误和标点符号问题</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>写作风格建议</h4>
+                                <p>提供学术写作风格建议和表达优化方案</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>引用管理</h4>
+                                <p>自动格式化引用，支持APA、MLA、Chicago等格式</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>结构分析</h4>
+                                <p>分析文档结构，提供逻辑性和连贯性建议</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>多语言支持</h4>
+                                <p>支持中文、英文等多种语言的写作辅助</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>协作功能</h4>
+                                <p>支持多人协作编辑和评论反馈</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            技术架构
+                        </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="download-section">
+                        <h3 class="download-title">项目资源</h3>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn" onclick="downloadFile('ai_writing_assistant.zip')">
+                                <i class="fas fa-download"></i>
+                                下载项目
+                            </a>
+                            <a href="#" class="download-btn secondary" onclick="openInNewTab('https://demo.ai-writing.com')">
+                                <i class="fas fa-external-link-alt"></i>
+                                在线演示
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 项目3：智能课程规划系统 -->
+            <div class="project-detail">
+                <div class="project-header">
+                    <div class="project-title">
+                        <div class="project-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        智能课程规划系统
+                    </div>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            课程管理
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            学生管理
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-chart-bar"></i>
+                            数据分析
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            响应式设计
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        一个全面的智能课程规划和管理系统，集成了课程设计、学生管理、进度跟踪和数据分析功能，为教育机构提供完整的数字化解决方案。
+                    </p>
+                </div>
+                
+                <div class="project-content">
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-star"></i>
+                            系统功能
+                        </h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <h4>智能课程设计</h4>
+                                <p>基于AI算法自动生成课程大纲和教学计划</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>学习路径规划</h4>
+                                <p>为每个学生定制个性化的学习路径</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>进度监控</h4>
+                                <p>实时跟踪学习进度和完成情况</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>智能推荐</h4>
+                                <p>根据学习表现推荐适合的学习资源</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>数据可视化</h4>
+                                <p>提供丰富的图表和报告功能</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>移动端支持</h4>
+                                <p>支持手机和平板设备访问</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            技术栈
+                        </h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vue.js 3</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Element Plus</span>
+                            <span class="tech-tag">Apache ECharts</span>
+                        </div>
+                    </div>
+
+                    <div class="download-section">
+                        <h3 class="download-title">获取项目</h3>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn" onclick="downloadFile('course_planning_system.zip')">
+                                <i class="fas fa-download"></i>
+                                下载源码
+                            </a>
+                            <a href="#" class="download-btn secondary" onclick="downloadFile('system_documentation.pdf')">
+                                <i class="fas fa-file-pdf"></i>
+                                系统文档
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function copyCode(button) {
+            const codeBlock = button.closest('.code-block').querySelector('code');
+            const text = codeBlock.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = '已复制!';
+                button.style.background = '#10b981';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('复制失败:', err);
+                showNotification('复制失败，请手动选择代码', 'error');
+            });
+        }
+    </script>
+</body>
+</html>

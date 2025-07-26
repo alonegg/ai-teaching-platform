@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单词教学助手</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3B82F6',
+            secondary: '#10B981',
+            accent: '#8B5CF6',
+            neutral: '#6B7280',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .card-shadow {
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+      }
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .btn-pulse {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+        }
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-gradient-to-r from-primary to-accent text-white shadow-lg">
+    <div class="container mx-auto px-4 py-6">
+      <h1 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold flex items-center">
+        <i class="fa fa-book mr-3"></i>
+        单词教学助手
+      </h1>
+      <p class="mt-2 text-white/90 text-lg">提升课堂互动，强化单词记忆</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <!-- 控制面板 -->
+    <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-xl font-bold text-gray-800 mb-2">当前单词</h2>
+          <p id="current-word" class="text-3xl font-bold text-primary mb-4">Apple</p>
+          
+          <div class="flex flex-wrap gap-3 mb-4">
+            <button id="play-sound-btn" class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg flex items-center transition-all duration-300 transform hover:scale-105">
+              <i class="fa fa-volume-up mr-2"></i> 播放发音
+            </button>
+            <button id="show-definition-btn" class="bg-secondary hover:bg-secondary/90 text-white px-5 py-2 rounded-lg flex items-center transition-all duration-300 transform hover:scale-105">
+              <i class="fa fa-book mr-2"></i> 显示释义
+            </button>
+            <button id="show-example-btn" class="bg-accent hover:bg-accent/90 text-white px-5 py-2 rounded-lg flex items-center transition-all duration-300 transform hover:scale-105">
+              <i class="fa fa-quote-right mr-2"></i> 显示例句
+            </button>
+          </div>
+        </div>
+        
+        <div class="bg-gray-100 p-4 rounded-lg w-full md:w-auto">
+          <h3 class="text-lg font-semibold text-gray-700 mb-2">学习进度</h3>
+          <div class="flex items-center gap-3">
+            <div class="w-40 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div id="progress-bar" class="h-full bg-primary rounded-full transition-all duration-500" style="width: 25%"></div>
+            </div>
+            <span id="progress-text" class="text-gray-700 font-medium">2/8</span>
+          </div>
+          
+          <div class="mt-4 flex gap-2">
+            <button id="prev-word-btn" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg flex items-center transition-all duration-300">
+              <i class="fa fa-chevron-left mr-1"></i> 上一个
+            </button>
+            <button id="next-word-btn" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg flex items-center transition-all duration-300">
+              下一个 <i class="fa fa-chevron-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 单词信息区域 -->
+    <section class="bg-white rounded-xl shadow-lg p-6 mb-8">
+      <div id="word-info" class="space-y-4">
+        <div id="definition-container" class="hidden bg-blue-50 border-l-4 border-primary p-4 rounded-r-lg">
+          <h3 class="font-bold text-primary mb-1">英文释义:</h3>
+          <p id="word-definition" class="text-gray-700">A round fruit with red, green, or yellow skin and firm white flesh.</p>
+        </div>
+        
+        <div id="example-container" class="hidden bg-purple-50 border-l-4 border-accent p-4 rounded-r-lg">
+          <h3 class="font-bold text-accent mb-1">例句:</h3>
+          <p id="word-example" class="text-gray-700">She took a bite of the apple and savored its sweet flavor.</p>
+          <p id="example-translation" class="text-gray-600 italic mt-1">她咬了一口苹果，品尝着它的甜味。</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- 单词卡片区域 -->
+    <section class="bg-white rounded-xl shadow-lg p-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-6">请选择正确的单词卡片</h2>
+      
+      <div id="cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- 单词卡片将通过JavaScript动态生成 -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-gray-400">© 2025 单词教学助手 - 提升课堂互动体验</p>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa fa-question-circle"></i> 帮助
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa fa-cog"></i> 设置
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 示例单词数据
+    const vocabularyData = [
+      {
+        word: "Apple",
+        definition: "A round fruit with red, green, or yellow skin and firm white flesh.",
+        example: "She took a bite of the apple and savored its sweet flavor.",
+        translation: "她咬了一口苹果，品尝着它的甜味。"
+      },
+      {
+        word: "Banana",
+        definition: "A long curved fruit with a yellow skin and soft sweet flesh.",
+        example: "I like to eat a banana every morning for breakfast.",
+        translation: "我喜欢每天早上吃一根香蕉作为早餐。"
+      },
+      {
+        word: "Cherry",
+        definition: "A small round fruit with a smooth skin and a single hard stone.",
+        example: "The cherry trees are blooming beautifully this spring.",
+        translation: "今年春天樱桃树开得很漂亮。"
+      },
+      {
+        word: "Grape",
+        definition: "A small round fruit that grows in bunches on vines, often used to make wine.",
+        example: "She bought a bunch of grapes from the supermarket.",
+        translation: "她从超市买了一串葡萄。"
+      },
+      {
+        word: "Lemon",
+        definition: "A yellow citrus fruit with a sour taste, used for its juice or flavor.",
+        example: "Add a slice of lemon to your water for extra flavor.",
+        translation: "在你的水中加一片柠檬增添风味。"
+      },
+      {
+        word: "Mango",
+        definition: "A tropical fruit with yellowish-red skin and a sweet juicy flesh.",
+        example: "Mangoes are my favorite fruit during the summer.",
+        translation: "芒果是我夏天最喜欢的水果。"
+      },
+      {
+        word: "Orange",
+        definition: "A round citrus fruit with a tough bright reddish-yellow rind and juicy flesh.",
+        example: "He squeezed the orange to make fresh orange juice.",
+        translation: "他挤橙子做新鲜的橙汁。"
+      },
+      {
+        word: "Strawberry",
+        definition: "A sweet red fruit with tiny seeds on the surface, growing on low plants.",
+        example: "We went strawberry picking at the farm last weekend.",
+        translation: "我们上周末去农场摘草莓了。"
+      }
+    ];
+    
+    // 当前单词索引
+    let currentWordIndex = 0;
+    // 随机选择的单词索引（包括当前单词和干扰项）
+    let shuffledWordIndices = [];
+    
+    // DOM元素
+    const currentWordElement = document.getElementById('current-word');
+    const definitionContainer = document.getElementById('definition-container');
+    const wordDefinitionElement = document.getElementById('word-definition');
+    const exampleContainer = document.getElementById('example-container');
+    const wordExampleElement = document.getElementById('word-example');
+    const exampleTranslationElement = document.getElementById('example-translation');
+    const cardsContainer = document.getElementById('cards-container');
+    const progressBarElement = document.getElementById('progress-bar');
+    const progressTextElement = document.getElementById('progress-text');
+    
+    // 初始化
+    function init() {
+      generateShuffledWordIndices();
+      updateWordDisplay();
+      createWordCards();
+      setupEventListeners();
+    }
+    
+    // 生成随机单词索引（包括当前单词和干扰项）
+    function generateShuffledWordIndices() {
+      // 确保至少有4个单词
+      if (vocabularyData.length < 4) {
+        shuffledWordIndices = [...Array(vocabularyData.length).keys()];
+        return;
+      }
+      
+      // 随机选择3个干扰项
+      const distractors = [];
+      while (distractors.length < 3) {
+        const randomIndex = Math.floor(Math.random() * vocabularyData.length);
+        if (randomIndex !== currentWordIndex && !distractors.includes(randomIndex)) {
+          distractors.push(randomIndex);
+        }
+      }
+      
+      // 合并当前单词索引和干扰项索引，并打乱顺序
+      shuffledWordIndices = [currentWordIndex, ...distractors];
+      shuffleArray(shuffledWordIndices);
+    }
+    
+    // Fisher-Yates 洗牌算法
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+    
+    // 更新单词显示
+    function updateWordDisplay() {
+      const currentWordData = vocabularyData[currentWordIndex];
+      currentWordElement.textContent = currentWordData.word;
+      wordDefinitionElement.textContent = currentWordData.definition;
+      wordExampleElement.textContent = currentWordData.example;
+      exampleTranslationElement.textContent = currentWordData.translation;
+      
+      // 重置信息显示状态
+      definitionContainer.classList.add('hidden');
+      exampleContainer.classList.add('hidden');
+      
+      // 更新进度条
+      const progressPercentage = ((currentWordIndex + 1) / vocabularyData.length) * 100;
+      progressBarElement.style.width = `${progressPercentage}%`;
+      progressTextElement.textContent = `${currentWordIndex + 1}/${vocabularyData.length}`;
+    }
+    
+    // 创建单词卡片
+    function createWordCards() {
+      cardsContainer.innerHTML = '';
+      
+      shuffledWordIndices.forEach(index => {
+        const wordData = vocabularyData[index];
+        const card = document.createElement('div');
+        card.className = 'card-shadow card-hover rounded-xl p-6 bg-white border border-gray-200 cursor-pointer text-center transition-all duration-300';
+        
+        // 检查是否是正确答案
+        const isCorrect = index === currentWordIndex;
+        
+        card.innerHTML = `
+          <div class="word-card-content">
+            <h3 class="text-xl font-bold text-gray-800 mb-2">${wordData.word}</h3>
+            <div class="card-back hidden mt-3 text-gray-600">
+              <p class="font-medium mb-1">释义:</p>
+              <p>${wordData.definition}</p>
+            </div>
+          </div>
+        `;
+        
+        card.addEventListener('click', () => {
+          checkAnswer(card, isCorrect);
+        });
+        
+        cardsContainer.appendChild(card);
+      });
+    }
+    
+    // 检查答案
+    function checkAnswer(card, isCorrect) {
+      // 禁用所有卡片点击
+      document.querySelectorAll('#cards-container > div').forEach(c => {
+        c.style.pointerEvents = 'none';
+      });
+      
+      if (isCorrect) {
+        // 正确答案
+        card.classList.add('bg-green-50', 'border-green-300');
+        card.querySelector('h3').classList.add('text-green-600');
+        
+        // 显示释义
+        setTimeout(() => {
+          card.querySelector('.card-back').classList.remove('hidden');
+        }, 500);
+        
+        // 显示成功提示
+        showNotification('正确！太棒了！', 'success');
+        
+        // 自动跳到下一个单词
+        setTimeout(() => {
+          goToNextWord();
+        }, 2000);
+      } else {
+        // 错误答案
+        card.classList.add('bg-red-50', 'border-red-300');
+        card.querySelector('h3').classList.add('text-red-600');
+        
+        // 显示正确答案
+        document.querySelectorAll('#cards-container > div').forEach(c => {
+          const content = c.querySelector('.word-card-content');
+          const h3 = content.querySelector('h3');
+          
+          if (h3.textContent === vocabularyData[currentWordIndex].word) {
+            c.classList.add('bg-green-50', 'border-green-300');
+            h3.classList.add('text-green-600');
+            
+            // 显示正确答案的释义
+            setTimeout(() => {
+              c.querySelector('.card-back').classList.remove('hidden');
+            }, 500);
+          }
+        });
+        
+        // 显示错误提示
+        showNotification('再试一次！', 'error');
+        
+        // 允许重新选择
+        setTimeout(() => {
+          document.querySelectorAll('#cards-container > div').forEach(c => {
+            c.style.pointerEvents = 'auto';
+          });
+        }, 2000);
+      }
+    }
+    
+    // 显示通知
+    function showNotification(message, type) {
+      // 移除之前的通知
+      const oldNotification = document.querySelector('.notification');
+      if (oldNotification) oldNotification.remove();
+      
+      const notification = document.createElement('div');
+      notification.className = `notification fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg z-50 transition-all duration-500 transform translate-y-0 opacity-100`;
+      
+      if (type === 'success') {
+        notification.classList.add('bg-green-500', 'text-white');
+        notification.innerHTML = `<i class="fa fa-check-circle mr-2"></i> ${message}`;
+      } else {
+        notification.classList.add('bg-red-500', 'text-white');
+        notification.innerHTML = `<i class="fa fa-times-circle mr-2"></i> ${message}`;
+      }
+      
+      document.body.appendChild(notification);
+      
+      // 3秒后隐藏通知
+      setTimeout(() => {
+        notification.classList.add('opacity-0', 'translate-y-[-20px]');
+        setTimeout(() => {
+          notification.remove();
+        }, 500);
+      }, 3000);
+    }
+    
+    // 上一个单词
+    function goToPrevWord() {
+      if (currentWordIndex > 0) {
+        currentWordIndex--;
+        generateShuffledWordIndices();
+        updateWordDisplay();
+        createWordCards();
+      } else {
+        showNotification('已经是第一个单词了！', 'info');
+      }
+    }
+    
+    // 下一个单词
+    function goToNextWord() {
+      if (currentWordIndex < vocabularyData.length - 1) {
+        currentWordIndex++;
+        generateShuffledWordIndices();
+        updateWordDisplay();
+        createWordCards();
+      } else {
+        showNotification('恭喜！你已经完成了所有单词的学习！', 'success');
+      }
+    }
+    
+    // 设置事件监听器
+    function setupEventListeners() {
+      // 播放发音按钮
+      document.getElementById('play-sound-btn').addEventListener('click', () => {
+        // 在实际应用中，这里应该使用语音合成API播放单词发音
+        // 这里仅作示例
+        showNotification(`正在播放 "${currentWordElement.textContent}" 的发音...`, 'info');
+        simulatePronunciation(currentWordElement.textContent);
+      });
+      
+      // 显示释义按钮
+      document.getElementById('show-definition-btn').addEventListener('click', () => {
+        definitionContainer.classList.toggle('hidden');
+      });
+      
+      // 显示例句按钮
+      document.getElementById('show-example-btn').addEventListener('click', () => {
+        exampleContainer.classList.toggle('hidden');
+      });
+      
+      // 上一个单词按钮
+      document.getElementById('prev-word-btn').addEventListener('click', goToPrevWord);
+      
+      // 下一个单词按钮
+      document.getElementById('next-word-btn').addEventListener('click', goToNextWord);
+    }
+    
+    // 模拟发音（实际应用中应使用语音合成API）
+    function simulatePronunciation(word) {
+      // 这里使用Web Speech API进行语音合成
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = 'en-US';
+        window.speechSynthesis.speak(utterance);
+      } else {
+        showNotification('您的浏览器不支持语音合成功能', 'info');
+      }
+    }
+    
+    // 初始化应用
+    init();
+  </script>
+</body>
+</html>
+    

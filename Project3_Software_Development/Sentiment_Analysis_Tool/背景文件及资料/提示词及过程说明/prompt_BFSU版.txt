@@ -1,0 +1,26 @@
+Create a Python program with a GUI (using Tkinter) that provides the following features:
+
+#Text File Upload: 
+##Let the user select and upload one or more plain text files using a file dialog.
+
+#Sentence Tokenization: 
+##For each uploaded text, split the content into individual sentences.
+
+#Sentence-Level Sentiment Analysis: 
+##For each sentence in each text: Use a sentiment analysis tool (such as NLTK’s VADER SentimentIntensityAnalyzer) to calculate a sentiment score ranging from -1 to 1.
+
+#Visualization:
+##Display a line graph (using matplotlib) where the X-axis represents sentence order and the Y-axis represents sentiment score. If multiple texts are uploaded, plot each text as a separate line on the same axes for easy comparison.
+
+#GUI Requirements: 
+##Have buttons for uploading files and for starting the analysis/visualization process.
+##Display the chosen file names visibly in the interface.
+##Embed the matplotlib plot directly within the Tkinter application window.
+
+#Executable-Friendly Design: 
+##Write the script so it can be easily turned into a standalone executable (for example, using PyInstaller).
+
+#Setup Instructions: 
+##Include (as code comments) any necessary package installation steps and provide instructions for running or building as an executable.
+
+Please produce well-organized, commented code that is as user-friendly as possible.

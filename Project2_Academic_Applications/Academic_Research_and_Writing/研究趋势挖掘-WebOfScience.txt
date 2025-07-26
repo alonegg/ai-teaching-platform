@@ -1,0 +1,6648 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Aluisio, Sandra Maria
+   de Barcellos Almeida, Gladis Maria
+TI What is a <i>corpus</i> and how to build it? Lessons learned from
+   developing several linguistic <i>corpora</i>
+SO CALIDOSCOPIO
+VL 4
+IS 3
+BP 156
+EP 178
+DT Article
+PD SEP-DEC 2006
+PY 2006
+AB The research based on corpus has had in the last decade an ample
+   development in the Brazilian context. Its relevancy is noticed in the
+   Linguistics, Applied Linguistics and Computational Linguistics research
+   areas. The approach of Corpus Linguistics comes out to systematize
+   procedures and to give account of this new way to make research. The
+   development of Brazilian Portuguese natural language processing tools
+   can help Corpus Linguistics to reach a great development in Brazil.
+   However, the advances in Corpus Linguistics in the international scenery
+   have not happened yet in many of the research carried out in Brazil. The
+   reasons for this is that the procedures and concepts world-wide accepted
+   are not still settled here, in spite of having researchers developing
+   extraordinary projects based on corpus in Brazil. Thus, this article has
+   the intention to discuss several definitions of corpus, the requirements
+   and procedures for its elaboration, the available corpora and tools and,
+   finally, to present four projects involving corpus whose description and
+   detailing can assist other researchers in the corpus building and
+   processing.
+RI Aluísio, Sandra/F-2806-2011; ALUISIO, SANDRA MARIA/P-3900-2019
+OI ALUISIO, SANDRA MARIA/0000-0001-5108-2630
+ZS 0
+Z8 0
+TC 6
+ZA 0
+ZR 0
+ZB 0
+Z9 6
+C1 Univ Sao Paulo, Sao Paulo, Brazil
+C1 Univ Fed Sao Carlos, Sao Carlos, SP, Brazil
+SN 1679-8740
+EI 2177-6202
+DA 2006-09-01
+UT WOS:000207582800004
+ER
+
+PT J
+AU Park, Hyejin
+   Daehyeon, Nam
+TI Corpus linguistics research trends from 1997 to 2016: A co-citation
+   analysis
+SO Linguistic Research
+S1 언어연구
+VL 34
+IS 3
+BP 427
+EP 457
+DT research-article
+PD 2017
+PY 2017
+AB Corpus linguistics is one of the fastest growing areas of linguistics
+   because of its interface with neighboring academic disciplines and the
+   data-processing capability of a large amount of empirical linguistic
+   data. This study reviews research trends from the last two decades
+   within the corpus linguistics fields. Specifically, the study applied
+   systematic citation analysis procedures to summarize and identify the
+   salient research themes and publications from citation-reference data of
+   peer-reviewed research articles published and indexed in the Web of
+   Science (WoS) between 1997 and 2016. The co-citation analysis of 5,600
+   research articles and their 172,352 references indicated that, over the
+   four time spans of five years, the corpus linguistics research articles
+   have cited works ranging from general linguistics journal titles to
+   specialized journal titles and individual books. In terms of the
+   research themes of corpus linguistics, the topics of the linguistics
+   research have rapidly changed over the time span. More recently, the
+   development of web-based large monitor corpora and corpus analysis
+   software has contributed significantly to the dynamic and productive
+   interaction of research in the discipline. This may indicate the
+   evolving and juvenile nature of corpus linguistics and its possibility
+   of growing into a multi-disciplinary field. Although there are
+   exceptions to all of the research patterns found in the co-citation
+   analysis, the current study also discusses the most up-to-date research
+   trends and the future directions of corpus linguistics.
+RI Park, Hyejin/AEJ-4689-2022; Nam, Daehyeon/
+OI Nam, Daehyeon/0000-0001-7720-9791
+ZR 0
+ZA 0
+ZS 0
+Z8 1
+ZB 0
+TC 11
+Z9 11
+SN 1229-1374
+DA 2018-01-25
+UT KJD:ART002310414
+ER
+
+PT J
+AU Kasieva, Aida
+TI Corpus linguistics in Turkic languages
+SO TURKIC LANGUAGES
+VL 25
+IS 2
+BP 293
+EP 298
+DI 10.13173/TL.25.2.293
+DT Article
+PD 2021
+PY 2021
+AB This report deals with the state of corpus linguistics in Turkic
+   languages and discusses the nature of corpus linguistics as a
+   discipline. Its aim is to call attention to existing online corpora in
+   some Turkic languages and to reveal problems in corpus creation for
+   these languages and for Natural Language Processing.
+RI KASIEVA, AIDA/HGC-3155-2022
+OI KASIEVA, AIDA/0000-0002-9605-7460
+TC 0
+ZB 0
+Z8 0
+ZR 0
+ZS 0
+ZA 0
+Z9 0
+C1 Kyrgyz Turkish Manas Univ, Ch Aitmatov Prospect 56, Bishkek 720044,
+   Kyrgyzstan
+SN 1431-4983
+DA 2022-02-14
+UT WOS:000748278600009
+ER
+
+PT J
+AU Gerstenberg, Annette
+TI Romance Corpus Linguistics II. Corpora and Diachronic linguistics
+SO ROMANISCHE FORSCHUNGEN
+VL 120
+IS 2
+BP 266
+EP 268
+DT Book Review
+PD 2008
+PY 2008
+ZA 0
+TC 0
+Z8 0
+ZB 0
+ZS 0
+ZR 0
+Z9 0
+SN 0035-8126
+DA 2008-01-01
+UT WOS:000257877800031
+ER
+
+PT J
+AU Hilpert, Martin
+   Cuyckens, Hubert
+TI How do corpus-based techniques advance description and theory in English
+   historical linguistics? An introduction to the special issue
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 12
+IS 1
+SI SI
+BP 1
+EP 5
+DI 10.1515/cllt-2015-0065
+DT Editorial Material
+PD MAY 2016
+PY 2016
+ZB 0
+ZS 0
+TC 1
+Z8 0
+ZA 0
+ZR 0
+Z9 1
+C1 Univ Neuchatel, Espace Louis Agassiz 1, CH-2000 Neuchatel, Switzerland
+C1 Katholieke Univ Leuven, Blijde Inkomststr 21,Box 3308, B-3000 Leuven,
+   Belgium
+SN 1613-7027
+EI 1613-7035
+DA 2016-05-01
+UT WOS:000375154700001
+ER
+
+PT J
+AU Hajicova, Eva
+TI Old linguists never die, they only get obligatorily deleted
+SO COMPUTATIONAL LINGUISTICS
+VL 32
+IS 4
+BP 457
+EP 469
+DI 10.1162/coli.2006.32.4.457
+DT Article
+PD DEC 2006
+PY 2006
+RI Hajičová, Eva/O-4934-2017
+OI Hajičová, Eva/0000-0002-8640-246X
+ZA 0
+Z8 0
+ZS 0
+ZB 0
+ZR 0
+TC 2
+Z9 2
+C1 Univ Karlova, Matemat Fyzikalni Fak, CZ-11800 Prague, Czech Republic
+SN 0891-2017
+EI 1530-9312
+DA 2006-12-01
+UT WOS:000242377300001
+ER
+
+PT J
+AU De Knop, Sabine
+   Meunier, Fanny
+TI The 'Learner Corpus Research, Cognitive Linguistics and Second Language
+   Acquisition' nexus: a SWOT analysis
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 11
+IS 1
+SI SI
+BP 1
+EP 18
+DI 10.1515/cllt-2014-0004
+DT Article
+PD MAY 2015
+PY 2015
+AB The introductory chapter of this special issue on 'Learner Corpus
+   Research, Cognitive Linguistics and Second Language Acquisition'
+   addresses the strengths, weaknesses, opportunities and potential threats
+   of using both learner corpora and Cognitive Linguistics to research
+   second language acquisition. We also discuss some terminological issues
+   related to the notion of second language acquisition. Finally, we
+   present the various chapters included in the volume and explain how each
+   of them concretely articulates the connections between the three
+   disciplines under analysis.
+ZR 0
+TC 4
+Z8 0
+ZA 0
+ZB 1
+ZS 0
+Z9 4
+C1 St Louis Univ, German Language & Linguist, Brussels, Belgium
+C1 St Louis Univ, Dept Modern German Languages, Brussels, Belgium
+C1 Catholic Univ Louvain, English Language Linguist & Didact, Louvain La
+   Neuve, Belgium
+SN 1613-7027
+EI 1613-7035
+DA 2015-05-13
+UT WOS:000353590600001
+ER
+
+PT J
+AU Roemer, Ute
+TI Corpus Research Applications in Second Language Teaching
+SO ANNUAL REVIEW OF APPLIED LINGUISTICS
+VL 31
+BP 205
+EP 225
+DI 10.1017/S0267190511000055
+DT Article
+PD 2011
+PY 2011
+AB Over the past few decades, corpora have not only revolutionized
+   linguistic research but have also had an impact on second language
+   learning and teaching. In the field of applied linguistics, more and
+   more researchers and practitioners treasure what corpus linguistics has
+   to offer to language pedagogy. Still, corpora and corpus tools have yet
+   to be widely implemented in pedagogical contexts. The aim of this
+   article is to provide an overview of pedagogical corpus applications and
+   to review recent publications in the area of corpus linguistics and
+   language teaching. It covers indirect corpus applications, such as in
+   syllabus or materials design, as well as direct applications of corpora
+   in the second language classroom. The article aims to illustrate how
+   both general and specialized language corpora can be used in these
+   applications and discusses directions for future research in applied
+   corpus linguistics.
+RI Aldereihim, Alshahad/N-5406-2017; Romer, Ute/
+OI Romer, Ute/0000-0002-0896-3165
+TC 80
+ZS 1
+ZR 0
+ZB 0
+Z8 1
+ZA 1
+Z9 83
+C1 Univ Michigan, English Language Inst, Appl Corpus Linguist Unit,
+   Michigan Corpus Acad Spoken English Project, Ann Arbor, MI 48109 USA
+C1 Univ Michigan, English Language Inst, Appl Corpus Linguist Unit,
+   Michigan Corpus Upper Level Student Papers Projec, Ann Arbor, MI 48109
+   USA
+SN 0267-1905
+EI 1471-6356
+DA 2011-01-01
+UT WOS:000295464300012
+ER
+
+PT J
+AU Barlow, Michael
+TI Corpus linguistics and theoretical linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 16
+IS 1
+BP 3
+EP 44
+DI 10.1075/ijcl.16.1.02bar
+DT Article
+PD 2011
+PY 2011
+AB This paper examines the relationship between corpus linguistics and
+   theoretical linguistics from a variety of standpoints. We consider the
+   nature of the fit between particular theoretical approaches and the
+   three areas in which corpus linguistics has made a significant
+   contribution to our understanding of language: the provision of
+   frequency information, the highlighting of the importance of
+   collocations, and the description of variation and text types. The
+   complex relationship between data, theory, and representation is
+   described with the aim of situating corpus-based research with respect
+   to different linguistic theories, looking broadly at British and
+   American traditions and paying particular attention to usage-based
+   models of language. We then briefly discuss some current issues
+   surrounding theoretical developments within corpus linguistics,
+   including the divide between cognitive and social perspectives; the
+   representation of corpus-based generalisations; and the relationship
+   between patterns in corpus data and patterns in the mind.
+OI Barlow, Michael/0000-0002-5901-6862
+ZA 0
+TC 11
+ZR 0
+ZB 0
+Z8 0
+ZS 0
+Z9 11
+C1 Univ Auckland, DALSL, Auckland 1, New Zealand
+SN 1384-6655
+EI 1569-9811
+DA 2011-01-01
+UT WOS:000289869500001
+ER
+
+PT J
+AU Anthony, Laurence
+TI A critical look at software tools in corpus linguistics
+SO Linguistic Research
+S1 언어연구
+VL 30
+IS 2
+BP 141
+EP 161
+DT research-article
+PD 2013
+PY 2013
+AB Corpora are often referred to as the ‘tools’ of corpus linguistics.
+   However, it is important to recognize that corpora are simply linguistic
+   data and that specialized software tools are required to view and
+   analyze them. The functionality offered by software tools largely
+   dictates what corpus linguistics research methods are available to a
+   researcher, and hence, the design of tools will become an increasingly
+   important factor as corpora become larger and the statistical analysis
+   of linguistic data becomes increasingly complex. In this paper, I will
+   first discuss how separating the data from the tools resolves various
+   issues that are hotly debated within the field. Next, I will offer a
+   critical look at the development of four generations of corpus tools,
+   discussing their strengths and weaknesses. Then, I will discuss the role
+   of programming in corpus linguistics tools creation and present a model
+   for the development of future corpus tools. Finally, I will show a
+   real-world example of a next-generation corpus tool that was developed
+   for use in language learning.
+RI Anthony, Laurence/ABE-6103-2021
+OI Anthony, Laurence/0000-0002-8249-2824
+ZR 1
+ZA 0
+ZB 0
+ZS 3
+Z8 0
+TC 55
+Z9 56
+SN 1229-1374
+DA 2014-03-13
+UT KJD:ART001801338
+ER
+
+PT J
+AU Gries, Stefan Th
+TI Some Current Quantitative Problems in Corpus Linguistics and a Sketch of
+   Some Solutions
+SO LANGUAGE AND LINGUISTICS
+VL 16
+IS 1
+BP 93
+EP 117
+DI 10.1177/1606822X14556606
+DT Article
+PD JAN 2015
+PY 2015
+AB This paper surveys a variety of methodological problems in current
+   quantitative corpus linguistics. Some problems discussed are from corpus
+   linguistics in general, such as the impact that dispersion, type
+   frequencies/entropies, and directionality (should) have on the
+   computation of association measures as well as the impact that
+   neglecting the sampling structure of a corpus can have on a statistical
+   analysis. Others involve more specialized areas in which
+   corpus-linguistic work is currently booming, such as historical
+   linguistics and learner corpus research. For each of the problems, first
+   ideas/pointers as to how these problems can be resolved are provided and
+   exemplified in some detail.
+OI Gries, Stefan Th./0000-0002-6497-3958
+ZS 0
+ZB 0
+Z8 0
+TC 21
+ZA 0
+ZR 0
+Z9 21
+C1 Univ Calif Santa Barbara, Santa Barbara, CA 93106 USA
+SN 1606-822X
+EI 2309-5067
+DA 2015-02-22
+UT WOS:000348097500005
+ER
+
+PT J
+AU Xie, Qin
+TI Recent developments in corpus linguistics and corpus-based research
+   Department of Linguistics and Modern Language Studies at the Hong Kong
+   Institute of Education
+SO LANGUAGE TEACHING
+VL 48
+IS 1
+BP 156
+EP 160
+DI 10.1017/S0261444814000330
+DT Article
+PD JAN 2015
+PY 2015
+RI Xie, Qin/AAE-3583-2019
+OI Xie, Qin/0000-0001-8528-6092
+ZA 0
+TC 1
+ZB 0
+Z8 0
+ZR 0
+ZS 0
+Z9 1
+C1 Hong Kong Inst Educ, Dept Linguist & Modern Language Studies, Hong Kong,
+   Hong Kong, Peoples R China
+SN 0261-4448
+EI 1475-3049
+DA 2015-02-22
+UT WOS:000347713900011
+ER
+
+PT J
+AU Egbert, Jesse
+   Gray, Bethany
+   Larsson, Tove
+TI Register variation and corpus linguistics: empirical findings and
+   emerging theories. Special issue introduction of <i>Corpus Linguistics
+   and Linguistic Theory</i> in honor of Douglas Biber
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 19
+IS 1
+BP 1
+EP 5
+DI 10.1515/cllt-2022-0093
+EA DEC 2022
+DT Article
+PD FEB 23 2023
+PY 2023
+OI Larsson, Tove/0000-0002-0489-2697
+TC 0
+ZA 0
+ZR 0
+ZS 0
+Z8 0
+ZB 0
+Z9 0
+C1 No Arizona Univ, Dept English, Appl Linguist, Flagstaff, AZ 86011 USA
+C1 Iowa State Univ, English, Ames, IA USA
+C1 No Arizona Univ, Flagstaff, AZ USA
+SN 1613-7027
+EI 1613-7035
+DA 2022-12-30
+UT WOS:000898105700001
+ER
+
+PT J
+AU Hilpert, Martin
+   Gries, Stefan Th.
+TI Assessing frequency changes in multistage diachronic corpora:
+   Applications for historical corpus linguistics and the study of language
+   acquisition
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 24
+IS 4
+BP 385
+EP 401
+DI 10.1093/llc/fqn012
+DT Article
+PD DEC 2009
+PY 2009
+AB The use of corpora that are divided into temporally ordered stages is
+   becoming increasingly wide-spread in historical corpus linguistics. This
+   development is partly due to the fact that more and more resources of
+   this kind are being developed. Since the assessment of frequency changes
+   over multiple periods of time is a relatively recent practice, there are
+   few agreed-upon standards of how such trends should be statistically
+   interpreted. This article addresses the need for a basic analytical
+   toolbox that is specifically tailored to the interpretation of frequency
+   changes in multistage diachronic corpora. We present a number of
+   suggestions for the analysis of data that analysts commonly face in
+   historical studies, but also in the study of language acquisition.
+OI Gries, Stefan Th./0000-0002-6497-3958; Hilpert,
+   Martin/0000-0002-6347-5076
+ZA 0
+ZS 0
+Z8 0
+ZB 1
+TC 65
+ZR 0
+Z9 65
+C1 Freiburg Inst Adv Studies FRIAS, D-79104 Freiburg, Germany
+C1 Univ Calif Santa Barbara, Santa Barbara, CA 93106 USA
+C3 Freiburg Inst Adv Studies FRIAS
+SN 0268-1145
+EI 1477-4615
+DA 2009-12-01
+UT WOS:000284755400002
+ER
+
+PT J
+AU Marcos Miguel, Nausica
+TI Exploring the use of corpus tools for teaching language variation to L2
+   Spanish majors
+SO LANGUAGE
+VL 98
+IS 2
+BP E80
+EP E107
+DT Article
+PD JUN 2022
+PY 2022
+AB Discussing language variation in introductory linguistics courses is a
+   given in helping university students understand that speakers and
+   communities use language differently. For Spanish majors/minors in the
+   US, such content can be explored in linguistics courses taught in
+   Spanish. However, little research has been done on pedagogy for teaching
+   Hispanic linguistics in this context. Following an action-based design,
+   this study contributes to research on linguistics pedagogy by exploring
+   how students in four sections of an introductory Spanish linguistics
+   course reacted not only to the topic of social and/or structural
+   variation but also to the use of corpus tools in exploring this topic.
+RI Miguel, Nausica Marcos/AAF-9302-2020
+OI Miguel, Nausica Marcos/0000-0003-0351-8174
+ZR 0
+Z8 0
+ZA 0
+ZS 0
+ZB 0
+TC 0
+Z9 0
+C1 Denison Univ, Granville, OH 43023 USA
+SN 0097-8507
+EI 1535-0665
+DA 2022-06-01
+UT WOS:000818506000001
+ER
+
+PT S
+AU Goldfarb, Neal
+BE Liberman, MY
+   Partee, BH
+TI The Use of Corpus Linguistics in Legal Interpretation
+SO ANNUAL REVIEW OF LINGUISTICS, VOL 7
+SE Annual Review of Linguistics
+VL 7
+BP 473
+EP 491
+DI 10.1146/annurev-linguistics-050520-093942
+DT Article; Book Chapter
+PD 2021
+PY 2021
+AB Over the past decade, the idea of using corpus linguistics in legal
+   interpretation has attracted interest on the part of judges, lawyers,
+   and legal academics in the United States. This review provides an
+   introduction to this nascent movement, which is generally referred to as
+   Law and Corpus Linguistics (LCL). After briefly summarizing LCL's origin
+   and development, I situate LCL within legal interpretation by discussing
+   the legal concept of ordinary meaning, which establishes the framework
+   within which LCL operates. Next, I situate LCL within linguistics by
+   identifying the subfields that are most relevant to LCL. I then offer a
+   linguistic justification for an idea that is implicit in the case law
+   and that provides important support for using corpus analysis in legal
+   interpretation: that data about patterns of usage provide evidence of
+   how words and other expressions are ordinarily understood. I go on to
+   discuss linguistic issues that arise from the use of corpus linguistics
+   in disputes that involve lexical ambiguity and categorization. Finally,
+   I point out some challenges that the growth of LCL will present for both
+   legal professionals and linguists.
+ZS 0
+ZB 0
+ZR 0
+ZA 0
+Z8 0
+TC 0
+Z9 0
+SN 2333-9691
+BN *****************
+DA 2021-02-25
+UT WOS:000614614700024
+ER
+
+PT J
+AU Schilling, Achim
+   Tomasello, Rosario
+   Henningsen-Schomers, Malte R.
+   Zankl, Alexandra
+   Surendra, Kishore
+   Haller, Martin
+   Karl, Valerie
+   Uhrig, Peter
+   Maier, Andreas
+   Krauss, Patrick
+TI Analysis of continuous neuronal activity evoked by natural speech with
+   computational corpus linguistics methods
+SO LANGUAGE COGNITION AND NEUROSCIENCE
+VL 36
+IS 2
+BP 167
+EP 186
+DI 10.1080/23273798.2020.1803375
+EA AUG 2020
+DT Article
+PD FEB 1 2021
+PY 2021
+AB In the field of neurobiology of language, neuroimaging studies are
+   generally based on stimulation paradigms consisting of at least two
+   different conditions. Designing those paradigms can be very
+   time-consuming and this traditional approach is necessarily
+   data-limited. In contrast, in computational and corpus linguistics,
+   analyses are often based on large text corpora, which allow a vast
+   variety of hypotheses to be tested by repeatedly re-evaluating the data
+   set. Furthermore, text corpora also allow exploratory data analysis in
+   order to generate new hypotheses. By drawing on the advantages of both
+   fields, neuroimaging and computational corpus linguistics, we here
+   present a unified approach combining continuous natural speech and MEG
+   to generate a corpus of speech-evoked neuronal activity.
+RI Maier, Andreas/AAV-6505-2021; Tomasello, Rosario/AAA-8865-2021; Krauss, Patrick/; Schilling, Achim/; Henningsen-Schomers, Malte R./
+OI Maier, Andreas/0000-0002-9550-5284; Krauss, Patrick/0000-0002-6611-7733;
+   Schilling, Achim/0000-0001-9543-305X; Henningsen-Schomers, Malte
+   R./0000-0002-4506-1697
+TC 10
+ZR 0
+ZA 0
+ZB 4
+ZS 0
+Z8 0
+Z9 10
+C1 Friedrich Alexander Univ Erlangen Nurnberg FAU, Cognit Computat Neurosci
+   Grp, English Philol & Linguist, Erlangen, Germany
+C1 Univ Hosp Erlangen, Neurosci Lab, Erlangen, Germany
+C1 Free Univ Berlin, Dept Philosophy & Humanities, Brain Language Lab,
+   Berlin, Germany
+C1 Humboldt Univ, Cluster Excellence Matters Act Image Space Mat, Berlin,
+   Germany
+C1 Friedrich Alexander Univ Erlangen Nurnberg FAU, Machine Intelligence,
+   Erlangen, Germany
+C1 Univ Hosp Erlangen, Dept Neurosurg, Biomagnetism Lab, Erlangen, Germany
+C1 Friedrich Alexander Univ Erlangen Nurnberg FAU, English Philol &
+   Linguist, Erlangen, Germany
+C1 Friedrich Alexander Univ Erlangen Nurnberg FAU, Linguist Lab, Erlangen,
+   Germany
+C1 Univ Groningen, Univ Med Ctr Groningen, Groningen, Netherlands
+SN 2327-3798
+EI 2327-3801
+DA 2020-08-24
+UT WOS:000557944200001
+ER
+
+PT J
+AU Hodge, Gabrielle
+   Goico, Sara A.
+TI Natural and elicited: Sign language corpus linguistics and linguistic
+   ethnography as complementary methodologies
+SO JOURNAL OF SOCIOLINGUISTICS
+VL 26
+IS 1
+BP 126
+EP 136
+DI 10.1111/josl.12523
+EA FEB 2022
+DT Editorial Material
+PD FEB 2022
+PY 2022
+OI Hodge, Gabrielle/0000-0001-8677-6149
+ZB 0
+TC 3
+ZS 0
+Z8 0
+ZA 0
+ZR 0
+Z9 3
+C1 UCL, London, England
+C1 Univ Calif Los Angeles, Los Angeles, CA USA
+SN 1360-6441
+EI 1467-9841
+DA 2022-02-07
+UT WOS:000749343400001
+ER
+
+PT J
+AU Wilks, Yorick
+TI Corpus linguistics and computational linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 15
+IS 3
+SI SI
+BP 408
+EP 411
+DI 10.1075/ijcl.15.3.12wil
+DT Article
+PD 2010
+PY 2010
+ZB 0
+TC 0
+ZS 0
+Z8 0
+ZA 0
+ZR 0
+Z9 0
+C1 Univ Oxford, Oxford Internet Inst, Oxford OX1 3JS, England
+SN 1384-6655
+DA 2010-01-01
+UT WOS:000282481300013
+ER
+
+PT J
+AU Ji, Meng
+TI Corpus stylistics in translation studies: two modern Chinese
+   translations of <i>Don Quijote</i>
+SO LANGUAGE AND LITERATURE
+VL 18
+IS 1
+BP 61
+EP 73
+DI 10.1177/0963947008099306
+DT Article
+PD FEB 2009
+PY 2009
+AB This article aims to provide a quantitative account of the stylistic
+   differences between two modern Chinese translations of Don Quijote in
+   terms of the use of language archaism. For this purpose, a number of
+   statistical techniques applicable in corpus linguistics have been used,
+   which exemplifies the foregrounding of quantitative primary data. The
+   article provides an original interdisciplinary study which attempts to
+   integrate research methods adapted from different areas of research,
+   e.g. textual statistics, corpus linguistics, literary stylistics and
+   translation studies, into the development of an emerging field known as
+   corpus stylistics.
+RI Ji, Meng/E-7549-2013; Ji, Meng/
+OI Ji, Meng/0000-0002-7463-9208
+TC 7
+ZA 0
+ZB 0
+ZR 0
+ZS 0
+Z8 0
+Z9 7
+C1 Univ Sheffield, Sheffield S10 2TN, S Yorkshire, England
+SN 0963-9470
+EI 1461-7293
+DA 2009-02-01
+UT WOS:000263711000005
+ER
+
+PT J
+AU Szmrecsanyi, Benedikt
+TI Variationist sociolinguistics and corpus-based variationist linguistics:
+   overlap and cross-pollination potential
+SO CANADIAN JOURNAL OF LINGUISTICS-REVUE CANADIENNE DE LINGUISTIQUE
+VL 62
+IS 4
+BP 685
+EP 701
+DI 10.1017/cnj.2017.34
+DT Article
+PD DEC 2017
+PY 2017
+AB The paper surveys overlap between corpus linguistics and variationist
+   sociolinguistics. Corpus linguistics is customarily defined as a
+   methodology that bases claims about language on usage patterns in
+   collections of naturalistic, authentic speech or text. Because this is
+   what is typically done in variationist sociolinguistics work, I argue
+   that variationist sociolinguists are by definition corpus linguists,
+   though of course the reverse is not true: the variationist method
+   entails more than merely analyzing usage data, and not all corpus
+   analysts are interested in variation. But that being said, a
+   considerable and arguably increasing number of corpus linguists not
+   formally trained in variationist sociolinguistics are explicitly
+   concerned with variation and engage in what I call corpus-based
+   variationist linguistics (CVL). I first discuss what unites or divides
+   work in CVL and in variationist sociolinguistics. In a plea to cross
+   subdisciplinary boundaries, I subsequently identify three research areas
+   where variationist sociolinguists may draw inspiration from work in CVL:
+   conducting multi-variable research, paying more attention to
+   probabilistic grammars, and taking more seriously the
+   register-sensitivity of variation patterns.
+ZS 0
+ZB 0
+Z8 0
+ZA 0
+ZR 0
+TC 19
+Z9 19
+C1 Katholieke Univ Leuven, Leuven, Belgium
+SN 0008-4131
+EI 1710-1115
+DA 2018-02-05
+UT WOS:000423271300010
+ER
+
+PT J
+AU Vazquez Balonga, Delfina
+TI Corpus Linguistics and Historical linguistics lberorromanica
+SO REVUE DE LINGUISTIQUE ROMANE
+VL 82
+IS 325
+BP 226
+EP 229
+DT Book Review
+PD JAN-JUN 2018
+PY 2018
+ZS 0
+Z8 0
+TC 0
+ZA 0
+ZR 0
+ZB 0
+Z9 0
+SN 0035-1458
+DA 2018-12-28
+UT WOS:000452818500017
+ER
+
+PT J
+AU Rebuschat, Patrick
+   Meurers, Detmar
+   McEnery, Tony
+TI Language Learning Research at the Intersection of Experimental,
+   Computational, and Corpus-Based Approaches
+SO LANGUAGE LEARNING
+VL 67
+SI SI
+BP 6
+EP 13
+DI 10.1111/lang.12243
+SU 1
+DT Editorial Material
+PD JUN 2017
+PY 2017
+RI Rebuschat, Patrick/AGK-6842-2022; Meurers, Detmar/AAQ-6659-2020; McEnery, Anthony/
+OI Rebuschat, Patrick/0000-0002-5903-3478; Meurers,
+   Detmar/0000-0002-9740-7442; McEnery, Anthony/0000-0002-8425-6403
+Z8 0
+ZB 0
+ZS 0
+ZR 0
+ZA 0
+TC 9
+Z9 9
+C1 Univ Lancaster, Dept Linguist & English Language, Lancaster LA1 4YL,
+   England
+C1 Univ Tubingen, Grad Sch, Tubingen, Germany
+C1 Univ Tubingen, Res Network, Tubingen, Germany
+C1 Univ Tubingen, Seminar Sprachwissensch, Tubingen, Germany
+C1 Econ & Social Res Council, Ctr Corpus Approaches Social Sci, Swindon,
+   Wilts, England
+SN 0023-8333
+EI 1467-9922
+DA 2017-06-01
+UT WOS:000403692200002
+ER
+
+PT J
+AU Hunston, Susan
+TI Systemic functional linguistics, corpus linguistics, and the ideology of
+   science
+SO TEXT & TALK
+VL 33
+IS 4-5
+BP 617
+EP 640
+DI 10.1515/text-2013-0028
+DT Article
+PD 2013
+PY 2013
+AB This paper considers the relationship between research using systemic
+   functional linguistics and research of the kind referred to as corpus
+   linguistics, specifically in a study of ideology in a popular science
+   text. The paper argues that ideas in SFL and corpus linguistics may be
+   regarded as parallel (register), divergent (grammar and phraseology),
+   and complementary (lexis and taxonomy). Following a review of research
+   in these areas, the paper presents a case study of evaluation of status
+   in a popular science book (The Rough Guide to Evolution). "Status" draws
+   on the grammatical concept of projection and on a set of lexis and
+   phraseologies. The interaction between grammatical choice and lexical
+   choice is quantified. It is argued that particular combinations of lexis
+   and grammar are preferred when knowledge is presented as in the process
+   of formation, and other combinations are preferred when knowledge is
+   presented as in a state of completion. The case study reveals that
+   concepts drawn from a systemic functional view of grammar and from a
+   corpus linguistic view of phraseology are usefully combined in studying
+   ideology.
+Z8 0
+ZS 0
+ZR 0
+TC 17
+ZA 0
+ZB 0
+Z9 17
+C1 Univ Birmingham, Dept English, Birmingham B15 2TT, W Midlands, England
+SN 1860-7330
+EI 1860-7349
+DA 2013-11-01
+UT WOS:000323943400009
+ER
+
+PT J
+AU Xiao-Desai, Yang
+   Kuebler, Sandra
+TI Corpus Linguistics and Linguistically Annotated Corpora
+SO MODERN LANGUAGE JOURNAL
+VL 99
+IS 4
+BP 801
+EP 802
+DI 10.1111/modl.12287
+DT Book Review
+PD WIN 2015
+PY 2015
+TC 0
+ZA 0
+ZR 0
+ZB 0
+ZS 0
+Z8 0
+Z9 0
+C1 San Francisco State Univ, San Francisco, CA 94132 USA
+SN 0026-7902
+EI 1540-4781
+DA 2016-01-13
+UT WOS:000367220100014
+ER
+
+PT J
+AU Rodriguez-Fuentes, Rodrigo A.
+TI Corpus Linguistics and Linguistically Annotated Corpora
+SO LANGUAGE LEARNING & TECHNOLOGY
+VL 19
+IS 3
+SI SI
+BP 56
+EP 60
+DT Book Review
+PD OCT 2015
+PY 2015
+RI Rodriguez-Fuentes, Rodrigo A./AIA-1470-2022
+OI Rodriguez-Fuentes, Rodrigo A./0000-0001-7055-0794
+TC 1
+ZS 0
+Z8 0
+ZR 0
+ZA 0
+ZB 0
+Z9 1
+C1 Purdue Univ, ESL Language Studies 2, W Lafayette, IN 47907 USA
+SN 1094-3501
+DA 2015-12-25
+UT WOS:000365355100005
+ER
+
+PT J
+AU Schosler, Lene
+TI Romance corpus linguistics, vol 2, Copora and diachronic linguistics.
+SO REVUE DE LINGUISTIQUE ROMANE
+VL 70
+IS 277-78
+BP 209
+EP 211
+DT Book Review
+PD JAN-JUN 2006
+PY 2006
+Z8 0
+ZR 0
+ZB 0
+ZS 0
+TC 0
+Z9 0
+SN 0035-1458
+DA 2006-01-01
+UT WOS:000240420400009
+ER
+
+PT J
+AU Yildiz, Yasemin
+TI Corpus Linguistics and Linguistically Annotated Corpora
+SO SYSTEM
+VL 70
+BP 134
+EP 136
+DI 10.1016/j.system.2017.09.011
+DT Book Review
+PD NOV 2017
+PY 2017
+ZS 0
+ZB 0
+ZA 0
+Z8 0
+TC 0
+ZR 0
+Z9 0
+C1 Univ Westminster, Dept English Linguist & Cultural Studies, 309 Regent
+   St, London W1B 2HW, England
+SN 0346-251X
+EI 1879-3282
+DA 2017-11-19
+UT WOS:000412685700018
+ER
+
+PT J
+AU Banos, Rocio
+   Bruti, Silvia
+   Zanotti, Serenella
+TI Corpus linguistics and Audiovisual Translation: in search of an
+   integrated approach
+SO PERSPECTIVES-STUDIES IN TRANSLATION THEORY AND PRACTICE
+VL 21
+IS 4
+SI SI
+BP 483
+EP 490
+DI 10.1080/0907676X.2013.831926
+DT Article
+PD DEC 1 2013
+PY 2013
+AB This article serves as an introduction to the special issue of
+   Perspectives: Studies in Translatology entitled Corpus linguistics and
+   Audiovisual Translation: in search of an integrated approach'. The
+   purpose of the volume is to illustrate and discuss the use and limits
+   (if any) of corpus-based investigation into audiovisual dialogue and
+   audiovisual translation. This special issue also seeks to investigate
+   the development of corpus-based approaches to AVT that are able to take
+   into account the multiple dimensions of audiovisual translation, the
+   technical and professional constraints that are specific to the medium,
+   as well as the social factors affecting the translational act (e.g.
+   target language and culture norms, self-censorship, patronage, etc.).
+   This is achieved through seven contributions, intended to offer a wide
+   range of perspectives on the application of corpus linguistics
+   methodologies to different AVT modalities. As the contributions in this
+   volume suggest, an integrated approach is needed to account for the
+   complex semiotic fabric of audiovisual texts, their hybrid nature and
+   multiple codes.
+OI BRUTI, SILVIA/0000-0001-9327-1114; Banos Pinero,
+   Rocio/0000-0002-3026-6737
+Z8 0
+TC 23
+ZS 0
+ZA 0
+ZR 0
+ZB 0
+Z9 23
+C1 Univ London Imperial Coll Sci Technol & Med, Translat Studies Unit,
+   London, England
+C1 Univ Pisa, Dept Philol Literature & Linguist, Pisa, Italy
+C1 Univ Roma Tre, Dept Foreign Languages Literatures & Cultures, Rome,
+   Italy
+SN 0907-676X
+EI 1747-6623
+DA 2013-12-04
+UT WOS:000326490500001
+ER
+
+PT J
+AU Xiao, Richard
+   Wei, Naixing
+TI Translation and contrastive linguistic studies at the interface of
+   English and Chinese: Significance and implications
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 10
+IS 1
+BP 1
+EP 10
+DI 10.1515/cllt-2013-0015
+DT Article
+PD 2014
+PY 2014
+AB Corpora have revolutionized nearly all areas of linguistic research over
+   the past four decades (McEnery, Xiao and Tono 2006; McEnery and Hardie
+   2012). Translation studies and contrastive linguistics are no
+   exceptions. Indeed, the rapid development of bilingual parallel corpora
+   as well as monolingual and multilingual comparable corpora since the
+   early 1990s has been of particular relevance and crucial importance to
+   translation studies and contrastive linguistics. This special issue of
+   Corpus Linguistics and Linguistic Theory focuses on corpus-based
+   translation and contrastive linguistic studies involving two genetically
+   different languages, namely English and Chinese, which we believe have
+   formed an important interface with its unique features as a result of
+   the mutual interaction between the two languages. This introduction will
+   first contextualize the special issue by exploring the state of the art
+   in using corpora in translation and contrastive linguistic studies,
+   particularly in the context of the two languages covered, and then
+   provide a synopsis of each article included in this volume and comment
+   on its significance and implications for linguistic theorization.
+Z8 0
+ZB 0
+ZR 0
+TC 2
+ZA 0
+ZS 0
+Z9 2
+C1 Univ Lancaster, Dept Linguist & English Language, Lancaster, Lancs,
+   England
+C1 Beihang Univ, Foreign Languages Sch, Beijing 100191, Peoples R China
+SN 1613-7027
+EI 1613-7035
+DA 2014-01-01
+UT WOS:000340292600001
+ER
+
+PT J
+AU Mukherjee, Joybrato
+TI Corpus linguistics versus corpus dogmatism - <i>pace</i> Wolfgang
+   Teubert
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 15
+IS 3
+SI SI
+BP 370
+EP 378
+DI 10.1075/ijcl.15.3.07muk
+DT Article
+PD 2010
+PY 2010
+Z8 0
+TC 5
+ZA 0
+ZR 0
+ZS 0
+ZB 0
+Z9 5
+C1 Univ Giessen, Dept English, D-35394 Giessen, Germany
+SN 1384-6655
+DA 2010-01-01
+UT WOS:000282481300008
+ER
+
+PT J
+AU Gries, Stefan Th
+   Ellis, Nick C.
+TI Statistical Measures for Usage-Based Linguistics
+SO LANGUAGE LEARNING
+VL 65
+SI SI
+BP 228
+EP 255
+DI 10.1111/lang.12119
+SU 1
+DT Article
+PD JUN 2015
+PY 2015
+AB The advent of usage-/exemplar-based approaches has resulted in a major
+   change in the theoretical landscape of linguistics, but also in the
+   range of methodologies that are brought to bear on the study of language
+   acquisition/learning, structure, and use. In particular, methods from
+   corpus linguistics are now frequently used to study distributional
+   characteristics of linguistics units and what they reveal about
+   cognitive and psycholinguistic processes. This paper surveys a range of
+   psycholinguistic notions that are becoming ever more important in
+   theoretical and cognitive linguisticsfor example, frequency,
+   entrenchment, dispersion, contingency, surprisal, Zipfian
+   distributionsand current corpus-linguistic approaches toward exploring
+   these notions and their roles for linguistic cognition.
+OI Gries, Stefan Th./0000-0002-6497-3958
+Z8 0
+ZS 0
+ZB 3
+TC 91
+ZR 0
+ZA 0
+Z9 91
+C1 Univ Calif Santa Barbara, Santa Barbara, CA 93106 USA
+C1 Univ Michigan, Ann Arbor, MI 48109 USA
+SN 0023-8333
+EI 1467-9922
+DA 2015-06-17
+UT WOS:000354883600011
+ER
+
+PT J
+AU Simonnet, Doriane
+   Tutin, Agnes
+TI Use corpus linguistics to enhance students' skills in parsing
+SO LANGUE FRANCAISE
+IS 203
+BP 83
+EP 99
+DT Article
+PD SEP 2019
+PY 2019
+ZB 0
+TC 0
+ZA 0
+ZS 0
+ZR 0
+Z8 0
+Z9 0
+C1 Univ Grenoble Alpes, Grenoble, France
+C1 LIDILEM, EA 609, Grenoble, France
+C3 LIDILEM
+SN 0023-8368
+EI 1957-7982
+DA 2019-10-31
+UT WOS:000490972500007
+ER
+
+PT J
+AU Wiegand, Viola
+TI Practical Corpus Linguistics: An Analysis to Corpus-based Language
+   Analysis
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 23
+IS 2
+BP 244
+EP 249
+DI 10.1075/ijcl.00004.wie
+DT Book Review
+PD 2018
+PY 2018
+OI Wiegand, Viola/0000-0001-6746-6620
+ZA 0
+ZB 0
+TC 0
+ZS 0
+Z8 0
+ZR 0
+Z9 0
+C1 Univ Birmingham, Birmingham, W Midlands, England
+SN 1384-6655
+EI 1569-9811
+DA 2018-10-16
+UT WOS:000446516300005
+ER
+
+PT J
+AU Siwicki, Aleksander
+TI Practical Corpus Linguistics: An Introduction to Corpus-based Language
+   Analysis
+SO NORDIC JOURNAL OF LINGUISTICS
+VL 41
+IS 3
+BP 383
+EP 387
+DI 10.1017/S0332586518000082
+DT Book Review
+PD DEC 2018
+PY 2018
+ZA 0
+ZB 0
+ZS 0
+TC 0
+Z8 0
+ZR 0
+Z9 0
+C1 Univ Warsaw, Fac Appl Linguist, Ul Krakowskie Przedmiescie 26-28,
+   PL-00927 Warsaw, Poland
+SN 0332-5865
+EI 1502-4717
+DA 2018-12-28
+UT WOS:000450205000007
+ER
+
+PT J
+AU Feng, Haoda
+TI Corpus Linguistics and Statistics with R: Introduction to Quantitative
+   Methods in Linguistics
+SO SYSTEM
+VL 78
+BP 245
+EP 246
+DI 10.1016/j.system.2018.08.009
+DT Book Review
+PD NOV 2018
+PY 2018
+RI Feng, Haoda/R-6271-2019
+TC 0
+ZR 0
+Z8 0
+ZA 0
+ZS 0
+ZB 0
+Z9 0
+C1 Bohai Univ, Sch Foreign Languages, 19 Keji Rd, Jinzhou, Liaoning,
+   Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2018-12-28
+UT WOS:000447991100020
+ER
+
+PT J
+AU Xi, Xiaoming
+TI What does corpus linguistics have to offer to language assessment?
+SO LANGUAGE TESTING
+VL 34
+IS 4
+SI SI
+BP 565
+EP 577
+DI 10.1177/0265532217720956
+DT Article
+PD OCT 2017
+PY 2017
+AB In recent years, continuing advances in technology have increased the
+   capacity to automate the extraction of a range of linguistic features of
+   texts and thus have provided the impetus for the substantial growth of
+   corpus linguistics. While corpus linguistic tools and methods have been
+   used extensively in second language learning research, they have also
+   been used increasingly in the design and validation of language
+   assessments (Callies & Gotz, 2015; Deshors, Gotz, & Laporte, 2016; Park,
+   2014). The collection of papers in this special issue represents an
+   intentional and systematic effort to encourage the cross-pollination of
+   corpus linguistics and language assessment. The research foci of these
+   papers take this cross-disciplinary area in exciting, new directions. At
+   the same time, the papers also point to some important gaps and provide
+   inspiration for additional research. In this commentary, I offer some
+   perspectives on how the papers contribute to this cross-disciplinary
+   research area and then share my reflections on some of the gaps that
+   need to be narrowed or closed if language testing researchers and
+   practitioners are to take full advantage of the potential of corpus
+   linguistics for language assessment.
+ZB 0
+TC 9
+ZS 0
+ZA 0
+Z8 0
+ZR 0
+Z9 9
+C1 Educ Testing Serv, Rosedale Rd, Princeton, NJ 08541 USA
+SN 0265-5322
+EI 1477-0946
+DA 2017-12-29
+UT WOS:000418175600008
+ER
+
+PT J
+AU Shirazizadeh, Mohsen
+TI Practical Corpus Linguistics: An Introduction to Corpus-Based Language
+   Analysis
+SO RELC JOURNAL
+VL 50
+IS 2
+BP 361
+EP 363
+DI 10.1177/0033688217707631
+DT Book Review
+PD AUG 2019
+PY 2019
+RI Shirazizadeh, Mohsen/AAN-5577-2020
+OI Shirazizadeh, Mohsen/0000-0003-1880-1036
+ZS 0
+TC 1
+Z8 0
+ZR 0
+ZB 0
+ZA 0
+Z9 1
+C1 Alzahra Univ, English Dept, Tehran, Iran
+SN 0033-6882
+EI 1745-526X
+DA 2019-08-27
+UT WOS:000480575800014
+ER
+
+PT J
+AU Ellis, Nick C.
+TI Cognition, Corpora, and Computing: Triangulating Research in Usage-Based
+   Language Learning
+SO LANGUAGE LEARNING
+VL 67
+SI SI
+BP 40
+EP 65
+DI 10.1111/lang.12215
+SU 1
+DT Review
+PD JUN 2017
+PY 2017
+AB Usage-based approaches explore how we learn language from our experience
+   of language. Related research thus involves the analysis of the usage
+   from which learners learn and of learner usage as it develops. This
+   program involves considerable data recording, transcription, and
+   analysis, using a variety of corpus and computational techniques, many
+   of them specially devised for learner language. This article surveys
+   relevant developments across the psychology of learning, first and
+   second language acquisition, psycholinguistics, corpus linguistics, and
+   computational linguistics and identifies challenges and future
+   priorities relating to the following issues: (1) analyzing the
+   distributional characteristics of linguistic constructions and their
+   meanings in large collections of language that are representative of the
+   language that learners experience, (2) the longitudinal analysis of
+   learner language, and (3) Natural Language Processing analyses of the
+   dimensions of language complexity.
+ZR 0
+TC 42
+ZA 0
+ZB 0
+ZS 0
+Z8 0
+Z9 42
+C1 Univ Michigan, Ann Arbor, MI 48109 USA
+SN 0023-8333
+EI 1467-9922
+DA 2017-07-04
+UT WOS:000403692200004
+ER
+
+PT J
+AU Parodi, Giovanni
+TI CORPUS LINGUISTICS: AN INTRODUCTION TO THE AREA
+SO RLA-REVISTA DE LINGUISTICA TEORICA Y APLICADA
+VL 46
+IS 1
+BP 93
+EP 119
+DT Article
+PD 2008
+PY 2008
+AB This article focuses critically on a relatively new way of doing
+   linguistics, that is, Corpus Linguistics (CL). To do so, a general
+   overview of the (re) emergence is presented and a theoretical background
+   is analyzed in order to justify its independence as a linguistic
+   research methodology but with robust principles. Also, my own definition
+   of CL is proposed. A discussion of the possible status of CL as a theory
+   is focused. To the end of the article, CL and Spanish language research
+   is related.
+TC 30
+ZS 18
+ZB 0
+Z8 0
+ZR 0
+ZA 0
+Z9 42
+C1 Pontificia Univ Catolica Valparaiso, Valparaiso, Chile
+SN 0718-4883
+DA 2008-01-01
+UT WOS:000261493600006
+ER
+
+PT J
+AU Wilson, Guyanne
+TI Corpus Linguistics for World Englishes: A Guide for Research
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 25
+IS 4
+BP 511
+EP 516
+DI 10.1075/ijcl.00033.wil
+DT Book Review
+PD 2020
+PY 2020
+OI Wilson, Guyanne/0000-0002-2749-5213
+Z8 0
+ZS 0
+TC 0
+ZA 0
+ZB 0
+ZR 0
+Z9 0
+C1 Ruhr Univ Bochum, Bochum, Germany
+SN 1384-6655
+EI 1569-9811
+DA 2020-12-11
+UT WOS:000593466500007
+ER
+
+PT J
+AU Sanchez-Stockhammer, Christina
+TI Corpora in Cognitive Linguistics. Corpus-Based Approaches to Syntax and
+   Lexis
+SO COGNITIVE LINGUISTICS
+VL 20
+IS 2
+BP 434
+EP 448
+DT Book Review
+PD 2009
+PY 2009
+RI Sanchez-Stockhammer, Christina/GZG-5413-2022
+ZA 0
+ZS 0
+TC 0
+Z8 0
+ZR 0
+ZB 0
+Z9 0
+C1 Univ Augsburg, D-8900 Augsburg, Germany
+SN 0936-5907
+EI 1613-3641
+DA 2009-01-01
+UT WOS:000268058700008
+ER
+
+PT J
+AU Jose Lopez-Couso, Maria
+TI Continuing the dialogue between corpus linguistics and
+   grammaticalization theory: Three case studies
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 12
+IS 1
+SI SI
+BP 7
+EP 29
+DI 10.1515/cllt-2015-0069
+DT Article
+PD MAY 2016
+PY 2016
+AB The article shows that significant benefits can be gained from the
+   integration of corpus linguistics and grammaticalization theory, two
+   subfields which, despite sharing considerable common ground, tended to
+   remain as separate areas of linguistic analysis until quite recently.
+   Making use of diachronic and contemporary corpora of English, such as
+   the Helsinki Corpus, ARCHER, and COCA, the article illustrates how
+   standard corpus practices can indeed contribute to our understanding of
+   grammaticalization and related processes of language change. The
+   selected case studies deal with the origin of existential there, the
+   development of like-parentheticals in contemporary American English, and
+   the history of the marker of expository apposition namely.
+RI López-Couso, Maria José/J-9717-2014
+OI López-Couso, Maria José/0000-0003-3543-7408
+ZB 0
+Z8 0
+TC 3
+ZA 0
+ZS 0
+ZR 0
+Z9 3
+C1 Univ Santiago de Compostela, Dept English & German, E-15782 Santiago De
+   Compostela, Spain
+SN 1613-7027
+EI 1613-7035
+DA 2016-05-25
+UT WOS:000375154700002
+ER
+
+PT J
+AU Ibrahim, Riyadh Khalil
+TI Translation oriented corpus-based contrastive linguistics
+SO BABEL-REVUE INTERNATIONALE DE LA TRADUCTION-INTERNATIONAL JOURNAL OF
+   TRANSLATION
+VL 61
+IS 3
+BP 381
+EP 393
+DI 10.1075/babel.61.3.04kha
+DT Article
+PD 2015
+PY 2015
+AB The paper aims at studying the relationship between contrastive
+   linguistics (CL) and translation as branches of applied linguistics, on
+   one hand, and the use of computer corpora (C.C) on the other. It also
+   stresses the fact that the boundaries of CL have been redrawn to
+   incorporate the output of C.C in performing various tasks in
+   translation, that goes beyond the traditional methods of CL carried out
+   exclusively on solving problems in foreign language teaching (FLT). The
+   paper supports the call for the manipulation of data obtained from CC in
+   contrastive linguistic projects for the betterment of translation
+   quality. Previously, CL was concerned with linguistic systems rather
+   than language use, but with the introduction of corpora, language use
+   become more easily accessible and the field of CL has expanded. The
+   access to huge amounts of original texts and their translation in
+   electronic format is of great benefit to professional translators, since
+   a wide range of translation solutions for any particular source language
+   are available by a gentle hit on the required tagging key. As for
+   translation-oriented corpus based CL it becomes obvious that the actual
+   contrastive study will be carried out in order to obtain data for
+   explaining the various phenomena in translation.
+   Hence, translation as a communicative event can assume a fully-fledged
+   descriptive discipline if it manages to develop its own descriptive
+   tools of study. Computer corpora can play a decisive role in turning
+   translation into a well-established academic discipline.
+ZA 0
+ZB 0
+ZR 0
+TC 1
+Z8 0
+ZS 0
+Z9 1
+C1 Univ Baghdad, Coll Languages, Dept English, Baghdad, Iraq
+SN 0521-9744
+EI 1569-9668
+DA 2015-12-30
+UT WOS:000366177900005
+ER
+
+PT J
+AU Pan, Fan
+   Liu, Chen
+TI Corpus linguistics on the move: Exploring and understanding English
+   through corpora
+SO JOURNAL OF LINGUISTICS
+VL 54
+IS 2
+BP 447
+EP 451
+DI 10.1017/S0022226717000445
+DT Book Review
+PD APR 1 2018
+PY 2018
+ZR 0
+ZA 0
+ZB 0
+TC 0
+Z8 0
+ZS 0
+Z9 0
+C1 Huazhong Univ Sci & Technol, Sch Foreign Languages, Wuhan, Hubei,
+   Peoples R China
+SN 0022-2267
+EI 1469-7742
+DA 2018-03-28
+UT WOS:000427266700009
+ER
+
+PT J
+AU Luyckx, Kim
+TI Corpus Linguistics Beyond the Word-Corpus Research from Phrase to
+   Discourse
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 23
+IS 1
+BP 123
+EP 125
+DI 10.1093/llc/fqm034
+DT Book Review
+PD APR 2008
+PY 2008
+ZR 0
+ZA 0
+Z8 0
+ZB 0
+TC 0
+ZS 0
+Z9 0
+C1 Univ Antwerp, Dept Linguist, CNTS Language Technol Grp, Antwerp, Belgium
+SN 0268-1145
+EI 1477-4615
+DA 2008-04-01
+UT WOS:000207735300015
+ER
+
+PT J
+AU Garrao, Milena Uzeda
+TI Corpus linguistics: where semantics and pragmatics are blended together
+SO CALIDOSCOPIO
+VL 4
+IS 3
+BP 135
+EP 140
+DT Article
+PD SEP-DEC 2006
+PY 2006
+AB This paper presents the importance of dealing with linguistic phenomenon
+   from an empirical perspective, a rather controversial issue due to the
+   increasingly use of Corpus Linguistics as a theoretical tool. It makes a
+   brief philosophical account on this theoretical framework; then, it
+   presents its development within Linguistics and, more precisely, within
+   Natural Language Processing. It also discusses the feasibility and
+   reliability of the conventionalist framework on linguistic phenomenon.
+   Finally, it reasons that this perspective is the most eloquent one for
+   coping with an agenda of language studies focused on applications (such
+   as Translation and Portuguese as a Second Language) and lexicography.
+ZR 0
+ZS 0
+TC 0
+ZB 0
+Z8 0
+ZA 0
+Z9 0
+C1 PUC RJ, Rio De Janeiro, Brazil
+SN 1679-8740
+DA 2006-09-01
+UT WOS:000207582800001
+ER
+
+PT J
+AU Crosthwaite, Peter
+   Ningrum, Sulistya
+   Schweinberger, Martin
+TI Research trends in corpus linguistics A bibliometric analysis of two
+   decades of Scopus-indexed corpus linguistics research in arts and
+   humanities
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 28
+IS 3
+BP 344
+EP 377
+DI 10.1075/ijcl.21072.cro
+DT Article
+PD JUL 19 2023
+PY 2023
+AB This paper uses a bibliometric analysis to map the field of Corpus
+   Linguistics (CL) research in arts and humanities over the last 20 years,
+   tracking changes in popular CL research topics, outlets, highly cited
+   authors, and geographical origins based on the metadata of 5,829
+   CL-related articles from 429 Scopus-indexed journals. Results reveal an
+   increase in corpus-assisted discourse studies, lexical bundles and
+   academic writing, alongside newer topics including multilingualism and
+   social media. CL studies span 193 languages/dialects with a significant
+   rise in Chinese, Russian, Spanish, and Italian CL research over the past
+   decade. Clusters of highly cited CL researchers are identified spanning
+   (inter)disciplinary research areas. An increase of CL researchers in
+   China, Poland, South Korea, Japan, and more is evidence of the now
+   global reach of CL research. These findings mirror diachronic
+   socio-cultural developments in applied linguistics and society more
+   generally and provide insights into what CL research might come next.
+RI /G-7821-2016; Schweinberger, Martin/
+OI /0000-0002-1482-8381; Schweinberger, Martin/0000-0003-1923-9153
+TC 0
+ZS 0
+ZR 0
+Z8 0
+ZB 0
+ZA 0
+Z9 0
+C1 Univ Queensland, Sch Languages & Cultures, St Lucia, Qld 4072, Australia
+C1 State Polytech Sriwijaya, Palembang, Indonesia
+C3 State Polytech Sriwijaya
+SN 1384-6655
+EI 1569-9811
+DA 2023-08-10
+UT WOS:001032116400003
+ER
+
+PT J
+AU Orenha, Adriane
+TI The compilation of comparable corpora in the business field and its
+   relevance to translation and terminology
+SO CALIDOSCOPIO
+VL 7
+IS 3
+BP 232
+EP 236
+DI 10.4013/cld.2009.73.06
+DT Article
+PD SEP-DEC 2009
+PY 2009
+AB This article aims at highlighting the importance of Corpus Linguistics
+   particularly to the compiling of specialized comparable corpora to the
+   field of Translation as well as to the practice of translation itself.
+   Hence, we report the stages of the compilation and the organization of
+   bilingual comparable corpora in the Business field and its applications,
+   with the purpose of also highlighting its relevance to two of our target
+   audiences: translators and also researchers in the
+   Terminolgy/Terminography field.
+RI Orenha-Ottaiano, Adriane/D-8021-2012
+ZR 0
+Z8 0
+TC 1
+ZS 0
+ZA 0
+ZB 0
+Z9 1
+C1 UNESP IBILCE, BR-15054000 Sao Jose Do Rio Preto, SP, Brazil
+C3 UNESP IBILCE
+SN 1679-8740
+EI 2177-6202
+DA 2009-09-01
+UT WOS:000278859100007
+ER
+
+PT J
+AU Blumenthal-Drame, Alice
+TI What corpus-based Cognitive Linguistics can and cannot expect from
+   neurolinguistics
+SO COGNITIVE LINGUISTICS
+VL 27
+IS 4
+SI SI
+BP 493
+EP 505
+DI 10.1515/cog-2016-0062
+DT Article
+PD NOV 2016
+PY 2016
+AB This paper argues that neurolinguistics has the potential to yield
+   insights that can feed back into corpus-based Cognitive Linguistics. It
+   starts by discussing how far the cognitive realism of probabilistic
+   statements derived from corpus data currently goes. Against this
+   background, it argues that the cognitive realism of usage-based models
+   could be further enhanced through deeper engagement with
+   neurolinguistics, but also highlights a number of common misconceptions
+   about what neurolinguistics can and cannot do for linguistic theorizing.
+TC 8
+ZS 0
+ZB 1
+ZA 0
+Z8 0
+ZR 0
+Z9 8
+C1 Albert Ludwigs Univ Freiburg, Freiburg Inst Adv Studies, Freiburg,
+   Germany
+SN 0936-5907
+EI 1613-3641
+DA 2017-01-04
+UT WOS:000389588900004
+ER
+
+PT J
+AU Condamines, Anne
+TI Towards an ergonomic linguistics: Application to the design of
+   controlled natural languages
+SO INTERNATIONAL JOURNAL OF APPLIED LINGUISTICS
+VL 31
+IS 1
+BP 18
+EP 30
+DI 10.1111/ijal.12313
+EA SEP 2020
+DT Article
+PD MAR 2021
+PY 2021
+AB This article proposes to define a "new" discipline within applied
+   linguistics: ergonomic linguistics. The article addresses issues
+   concerning language use within organizations, focusing on human-oriented
+   controlled natural languages (CNLs) whose role is to limit the problems
+   encountered with natural language, in professional contexts in
+   particular. An ergonomic linguistics approach involves first taking into
+   account real linguistic productions and analyzing them with corpus
+   linguistics methods, and then evaluating the efficacy of linguists'
+   recommendations using cognitive evaluation or acceptance tests. Two
+   projects concerning human-oriented CNLs that adopt an ergonomic
+   linguistics approach are presented, the first in the space domain and
+   the second in aeronautics.
+OI Condamines, Anne/0000-0003-1735-8669
+ZB 0
+ZS 0
+TC 0
+ZA 0
+Z8 0
+ZR 0
+Z9 0
+C1 CNRS, CLLE Lab Cognit Langues Langage Ergon, Toulouse, France
+C1 Univ Jean Jaures, Toulouse, France
+C3 Univ Jean Jaures
+SN 0802-6106
+EI 1473-4192
+DA 2020-10-12
+UT WOS:000573691300001
+ER
+
+PT J
+AU Beltrami, Pietro G.
+TI Scheme and the history of Corpus Taurinense. Corpus linguistics of Old
+   Italian
+SO LINGUA E STILE
+VL 45
+IS 2
+BP 331
+EP 342
+DT Book Review
+PD DEC 2010
+PY 2010
+ZA 0
+Z8 0
+TC 1
+ZB 0
+ZS 0
+ZR 0
+Z9 1
+SN 0024-385X
+DA 2010-12-01
+UT WOS:000286487400005
+ER
+
+PT J
+AU Louwerse, Max M.
+TI Mapping out the road from corpus linguistics to psycholinguistics
+SO REVISTA SIGNOS
+VL 54
+IS 107
+BP 971
+EP 984
+DI 10.4067/S0718-09342021000300971
+DT Article
+PD DEC 2021
+PY 2021
+AB Parodi (2007) made the case that corpus linguistics ought to more
+   consider the second most common language spoken in the world (Spanish),
+   and better disseminate the research findings on the structure of that
+   language in the lingua franca of the academic world (English). Moreover,
+   Parodi argued that corpus linguists should use corpora that are
+   heterogeneous in nature, and that corpus linguistics and discourse
+   psycholinguistics should go hand in hand. In the current paper these
+   claims are taken to heart with an overview of how corpus linguistics and
+   discourse psycholinguistics could be linked, by mapping out their
+   relations with the Symbol Interdependency Hypothesis that predicts that
+   language encodes the perceptual information. Built on previous research
+   that shows that word order reveals semantic information that language
+   users can take advantage of, and by showing that the longitude and
+   latitude of cities can be estimated based on the way the city names
+   share the same linguistic context, this paper shows - using examples
+   from the Spanish language and the South American continent - that
+   language creates meaning.
+RI Louwerse, Max/J-4166-2013; Louwerse, Max/
+OI Louwerse, Max/0000-0003-0328-7070
+TC 0
+ZA 0
+ZB 0
+ZR 0
+Z8 0
+ZS 0
+Z9 0
+C1 Tilburg Univ, Tilburg, Netherlands
+SN 0718-0934
+DA 2022-01-10
+UT WOS:000737234500014
+ER
+
+PT J
+AU Gries, Stefan Th.
+TI Corpus linguistics and theoretical linguistics A love-hate relationship?
+   Not necessarily ...
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 15
+IS 3
+SI SI
+BP 327
+EP 343
+DI 10.1075/ijcl.15.3.02gri
+DT Article
+PD 2010
+PY 2010
+OI Gries, Stefan Th./0000-0002-6497-3958
+Z8 0
+ZA 1
+TC 28
+ZB 0
+ZR 0
+ZS 2
+Z9 30
+C1 Univ Calif Santa Barbara, Dept Linguist, Santa Barbara, CA 93106 USA
+SN 1384-6655
+EI 1569-9811
+DA 2010-01-01
+UT WOS:000282481300003
+ER
+
+PT J
+AU Bird, Christy
+TI The linguistics of laughter: A corpus-assisted study of laughter-talk
+   (Routledge studies in linguistics)
+SO JOURNAL OF SOCIOLINGUISTICS
+VL 11
+IS 4
+BP 564
+EP 567
+DI 10.1111/j.1467-9841.2007.00337_13.x
+DT Book Review
+PD SEP 2007
+PY 2007
+Z8 0
+ZR 0
+TC 0
+ZS 0
+ZB 0
+ZA 0
+Z9 0
+C1 Univ Calif Santa Barbara, Dept Linguist, Santa Barbara, CA 93106 USA
+SN 1360-6441
+DA 2007-09-01
+UT WOS:000249267700016
+ER
+
+PT J
+AU Zhang Xiaojun
+TI Corpus-Based Contrastive Studies of English and Chinese (Routledge
+   Advances in Corpus Linguistics)
+SO LANGUAGE LEARNING & TECHNOLOGY
+VL 15
+IS 2
+BP 42
+EP 43
+DT Book Review
+PD JUN 2011
+PY 2011
+RI ZHANG, XIAOJUN/J-5204-2013
+OI ZHANG, XIAOJUN/0000-0003-3514-1981
+ZR 0
+ZA 0
+Z8 0
+ZB 0
+ZS 0
+TC 0
+Z9 0
+C1 Shaanxi Normal Univ, Sch Foreign Languages, Xian, Peoples R China
+SN 1094-3501
+DA 2012-02-07
+UT WOS:000297810300007
+ER
+
+PT J
+AU Nitti, Paolo
+TI Corpus-based and didactic analysis of the Italian language. The results
+   of an educational linguistics experiment
+SO FORUM ITALICUM
+VL 56
+IS 3
+BP 380
+EP 397
+DI 10.1177/00145858221110510
+EA JUL 2022
+DT Article
+PD NOV 2022
+PY 2022
+AB Corpus linguistics has developed significantly as a branch of applied
+   linguistics in recent times, in relation to the possibilities of
+   employment in research both in linguistics and in related disciplines.
+   This field of study, furthermore, aims at assaying and describing the
+   salient characteristics of a language by questioning collected and
+   stored data on computer support, in the most applicable way. Considering
+   the proposed definition, it was decided to use the methodology of
+   collection, archiving, and interrogation, specific of corpus-based
+   analysis, within the language educational practices for teaching Italian
+   as L1 and L2. For the purposes of experimentation, a working group of 30
+   Italian teachers was set up that was aimed at students from different
+   educational orders, and specific training was proposed, within a course
+   organised by Centro Interculturale della Citta di Torino. At the end of
+   the course, the teaching staff were able to use the operative modalities
+   of the corpus linguistics with regard to the collection and analysis of
+   the linguistic productions of the students, questioning the corpora with
+   respect to the linguistic uses. In conclusion, the corpora were used as
+   a tool for linguistic analysis and to suggest interventions on error
+   analysis, proving effective both for teachers and for learners.
+   Actually, all the linguistic productions have been used as a basis for
+   the linguistic research proposed to the learners. Teachers were offered
+   a questionnaire about experimentation and the results were positive, as
+   these showed how corpus linguistics can contribute to a significant
+   awareness of learners about the language and learning goals.
+ZB 0
+ZR 0
+TC 0
+ZS 0
+Z8 0
+ZA 0
+Z9 0
+C1 Univ Insubria, Via Mazzini 5, I-21100 Varese, Italy
+SN 0014-5858
+EI 2168-989X
+DA 2022-07-13
+UT WOS:000821260900001
+ER
+
+PT J
+AU Boillos Pereira, Mari Mar
+   Rodriguez-Lifante, Alberto
+TI THE ELABORATION OF A CORPUS OF SPANISH TEACHERS (COPELE): UTOPIA OR
+   REALITY?
+SO RLA-REVISTA DE LINGUISTICA TEORICA Y APLICADA
+VL 56
+IS 2
+BP 153
+EP 174
+DT Article
+PD DEC 2018
+PY 2018
+AB Corpus Linguistics constitutes a branch of linguistics that affects
+   positively the teaching practice of the language teacher. Many corpora,
+   where samples of foreign language students are registered, have been
+   published to carry out pedagogical interventions to improve the learning
+   and teaching process. However, most of these studies are focused on
+   students rather than teachers, who require, on this behalf, information
+   about their peer's beliefs, perceptions, and attitudes. The present
+   study analyzes the possibilities of elaborating a corpus of Spanish
+   teachers. A questionnaire for teachers with different profiles and
+   settings has been designed and administrated (n=130) to find the role of
+   corpus in their teaching practice, the perception of their profession,
+   as well as the benefits that the existence of this corpus (CopELE)
+   would/could have. Results show unanimity among the participants in
+   relation to the benefits this could have, among others, for the
+   acknowledgement of their teaching practice.
+RI Rodríguez-Lifante, Alberto/AAA-1822-2021; Boillos, Mari Mar/I-9410-2019
+OI Rodríguez-Lifante, Alberto/0000-0002-5851-5707; Boillos, Mari
+   Mar/0000-0001-5546-4724
+TC 0
+ZA 0
+Z8 0
+ZB 0
+ZS 0
+ZR 0
+Z9 0
+C1 Univ Basque Country, Euskal Herriko Unibertsitatea, Leioa, Spain
+C1 Univ Alicante, Alicante, Spain
+SN 0718-4883
+DA 2019-02-01
+UT WOS:000456191200007
+ER
+
+PT J
+AU Latif, Muhammad M. M. Abdel
+TI Corpus literacy instruction in language teacher education: Investigating
+   Arab EFL student teachers' immediate beliefs and long-term practices
+SO RECALL
+VL 33
+IS 1
+BP 34
+EP 48
+AR PII S0958344020000129
+DI 10.1017/S0958344020000129
+DT Article
+PD JAN 2021
+PY 2021
+AB With the increasing recognition of the pedagogical applications of
+   corpus linguistics, there has been a growing interest in developing
+   teachers' corpus literacy to popularize the use of corpora in language
+   education. This longitudinal study investigated Arab Gulf EFL student
+   teachers' immediate and long-term responses to corpus literacy
+   instruction. After teaching a corpus literacy component to two classes
+   of student teachers in a graduate computer-assisted language learning
+   course they attended, the author collected focus group data about their
+   views on this instruction and their own expected future uses of corpora
+   in language learning, teaching and research. Two years later, a group of
+   these student teachers (n = 19) responded to a follow-up questionnaire
+   exploring their beliefs about corpus literacy integration and their
+   multiple uses of corpora. The student teachers reported very positive
+   immediate and long-term perceptions of corpus literacy instruction, but
+   it was found that such instruction has not brought about all the desired
+   changes in their long-term uses of online corpora as a linguistic and
+   pedagogical resource, or their attitudes towards doing corpus-based
+   TESOL research. However, it is expected that the popularization benefits
+   gained from corpus literacy integration could lead to better future
+   developments in using corpora for language education and research
+   purposes in the target context.
+RI Abdel Latif, Muhammad M. M./T-8008-2019
+OI Abdel Latif, Muhammad M. M./0000-0003-4002-822X
+ZA 1
+ZB 0
+ZS 0
+ZR 0
+Z8 0
+TC 5
+Z9 6
+C1 Cairo Univ, Fac Grad Studies Educ, English Language Teaching, Cairo,
+   Egypt
+SN 0958-3440
+EI 1474-0109
+DA 2020-12-22
+UT WOS:000596240500004
+ER
+
+PT J
+AU Matamala, Anna
+TI The VIW project Multimodal corpus linguistics for audio description
+   analysis
+SO REVISTA ESPANOLA DE LINGUISTICA APLICADA
+VL 32
+IS 2
+BP 515
+EP 542
+DI 10.1075/resla.17001.mat
+DT Article
+PD NOV 5 2019
+PY 2019
+AB Following an overview of corpus linguistics in audiovisual translation,
+   and more specifically in audio description, this article presents the
+   VIW (Visuals Into Words) project and its resulting corpus. It describes
+   the compilation and annotation processes, highlighting the main
+   challenges found. The article also presents the web application that has
+   been developed, explaining in detail various data visualisation and
+   search possibilities.
+RI Matamala, Anna/B-1107-2014; Matamala, Anna/V-3499-2019
+OI Matamala, Anna/0000-0002-1607-9011; Matamala, Anna/0000-0002-1607-9011
+ZS 1
+TC 4
+ZA 0
+Z8 0
+ZR 0
+ZB 0
+Z9 5
+C1 Univ Autonoma Barcelona, Barcelona, Spain
+SN 0213-2028
+EI 2254-6774
+DA 2019-11-22
+UT WOS:000495652400005
+ER
+
+PT J
+AU Wisniewski, Katrin
+TI Learner corpora of spoke German: An overview
+SO ZEITSCHRIFT FUR GERMANISTISCHE LINGUISTIK
+VL 50
+IS 1
+BP 1
+EP 35
+DI 10.1515/zgl-2022-2047
+DT Editorial Material
+PD APR 2022
+PY 2022
+ZS 0
+Z8 0
+ZR 0
+ZB 0
+TC 2
+ZA 0
+Z9 2
+C1 Otto Friedrich Univ Bamberg, Germanist Inst, Hornthalstr 2, D-96047
+   Bamberg, Germany
+SN 0301-3294
+EI 1613-0626
+DA 2022-05-13
+UT WOS:000788063700001
+ER
+
+PT J
+AU Godwin-Jones, Robert
+TI Data-informed language learning
+SO LANGUAGE LEARNING & TECHNOLOGY
+VL 21
+IS 3
+BP 9
+EP 27
+DT Editorial Material
+PD OCT 2017
+PY 2017
+OI Godwin-Jones, Robert/0000-0002-2377-3204
+ZS 0
+Z8 0
+ZB 0
+TC 22
+ZA 0
+ZR 0
+Z9 22
+C1 Virginia Commonwealth Univ, Richmond, VA 23284 USA
+SN 1094-3501
+DA 2017-10-01
+UT WOS:000417464200002
+ER
+
+PT J
+AU Koplenig, Alexander
+TI Against statistical significance testing in corpus linguistics
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 15
+IS 2
+BP 321
+EP 346
+DI 10.1515/cllt-2016-0036
+DT Article
+PD OCT 2019
+PY 2019
+AB In the first volume of Corpus Linguistics and Linguistic Theory, Gries
+   (2005. Null-hypothesis significance testing of word frequencies: A
+   follow-up on Kilgarriff. Corpus Linguistics and Linguistic Theory 1(2).
+   doi :10.1515/cllt.2005.1.2.277.
+   http://www.degruyter.com/view/j/cllt.2005.1.issue-2/cllt.2005 .
+   1.2.277/cllt.2005.1.2.277.xml: 285) asked whether corpus linguists
+   should abandon null-hypothesis significance testing. In this paper, I
+   want to revive this discussion by defending the argument that the
+   assumptions that allow inferences about a given population - in this
+   case about the studied languages based on results observed in a sample -
+   in this case a collection of naturally occurring language data - are not
+   fulfilled. As a consequence, corpus linguists should indeed abandon
+   null-hypothesis significance testing.
+ZA 0
+Z8 0
+TC 13
+ZR 0
+ZB 1
+ZS 0
+Z9 13
+C1 Inst German Language IDS, Dept Lex, Mannheim, Germany
+SN 1613-7027
+EI 1613-7035
+DA 2019-10-21
+UT WOS:000489312300004
+ER
+
+PT J
+AU Handford, Michael
+TI Cultural identities in international, interorganisational meetings: a
+   corpus-informed discourse analysis of indexical <i>we</i>
+SO LANGUAGE AND INTERCULTURAL COMMUNICATION
+VL 14
+IS 1
+SI SI
+BP 41
+EP 58
+DI 10.1080/14708477.2013.866123
+DT Article
+PD JAN 2 2014
+PY 2014
+AB To date, there have been very few studies employing corpus techniques in
+   the analysis of intercultural interactions. This study analyses the
+   indexing of cultural identities in international, interorganisational
+   meetings. The approach used draws on methods and insights from corpus
+   linguistics and discourse analysis, professional communication,
+   intercultural studies and identity studies. It explores how a
+   statistically significant single item, we, in specialised corpora of
+   authentic professional meetings, signals different identities at
+   different moments in the unfolding discourse. Specifically, two research
+   questions are answered: 1. What cultural identities are explicitly
+   indexed in business meetings through we?
+   2. What can corpus linguistics contribute to IC studies?
+   While the first question comprises the bulk of the paper, the second
+   question is discussed in the final section, along with limitations of
+   the approach applied here.
+ZB 0
+ZS 0
+Z8 0
+ZA 0
+TC 11
+ZR 0
+Z9 11
+C1 Univ Tokyo, Inst Innovat Int Engn, Bunkyo Ku, Tokyo 1138656, Japan
+SN 1470-8477
+EI 1747-759X
+DA 2014-03-19
+UT WOS:000330757000004
+ER
+
+PT J
+AU Kachru, Yamuna
+TI Language variation and corpus linguistics
+SO WORLD ENGLISHES
+VL 27
+IS 1
+BP 1
+EP 8
+DI 10.1111/j.1467-971X.2008.00532.x
+DT Article
+PD FEB 2008
+PY 2008
+AB Corpus linguistics deserves serious attention from linguists and applied
+   linguists, since it is of direct relevance to linguistic description,
+   language variation, lexicography, and language education. Linguists tend
+   to be indifferent to corpora, however, as the predominant paradigm in
+   linguistics is based on introspective data, i.e. native speaker
+   intuition. Research has shown that intuitions are not 100 per cent
+   reliable; the notion of 'core' grammar needs to be modified to
+   accommodate the systematic differences across registers at all
+   linguistic levels. Moreover, what linguists perceive as significant
+   principles of linguistic organization may not coincide with their
+   distribution in patterns of use. One goal of applied linguistics is to
+   see what correspondences can be established between the two sets, i.e.
+   the set of underlying principles of linguistic organization and the
+   patterns of use of these principles revealed by analyses of corpora.
+   Regrettably, applied linguists have not embraced corpus linguistics any
+   more enthusiastically than formal linguists. Corpus linguistic analyses
+   have their problems, too. This paper examines a set of data from the
+   lexicon and grammar of world Englishes to suggest that a complete
+   reliance on patterns of use may not solve all the problems of language
+   description, study of variation, language instruction, translation, and
+   lexicography. Furthermore, whereas analyses of corpora are effective in
+   revealing dialect variation, they are not of great use in accounting for
+   diatypic variation, i.e. the permanent characteristics of users of
+   language and recurrent features of their language use, which are crucial
+   for understanding human linguistic behavior.
+ZS 0
+TC 14
+ZA 0
+ZR 0
+Z8 0
+ZB 0
+Z9 14
+C1 Univ Illinois, Dept Linguist, Urbana, IL 61801 USA
+SN 0883-2919
+DA 2008-02-01
+UT WOS:000262351200001
+ER
+
+PT J
+AU Sonning, Lukas
+   Werner, Valentin
+TI The replication crisis, scientific revolutions, and linguistics
+SO LINGUISTICS
+VL 59
+IS 5
+SI SI
+BP 1179
+EP 1206
+DI 10.1515/ling-2019-0045
+DT Editorial Material
+PD 2021
+PY 2021
+OI Sonning, Lukas/0000-0002-2705-395X; Werner, Valentin/0000-0003-2669-3557
+ZA 0
+ZS 0
+Z8 0
+ZR 0
+TC 5
+ZB 0
+Z9 5
+C1 Otto Friedrich Univ Bamberg, Inst Anglist & Amerikanist, Univ 9, D-96045
+   Bamberg, Germany
+SN 0024-3949
+EI 1613-396X
+DA 2021-09-28
+UT WOS:000697371400001
+ER
+
+PT J
+AU Koplenig, Alexander
+TI A Data-Driven Method to Identify (Correlated) Changes in Chronological
+   Corpora
+SO JOURNAL OF QUANTITATIVE LINGUISTICS
+VL 24
+IS 4
+BP 289
+EP 318
+DI 10.1080/09296174.2017.1311447
+DT Article
+PD 2017
+PY 2017
+AB In this paper, an exploratory data-driven method is presented that
+   extracts word-types from diachronic corpora that have undergone the most
+   pronounced change in frequency of occurrence in a given period of time.
+   Combined with statistical methods from time series analysis, the method
+   is able to find meaningful patterns and relationships in diachronic
+   corpora, an idea that is still uncommon in linguistics. This indicates
+   that the approach can facilitate an improved understanding of diachronic
+   processes.
+ZR 0
+ZA 0
+ZB 0
+TC 5
+Z8 0
+ZS 0
+Z9 5
+C1 Inst German Language IDS, Dept Lexical Studies, Mannheim, Germany
+SN 0929-6174
+EI 1744-5035
+DA 2017-11-03
+UT WOS:000411504500003
+ER
+
+PT J
+AU Brezina, Vaclav
+TI Corpus tools in EAP: A response to Davies (2013)
+SO JOURNAL OF ENGLISH FOR ACADEMIC PURPOSES
+VL 12
+IS 4
+BP 311
+EP 312
+DI 10.1016/j.jeap.2013.10.004
+DT Editorial Material
+PD DEC 2013
+PY 2013
+OI Brezina, Vaclav/0000-0002-1613-6100
+ZB 0
+ZA 0
+ZR 0
+Z8 0
+TC 0
+ZS 0
+Z9 0
+C1 Univ Lancaster, ESRC Ctr Corpus Approaches Social Sci, Lancaster LA1
+   4YD, England
+SN 1475-1585
+EI 1878-1497
+DA 2013-12-01
+UT WOS:000329006700008
+ER
+
+PT J
+AU Gilquin, Gaetanelle
+   Gries, Stefan Th.
+TI Corpora and experimental methods: A state-of-the-art review
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 5
+IS 1
+SI SI
+BP 1
+EP 26
+DI 10.1515/CLLT.2009.001
+DT Article
+PD 2009
+PY 2009
+AB This paper offers a state-of-the-art review of the combination of
+   corpora and experimental methods. Using a sample of recent studies, it
+   shows (i) that psycholinguists regularly exploit the benefits of
+   combining corpus and experimental data, whereas cot-pits linguists do so
+   much more rarely, and (ii) that psycholinguists and corpus linguists use
+   corpora in different ways in terms of the dichotomy of
+   exploratory/descriptive vs. hypothesis-testing as well as the
+   corpus-linguistic methods that are used. Possible reasons, for this are
+   suggested and arguments are presented for why (and how) cot-pits
+   linguists should look more into the possibilities of complementing their
+   corpus studies with experimental data.
+OI Gries, Stefan Th./0000-0002-6497-3958
+Z8 0
+ZS 0
+TC 110
+ZR 4
+ZB 2
+ZA 0
+Z9 112
+SN 1613-7027
+EI 1613-7035
+DA 2009-01-01
+UT WOS:000265512500001
+ER
+
+PT J
+AU Biber, Douglas
+   Reppen, Randi
+   Conrad, Susan
+TI Developing linguistic literacy: perspectives from corpus linguistics and
+   multi-dimensional analysis.
+SO Journal of child language
+VL 29
+IS 2
+BP 458
+EP 62; discussion 489-94
+DT Journal Article
+PD 2002-May
+PY 2002
+ZB 0
+ZA 1
+ZR 0
+ZS 0
+Z8 0
+TC 3
+Z9 4
+C1 Northern Arizona University, USA.
+SN 0305-0009
+DA 2002-05-01
+UT MEDLINE:12109381
+PM 12109381
+ER
+
+PT J
+AU Van de Velde, Freek
+   De Pascale, Stefano
+   Speelman, Dirk
+TI Generalizability in mixed models: Lessons from corpus linguistics
+SO BEHAVIORAL AND BRAIN SCIENCES
+VL 45
+AR e34
+DI 10.1017/S0140525X21000236
+DT Article
+PD FEB 10 2022
+PY 2022
+AB Part of the generalizability issues that haunt controlled lab experiment
+   designs in psychology, and more particularly in psycholinguistics, can
+   be alleviated by adopting corpus linguistic methods. These work with
+   natural data. This advantage comes at a cost: in corpus studies, lexemes
+   and language users can show different kinds of skew. We discuss a number
+   of solutions to bolster the control.
+RI De Pascale, Stefano/HMO-7351-2023; Van de Velde, Freek/; Speelman, Dirk/; De Pascale, Stefano/
+OI Van de Velde, Freek/0000-0003-3050-2207; Speelman,
+   Dirk/0000-0003-1561-1851; De Pascale, Stefano/0000-0003-2455-9004
+ZR 0
+ZB 0
+ZS 0
+ZA 0
+Z8 0
+TC 0
+Z9 0
+C1 Katholieke Univ Leuven, Dept Linguist, Blijde Inkomststr 21-3308,
+   BE-3000 Ku Leuven, Belgium
+SN 0140-525X
+EI 1469-1825
+DA 2022-03-01
+UT WOS:000753168100035
+PM 35139970
+ER
+
+PT J
+AU Egbert, Jesse
+TI Corpus linguistics and language testing: Navigating uncharted waters
+SO LANGUAGE TESTING
+VL 34
+IS 4
+SI SI
+BP 555
+EP 564
+DI 10.1177/0265532217713045
+DT Article
+PD OCT 2017
+PY 2017
+AB The use of corpora and corpus linguistic methods in language testing
+   research is increasing at an accelerated pace. The growing body of
+   language testing research that uses corpus linguistic data is a
+   testament to their utility in test development and validation. Although
+   there are many reasons to be optimistic about the future of using corpus
+   data in language testing, the convergence of these two fields introduces
+   uncharted waters that should be traversed carefully to ensure that high
+   standards of methodological rigor are maintained. The objectives of this
+   paper are as follows: (1) to describe and evaluate the ways corpora and
+   corpus data have been used in language testing to date; and (2) to offer
+   recommendations for best practices to encourage rigorous and appropriate
+   corpus linguistic methods for language testing purposes. This is
+   accomplished with the aid of examples from papers in this special issue,
+   as well as other previous work in this area. The future holds great
+   promise for a useful methodological synergy between corpus linguistics
+   and language testing. The choices researchers make as they navigate the
+   uncharted and challenging waters that lie ahead will ultimately
+   determine whether that potential is fully realized.
+ZS 0
+ZA 0
+TC 5
+ZR 0
+ZB 0
+Z8 0
+Z9 5
+C1 No Arizona Univ, BAA 315 Bldg 23, Flagstaff, AZ 86001 USA
+SN 0265-5322
+EI 1477-0946
+DA 2017-12-29
+UT WOS:000418175600007
+ER
+
+PT J
+AU Lindquist, Hans
+TI Advances in corpus linguistics: Papers from the 23rd International
+   Conference on English Language Research on Computerized Corpora (ICAME
+   23).
+SO LANGUAGE
+VL 83
+IS 1
+BP 215
+EP 215
+DI 10.1353/lan.2007.0029
+DT Book Review
+PD MAR 2007
+PY 2007
+ZS 0
+ZR 0
+ZA 0
+TC 0
+Z8 0
+ZB 0
+Z9 0
+C1 Vaxjo Univ, S-35195 Vaxjo, Sweden
+SN 0097-8507
+DA 2007-03-01
+UT WOS:000245379600020
+ER
+
+PT J
+AU Simsek, Tugba
+   Can, Cem
+TI Integration of corpus literacy consultation into language teacher
+   education: Course design, implementation, and evaluation
+SO PORTA LINGUARUM
+IS 39
+BP 193
+EP 211
+DI 10.30827/portalin.vi39.23885
+DT Article
+PD JAN 2023
+PY 2023
+AB This qualitative study presents a corpus literacy course designed and
+   implemented at an undergraduate language teacher education program in
+   Turkey, and its evaluation by pre-service ELT teachers. The course
+   introduces the main concepts of corpus linguistics, raises future
+   teachers' linguistic and pedagogical awareness through corpus
+   applications, and introduces them to corpus-informed practices to
+   improve their pedagogical skills. In the first phase of the study,
+   students' corpus literacy levels were determined through a pre-course
+   survey revealing that most of the participants did not know about
+   corpora and their uses. The second and third phases were devoted to
+   evaluating the course. Initially, student teachers were asked to write
+   minute papers and reflection papers during the semester to evaluate the
+   process. In the final phase, semi-structured interviews and focus group
+   discussions were conducted after the course to explore their overall
+   evaluations. Findings implied that corpus literacy integration into
+   teacher education programs clearly yields positive outcomes, yet only
+   one course is not enough to popularize it among EFL teachers. Hence,
+   extensive exposure to corpus literacy and curriculum-wide integration in
+   the TEFL programs could contribute to its popularization among future
+   practitioners.
+OI Simsek Rackelmann, Tugba/0000-0001-5241-8001
+ZR 0
+Z8 0
+ZA 0
+ZB 0
+TC 0
+ZS 0
+Z9 0
+C1 Cukurova Univ, Adana, Turkiye
+SN 1697-7467
+DA 2023-04-28
+UT WOS:000964966100012
+ER
+
+PT J
+AU [Anonymous]
+TI Phrasal verbs in learner English: A corpus-based study of German and
+   Italian students
+SO ANGLIA-ZEITSCHRIFT FUR ENGLISCHE PHILOLOGIE
+BP 24
+EP 25
+DI 10.1515/east.2007.013
+SU S
+DT Book Review
+PD 2008
+PY 2008
+ZR 0
+ZB 0
+ZA 0
+TC 0
+Z8 0
+ZS 0
+Z9 0
+SN 0340-5222
+DA 2008-01-01
+UT WOS:000207524900012
+ER
+
+PT J
+AU McEnery, Tony
+   Brezina, Vaclav
+   Gablasova, Dana
+   Banerjee, Jayanti
+TI Corpus Linguistics, Learner Corpora, and SLA: Employing Technology to
+   Analyze Language Use
+SO ANNUAL REVIEW OF APPLIED LINGUISTICS
+VL 39
+BP 74
+EP 92
+DI 10.1017/S0267190519000096
+DT Article
+PD MAR 2019
+PY 2019
+AB In this article we explore the relationship between learner corpus and
+   second language acquisition research. We begin by considering the
+   origins of learner corpus research, noting its roots in smaller scale
+   studies of learner language. This development of learner corpus studies
+   is considered in the broader context of the development of corpus
+   linguistics. We then consider the aspirations that learner corpus
+   researchers have had to engage with second language acquisition research
+   and explore why, to date, the interaction between the two fields has
+   been minimal. By exploring some of the corpus building practices of
+   learner corpus research, and the theoretical goals of second language
+   acquisition studies, we identify reasons for this lack of interaction
+   and make proposals for how this situation could be fruitfully addressed.
+RI Banerjee, Jayanti/I-7990-2015
+OI Banerjee, Jayanti/0000-0002-8175-0887
+TC 18
+ZR 0
+ZS 0
+ZB 0
+Z8 1
+ZA 0
+Z9 19
+C1 Univ Lancaster, Lancaster, England
+C1 Trinity Coll London, London, England
+C3 Trinity Coll London
+SN 0267-1905
+EI 1471-6356
+DA 2019-08-13
+UT WOS:000477653400007
+ER
+
+PT J
+AU Bolaños Cuéllar, Sergio
+TI LA LINGÜÍSTICA DE CORPUS: PERSPECTIVAS PARA LA INVESTIGACIÓN LINGÜÍSTICA
+   CONTEMPORÁNEA
+X1 A LINGUÍSTICA DE CORPUS: PERSPECTIVAS PARA A PESQUISA LINGUÍSTICA
+   CONTEMPORÂNEA
+Y1 CORPUS LINGUISTICS: APPROACHES FOR CONTEMPORARY LINGUISTIC RESEARCH
+SO Forma y Función
+VL 28
+IS 1
+BP 31
+EP 54
+DI 10.15446/fyf.v28n1.51970
+DT research-article
+PD 2015-01
+PY 2015
+AB Nowadays Corpus Linguistics (CL) is one of the most developed research
+   areas in linguistic studies. This paper presents an abridged historical
+   review of the use of corpora from the hand-made lexicography of the 17th
+   c., through biblical and grammatical studies of 18th and 19th c., to the
+   first generation of electronic corpora in the 60s and later. A 'corpus'
+   definition as well as its typology and main characteristics are also
+   discussed. Likewise the methodological potential of CL for research in
+   contemporary linguistics is also depicted, e.g. in translation critique,
+   materials design for language teaching, lexical and grammatical
+   differentiation of dialectal varieties, the making of descriptive
+   grammars, and sociolinguistic discourse analysis.
+X4 La Lingüística de Corpus (LC) constituye una de las áreas de
+   investigación de mayor desarrollo en los estudios del lenguaje. En este
+   artículo se hace una sucinta revisión histórica al uso de los corpus,
+   desde su confección manual en la lexicografía del s. XVII, pasando por
+   los estudios bíblicos y gramaticales en los s. XVIII y XIX, hasta llegar
+   a la primera generación de corpus electrónicos en la década de los
+   sesenta y las generaciones posteriores. Se discute la definición del
+   término corpus, su tipología y sus principales características. Así
+   mismo, se muestra el potencial metodológico de la lingüística de corpus
+   para la investigación en diversas áreas de la lingüística contemporánea,
+   entre otras, la revisión de la traducción; la elaboración de materiales
+   para la enseñanza de las lenguas; la diferenciación léxico-gramatical de
+   variedades dialectales de una lengua; la elaboración de gramáticas
+   descriptivas y el análisis sociolingüístico del discurso.
+Y4 A Linguística de Corpus (LC) constitui uma das áreas de pesquisa de
+   maior desenvolvimento nos estudos da língua. Neste artigo, faz-se uma
+   sucinta revisão histórica do uso dos corpus, desde sua confecção manual
+   na lexicografia do século XVII, passando pelos estudos bíblicos e
+   gramaticais nos séculos XVIII e XIX, até chegar à primeira geração de
+   corpus eletrônicos na década de 1960 e às gerações posteriores.
+   Discute-se a definição do termo corpus, sua tipologia e suas principais
+   características. Também se mostra o potencial metodológico da
+   linguística de corpus para a pesquisa em diversas áreas da linguística
+   contemporânea, entre outras, a revisão da tradução; a elaboração de
+   materiais para o ensino de línguas; a diferença léxico-gramatical de
+   variedades dialetais de uma língua; a elaboração de gramáticas
+   descritivas e a análise sociolinguística do discurso.
+OI Bolanos Cuellar, Sergio/0000-0002-1595-7687
+ZS 5
+ZB 0
+TC 4
+Z8 0
+ZA 0
+ZR 0
+Z9 9
+C1 Universidad Nacional de Colombia, Colombia
+C3 Universidad Nacional de Colombia
+SN 0120-338X
+DA 2015-01-01
+UT SCIELO:S0120-338X2015000100002
+ER
+
+PT J
+AU Tranchese, Alessia
+   Sugiura, Lisa
+TI "I Don't Hate All Women, Just Those Stuck-Up Bitches": How Incels and
+   Mainstream Pornography Speak the Same <i>Extreme</i> Language of
+   Misogyny
+SO VIOLENCE AGAINST WOMEN
+VL 27
+IS 14
+BP 2709
+EP 2734
+AR 1077801221996453
+DI 10.1177/1077801221996453
+EA MAR 2021
+DT Article
+PD NOV 2021
+PY 2021
+AB This article seeks to establish the connection-via shared
+   discourse-between Incels and mainstream pornography. With an
+   interdisciplinary approach which involves a Corpus Linguistics analysis
+   of Reddit forum data, research into digital behaviors, and a feminist
+   critique, this article focuses on the commonalities between the language
+   of pornography and that of Incels. In doing so, it demonstrates how both
+   pornography and Incels are different manifestations of the same
+   misogyny. The findings of this study highlight the normalization of
+   violence against women (VAW), which continues to be endemic in society,
+   enabled and exacerbated by contemporary technologies.
+OI Sugiura, Lisa/0000-0002-2167-3613
+Z8 0
+ZB 0
+ZR 0
+ZA 0
+TC 21
+ZS 0
+Z9 21
+C1 Univ Portsmouth, Commun & Appl Linguist, Portsmouth, Hants, England
+C1 Univ Portsmouth, Criminol & Cybercrime, Portsmouth, Hants, England
+SN 1077-8012
+EI 1552-8448
+DA 2021-03-28
+UT WOS:000631605900001
+PM 33750244
+ER
+
+PT J
+AU Schrader, Bettina
+TI Corpus linguistics
+SO ZEITSCHRIFT FUR SPRACHWISSENSCHAFT
+VL 26
+IS 2
+BP 373
+EP 378
+DT Book Review
+PD 2007
+PY 2007
+ZR 0
+ZA 0
+ZS 0
+TC 0
+ZB 0
+Z8 0
+Z9 0
+SN 0721-9067
+EI 1613-3706
+DA 2007-01-01
+UT WOS:000255525200012
+ER
+
+PT J
+AU Schluecker, Barbara
+TI Corpus linguistics
+SO ZEITSCHRIFT FUR DIALEKTOLOGIE UND LINGUISTIK
+VL 74
+IS 1
+BP 108
+EP 110
+DT Book Review
+PD 2007
+PY 2007
+ZR 0
+ZA 0
+ZS 0
+TC 0
+Z8 0
+ZB 0
+Z9 0
+SN 0044-1449
+EI 2366-2395
+DA 2007-01-01
+UT WOS:000252053900028
+ER
+
+PT J
+AU Martinez, Ron
+TI Contemporary Corpus Linguistics
+SO SYSTEM
+VL 37
+IS 4
+BP 750
+EP 752
+DI 10.1016/j.system.2009.08.005
+DT Book Review
+PD DEC 2009
+PY 2009
+RI Martinez, Ron/H-3753-2014
+OI Martinez, Ron/0000-0003-4098-0093
+Z8 0
+TC 0
+ZR 0
+ZA 0
+ZS 0
+ZB 0
+Z9 0
+C1 Univ Nottingham, Sch English Studies, Nottingham NG7 2RD, England
+SN 0346-251X
+DA 2009-12-01
+UT WOS:000284802000022
+ER
+
+PT J
+AU Lei, Hong
+   Jiang, Zhanhao
+TI Understanding Corpus Linguistics
+SO SYSTEM
+VL 106
+AR 102757
+DI 10.1016/j.system.2022.102757
+EA FEB 2022
+DT Book Review
+PD JUN 2022
+PY 2022
+OI Lei, Hong/0000-0002-4392-0283
+Z8 0
+ZB 0
+ZS 0
+ZR 0
+TC 0
+ZA 0
+Z9 0
+C1 Xian Int Studies Univ, Sch Grad, Xian 710128, Shaanxi, Peoples R China
+C1 Xian Int Studies Univ, Sch English Studies, Xian 710128, Shaanxi,
+   Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2022-04-27
+UT WOS:000781854500016
+ER
+
+PT J
+AU Scott, Mike
+TI Looking back or looking forward in corpus linguistics: What can the last
+   20 years suggest about the next?
+SO IBERICA
+IS 24
+BP 75
+EP 85
+DT Article
+PD FAL 2012
+PY 2012
+AB Starting with a description of the software and hardware used for corpus
+   linguistics in the late 1980s to early 1990s, this contribution
+   discusses difficulties faced by the software designer when attempting to
+   allow users to study text. Future human-machine interfaces may develop
+   to be much more sophisticated, and certainly the aspects of text which
+   can be studied will progress beyond plain text without images. Another
+   area which will develop further is the study of patternings involving
+   not just single words but word-relations across large stretches of text.
+ZR 0
+Z8 0
+ZA 0
+ZB 0
+TC 4
+ZS 0
+Z9 4
+C1 Aston Univ, Birmingham B4 7ET, W Midlands, England
+SN 1139-7241
+DA 2012-12-26
+UT WOS:000310865400007
+ER
+
+PT J
+AU Maatz, Anke
+   Ilg, Yvonne
+TI The Ins and Outs of 'Schizophrenia': Considering Diagnostic Terms as
+   Ordinary Linguistic Expressions.
+SO The Journal of medical humanities
+VL 42
+IS 3
+BP 387
+EP 404
+DI 10.1007/s10912-019-09587-5
+DT Journal Article
+PD 2021-Sep
+PY 2021
+AB Diagnostic terms in psychiatry like 'schizophrenia' and 'bipolar
+   disorder' are deeply contested in the professional community, by mental
+   health activists and the public. In this paper, we provide a theoretical
+   framework for considering diagnostic terms as ordinary linguistic
+   expressions and illustrate this approach by a corpus linguistic analysis
+   of 'schizophrenia.' Our aim is to show how a focus on language itself
+   can inform current and future debates about psychiatric terminology and
+   provide new insights on relevant processes concerning their actual usage
+   and change over time. We hope that this contributes to enhancing mutual
+   understanding between different discourse spheres and stakeholders.
+TC 0
+ZB 0
+ZA 0
+ZS 0
+ZR 0
+Z8 0
+Z9 0
+C1 Centre for Social Psychiatry, Psychiatric Hospital, University of
+   Zurich, Militarstrasse 8, 8004, Zurich, Switzerland.
+   anke.maatz@puk.zh.ch.
+C1 Department of German Studies, University of Zurich, Schonberggasse 9,
+   Zurich, 8001, Switzerland.
+EI 1573-3645
+DA 2020-02-03
+UT MEDLINE:32002725
+PM 32002725
+ER
+
+PT J
+AU Clancy, Brian
+TI Complementary perspectives on hedging behaviour in family discourse The
+   analytical synergy of variational pragmatics and corpus linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 16
+IS 3
+BP 371
+EP 390
+DI 10.1075/ijcl.16.3.05cla
+DT Article
+PD 2011
+PY 2011
+AB This paper argues that corpus linguistics offers a methodology which
+   benefits variational pragmatic analysis in a number of ways. Corpus
+   linguistic tools such as word frequency lists allow the researcher to
+   construct a detailed "pragmatic profile" of a word, cluster or act.
+   This, coupled with the fact that most corpora are constructed to be
+   representative of a particular language variety, facilitates an accurate
+   account of language-use differences across various social categories.
+   Pragmatic analysis relies heavily on context for its interpretation.
+   Therefore, an illustrative case study of two corpora representing spoken
+   language recorded in the home environment, one from a middle class Irish
+   family and one from a family from the Irish Traveller Community will be
+   utilised in order to elucidate the benefits of the synergy of corpus
+   linguistics and variational pragmatics. Specifically, the variational
+   distribution of the occurrences of hedges across these two distinct
+   cultural groupings will be examined.
+RI Clancy, Brian/AAC-4654-2022
+OI Clancy, Brian/0000-0001-5912-5359
+ZB 0
+ZR 0
+TC 11
+ZA 0
+ZS 0
+Z8 0
+Z9 11
+C1 Univ Limerick, Mary Immaculate Coll, Limerick, Ireland
+SN 1384-6655
+EI 1569-9811
+DA 2011-01-01
+UT WOS:000297850700005
+ER
+
+PT J
+AU Salhi, Hammouda
+TI Investigating the Complementary Polysemy and the Arabic Translations of
+   the Noun <i>Destruction</i> in EAPCOUNT
+SO META
+VL 58
+IS 1
+BP 227
+EP 246
+DI 10.7202/1023818ar
+DT Article
+PD APR 2013
+PY 2013
+AB This article investigates a topic at the intersection of translation
+   studies, lexical semantics and corpus linguistics. Its general aim is to
+   show how translation studies can benefit from both lexical semantics and
+   corpus linguistics. The specific objective is to capture the semantic
+   and pragmatic behavior of the noun destruction and its different
+   translations into Arabic. The data are obtained from an English-Arabic
+   parallel corpus made from UN texts and their translations (EAPCOUNT).
+   The analysis of the data shows the polysemy of the word destruction as a
+   number of semantic and pragmatic alternations can be captured. These
+   findings are discussed in the frame of the Generative Lexicon (GL)
+   theory developed by James Pustejovsky. The paper concludes with some
+   concrete suggestions on how to enhance the relationship between
+   linguists and translators and their mutual cooperation.
+ZR 0
+TC 6
+ZS 0
+ZB 0
+ZA 1
+Z8 0
+Z9 7
+C1 Univ Tunis El Manar, Tunis, Tunisia
+SN 0026-0452
+DA 2013-04-01
+UT WOS:000341221400012
+ER
+
+PT J
+AU Hardy, Donald E.
+   Colombini, Crystal Broch
+TI A genre, collocational, and constructional analysis of RISK
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 16
+IS 4
+BP 462
+EP 485
+DI 10.1075/ijcl.16.4.02har
+DT Article
+PD 2011
+PY 2011
+AB Scholars of language have begun to explore the popular academic topic
+   that is "risk" and to establish the viability of corpus linguistics for
+   such analysis. We extend existing scholarship by analyzing the noun
+   lemma RISK over the last two decades of contemporary American discourse
+   with recourse to the Corpus of Contemporary American English. Using the
+   corpus procedures of frequency analysis, concordance contextual
+   analysis, collocational analysis, and a variation on
+   distinctive-collexeme analysis, we revisit the often under-supported
+   assertion that RISK is semantically negative, and then investigate the
+   semantic potential for good risk, a phenomenon associated with economic
+   and adventuring sectors. Data suggest that RISK is genre sensitive,
+   predominantly negative, and heavily medical in shared meaning across
+   genres, and further, that evidence for good risk is minimal. A phrase of
+   interest in recent corpus work - RISK worth taking - is shown to be
+   sensitive perhaps more to constructional constraints than to semantic
+   prosody.
+ZB 0
+ZS 0
+ZA 0
+ZR 0
+TC 7
+Z8 0
+Z9 7
+C1 Univ Nevada, Dept English, Reno, NV 89557 USA
+SN 1384-6655
+DA 2011-01-01
+UT WOS:000298794500002
+ER
+
+PT J
+AU Gablasova, Dana
+TI Doing Corpus Linguistics
+SO JOURNAL OF ENGLISH LINGUISTICS
+VL 44
+IS 3
+BP 283
+EP 286
+DI 10.1177/0075424216655846
+DT Book Review
+PD SEP 2016
+PY 2016
+OI Gablasova, Dana/0000-0001-6906-3956
+ZB 0
+ZR 0
+TC 0
+Z8 0
+ZS 0
+ZA 0
+Z9 0
+C1 Univ Lancaster, Lancaster LA1 4YW, England
+SN 0075-4242
+EI 1552-5457
+DA 2016-09-01
+UT WOS:000382469600006
+ER
+
+PT J
+AU Aehnlich, Barbara
+TI Historical Corpus Linguistics
+SO ZEITSCHRIFT FUR DEUTSCHE PHILOLOGIE
+VL 140
+IS 1
+BP 135
+EP 142
+DT Book Review
+PD 2021
+PY 2021
+TC 0
+ZS 0
+ZA 0
+ZB 0
+ZR 0
+Z8 0
+Z9 0
+C1 Inst Germanist Sprachwissensch FSU Jena, Furstengraben 30, D-07743 Jena,
+   Germany
+C3 Inst Germanist Sprachwissensch FSU Jena
+SN 0044-2496
+DA 2021-11-14
+UT WOS:000706465200006
+ER
+
+PT J
+AU Molina Salinas, Claudio
+   Sierra Martinez, Gerardo Eugenio
+TI Towards a frequency normalization of CREA and CORDE corpora
+SO REVISTA SIGNOS
+VL 48
+IS 89
+BP 307
+EP 331
+DI 10.4067/S0718-09342015000300002
+DT Article
+PD DEC 2015
+PY 2015
+AB CORDE (Corpus Diacronico del Espanol) and CREA (Corpus de Referencia del
+   Espanol Actual) are two of the largest and most frequently used
+   databases in the study of the Spanish language. However, they have some
+   limitations in terms of size, sample unit and representativeness that
+   may influence the results of studies and descriptions of linguistic
+   phenomena. In this paper we identify these limitations and propose a
+   method for the normalization of document frequencies by computing moving
+   averages. We show how this method allows for a more realistic
+   interpretation of corpus data and, thus, a more effective use of these
+   resources.
+RI Martínez, Gerardo Sierra/J-3737-2016
+OI Martínez, Gerardo Sierra/0000-0002-6724-1090
+ZS 1
+TC 3
+ZB 0
+ZA 0
+ZR 0
+Z8 0
+Z9 3
+C1 Univ Nacl Autonoma Mexico, Escuela Nacl Antropol & Hist, Mexico City
+   04510, DF, Mexico
+C1 Univ Nacl Autonoma Mexico, Mexico City 04510, DF, Mexico
+SN 0718-0934
+DA 2016-02-17
+UT WOS:000368917900002
+ER
+
+PT J
+AU Ringlstetter, Christoph
+   Schulz, Klaus U.
+   Mihov, Stoyan
+TI Orthographic errors in web pages: Toward cleaner web corpora
+SO COMPUTATIONAL LINGUISTICS
+VL 32
+IS 3
+BP 295
+EP 340
+DI 10.1162/coli.2006.32.3.295
+DT Article
+PD SEP 2006
+PY 2006
+AB Since the Web by far represents the largest public repository of natural
+   language texts, recent experiments, methods, and tools in the area of
+   corpus linguistics often use the Web as a corpus. For applications where
+   high accuracy is crucial, the problem has to be faced that a
+   non-negligible number of orthographic and grammatical errors occur in
+   Web documents. In this article we investigate the distribution of
+   orthographic errors of various types in Web pages. As a by-product,
+   methods are developed for efficiently detecting erroneous pages and for
+   marking orthographic errors in acceptable Web documents, reducing thus
+   the number of errors in corpora and linguistic knowledge bases
+   automatically retrieved from the Web.
+Z8 0
+TC 22
+ZA 0
+ZB 1
+ZS 0
+ZR 0
+Z9 22
+C1 Univ Munich, CIS, D-80539 Munich, Germany
+C1 Bulgarian Acad Sci, BG-1040 Sofia, Bulgaria
+SN 0891-2017
+DA 2006-09-01
+UT WOS:000240734900001
+ER
+
+PT J
+AU Mautner, Gerlinde
+TI Mining large corpora for social information:: The case of <i>elderly</i>
+SO LANGUAGE IN SOCIETY
+VL 36
+IS 1
+BP 51
+EP 72
+DI 10.1017/S0047404507070030
+DT Article
+PD FEB 2007
+PY 2007
+AB Using a large, computerized corpus, this study aims to provide
+   lexico-grammatical evidence of stereotypical constructions of age and
+   aging. It focuses on elderly, a word that is pivotal to the domain in
+   question and whose associative meaning is contested. The collocational
+   profile drawn up on the basis of corpus evidence shows that elderly is
+   primarily associated with discourses of care, disability, and
+   vulnerability, emerging less as a marker of chronological age than of
+   perceived social consequences. In addition to making a contribution to
+   discourse-oriented aging research, the article also demonstrates the use
+   of corpus linguistic methods within a sociolinguistic framework.
+   (Ageism, ageist language, corpus linguistics.)*
+ZS 0
+ZR 0
+ZB 0
+ZA 4
+TC 99
+Z8 0
+Z9 103
+C1 Vienna Univ Econ & Business Adm, Inst English Business Commun, A-1090
+   Vienna, Austria
+SN 0047-4045
+EI 1469-8013
+DA 2007-02-01
+UT WOS:000243863700003
+ER
+
+PT J
+AU [Anonymous]
+TI Variation and change in contemporary Indian English: Corpus-based
+   studies of spoken and written language use
+SO ANGLIA-ZEITSCHRIFT FUR ENGLISCHE PHILOLOGIE
+BP 47
+EP 50
+DI 10.1515/east.2007.022
+SU S
+DT Book Review
+PD 2008
+PY 2008
+TC 0
+ZS 0
+ZR 0
+Z8 0
+ZB 0
+ZA 0
+Z9 0
+SN 0340-5222
+EI 1865-8938
+DA 2008-01-01
+UT WOS:000207524900021
+ER
+
+PT J
+AU Duecker, Lisa
+TI Historical Corpus Linguistics
+SO ZEITSCHRIFT FUR GERMANISTISCHE LINGUISTIK
+VL 47
+IS 1
+BP 254
+EP 259
+DI 10.1515/zgl-2019-0009
+DT Editorial Material
+PD APR 2019
+PY 2019
+ZB 0
+ZA 0
+Z8 0
+ZS 0
+ZR 0
+TC 0
+Z9 0
+C1 Otto Friedrich Univ Bamberg, Lehrstuhl Deutsch Sprachwissensch,
+   Hornthalstr 2, D-96045 Bamberg, Germany
+SN 0301-3294
+EI 1613-0626
+DA 2019-04-01
+UT WOS:000464115600009
+ER
+
+PT J
+AU Hunt, Daniel
+TI Sociolinguistics and Corpus Linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 16
+IS 1
+BP 131
+EP 136
+DI 10.1075/ijcl.16.1.06hun
+DT Book Review
+PD 2011
+PY 2011
+TC 0
+ZR 0
+ZB 0
+ZS 0
+Z8 0
+ZA 0
+Z9 0
+C1 Univ Nottingham, Nottingham NG7 2RD, England
+SN 1384-6655
+EI 1569-9811
+DA 2011-01-01
+UT WOS:000289869500005
+ER
+
+PT J
+AU Chen, Xiaoyun
+   Pan, Fan
+TI Introduction to Corpus Linguistics
+SO SOUTHERN AFRICAN LINGUISTICS AND APPLIED LANGUAGE STUDIES
+VL 41
+IS 4
+BP 514
+EP 516
+DI 10.2989/16073614.2022.2147087
+EA APR 2023
+DT Book Review
+PD OCT 2 2023
+PY 2023
+ZS 0
+TC 0
+Z8 0
+ZB 0
+ZR 0
+ZA 0
+Z9 0
+C1 Huazhong Univ Sci & Technol, Sch Foreign Languages, Wuhan, Hubei,
+   Peoples R China
+SN 1607-3614
+EI 1727-9461
+DA 2023-05-22
+UT WOS:000976104300001
+ER
+
+PT J
+AU Yaeger-Dror, Malcah
+TI Sociolinguistics and Corpus Linguistics
+SO AMERICAN SPEECH
+VL 85
+IS 4
+BP 470
+EP 475
+DI 10.1215/00031283-2010-027
+DT Book Review
+PD WIN 2010
+PY 2010
+TC 0
+Z8 0
+ZR 0
+ZB 0
+ZA 0
+ZS 0
+Z9 0
+C1 Univ Arizona, Tucson, AZ 85721 USA
+SN 0003-1283
+DA 2010-12-01
+UT WOS:000287768200006
+ER
+
+PT J
+AU Holes, Clive
+TI Arabic corpus linguistics.
+SO LANGUAGE
+VL 96
+IS 1
+BP 202
+EP 206
+DT Book Review
+PD MAR 2020
+PY 2020
+ZS 0
+TC 0
+ZR 0
+Z8 0
+ZA 0
+ZB 0
+Z9 0
+C1 Univ Oxford, Barn House,36 Beckbury, Shifnal TF11 9DG, Shrops, England
+SN 0097-8507
+EI 1535-0665
+DA 2020-04-07
+UT WOS:000520158400011
+ER
+
+PT J
+AU Biber, Douglas
+TI Sociolinguistics and Corpus Linguistics
+SO JOURNAL OF SOCIOLINGUISTICS
+VL 16
+IS 2
+DI 10.1111/j.1467-9841.2012.00532_7.x
+DT Book Review
+PD APR 2012
+PY 2012
+Z8 0
+ZA 0
+TC 2
+ZB 0
+ZR 0
+ZS 0
+Z9 2
+C1 No Arizona Univ, Flagstaff, AZ 86011 USA
+SN 1360-6441
+DA 2012-05-09
+UT WOS:000302861800015
+ER
+
+PT J
+AU Magnone, Edoardo
+TI A novel graphical representation of sentence complexity: the description
+   and its application
+SO SCIENTOMETRICS
+VL 98
+IS 2
+BP 1301
+EP 1329
+DI 10.1007/s11192-013-1074-9
+DT Article
+PD FEB 2014
+PY 2014
+AB This paper concerns the development and use of a new interdisciplinary
+   graphical approach in the statistical analysis of complexity of sentence
+   structure for scientometric purposes. A scheme in three-dimensional
+   space (barycentric plot) is used for a graphical representation of
+   scientific research text correlations between the number of characters,
+   the number of words, and the number of complex syllable words for
+   sentences of several monolingual corpuses. The barycentric plots do not
+   only drastically increase the visual information content in a given
+   corpus, but at equal conditions of text-based corpus, they also
+   contribute to the comparative analysis of different kinds of subject,
+   section, author-style, journal, field, etc. As illustrated in present
+   study, the proposed graphical approach can have broad implications and
+   practical applications not only in scientometric field, but also in
+   statistical linguistics, stylistic text research, and informetric
+   research. This article explores the interdisciplinary approach research
+   and applications of different areas of knowledge.
+RI Magnone, Edoardo/ABF-5602-2021
+OI Magnone, Edoardo/0000-0002-1333-4339
+ZA 0
+ZB 0
+TC 0
+Z8 0
+ZR 0
+ZS 0
+Z9 0
+C1 Korea Inst Energy Res, Taejon 305343, South Korea
+SN 0138-9130
+EI 1588-2861
+DA 2014-03-05
+UT WOS:000330622600031
+ER
+
+PT J
+AU Moles-Cases, Teresa
+TI COMPILATION AND ANALYSIS OF A PARALLEL CORPUS FOR RESEARCH IN
+   TRANSLATION. PROJECT WITH DEJA VU, <i>TREETAGGER</i> AND <i>IMS OPEN
+   CORPUS WORKBENCH</i>
+SO RLA-REVISTA DE LINGUISTICA TEORICA Y APLICADA
+VL 54
+IS 1
+BP 149
+EP 174
+DI 10.4067/S0718-48832016000100008
+DT Article
+PD JUL 2016
+PY 2016
+AB Although Corpus linguistics has advanced a great deal in recent years
+   and is now being increasingly more frequently included within research
+   projects regarding Linguistics and Translation (for instance: Kubler y
+   Foucou, 2003; Laroche & Langlais, 2010), the most advanced technical
+   procedures focused on the creation and exploitation of corpora are still
+   a pitfall. The main aim of this paper is, then, to make this kind of
+   information more widely available to the research community with little
+   experience in the field. In particular, it presents the experience of
+   creating a parallel corpus that was aligned with Deja Vu, linguistically
+   tagged with TreeTagger, meta-textually tagged with Notepad++ and indexed
+   with IMS Open Corpus Workbench. Furthermore, it includes a brief
+   introduction to the exploration and analysis of corpora with Corpus
+   Query Processor, the main tool of IMS Open Corpus Workbench.
+OI Moles-Cases, Teresa/0000-0002-2829-8369
+ZB 0
+ZR 0
+ZS 2
+ZA 0
+TC 6
+Z8 0
+Z9 6
+C1 Univ Jaume I Castellon, Castellon de La Plana, Castello, Spain
+SN 0718-4883
+DA 2017-01-04
+UT WOS:000389848000008
+ER
+
+PT J
+AU Kohn, James J.
+TI Perspectives on Corpus Linguistics
+SO MODERN LANGUAGE JOURNAL
+VL 96
+IS 4
+BP 644
+EP 645
+DI 10.1111/j.1540-4781.2012.01413.x
+DT Book Review
+PD DEC 2012
+PY 2012
+ZA 0
+ZR 0
+TC 0
+ZB 0
+ZS 0
+Z8 0
+Z9 0
+C1 San Francisco State Univ, San Francisco, CA 94112 USA
+SN 0026-7902
+DA 2013-03-20
+UT WOS:000315303600020
+ER
+
+PT J
+AU Hanks, Patrick
+TI Metaphor and Corpus Linguistics.
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 15
+IS 1
+BP 133
+EP 150
+DI 10.1075/ijcl.15.1.06han
+DT Book Review
+PD 2010
+PY 2010
+TC 5
+Z8 0
+ZB 0
+ZS 0
+ZR 0
+ZA 0
+Z9 5
+C1 Charles Univ Prague, Prague, Czech Republic
+SN 1384-6655
+DA 2010-01-01
+UT WOS:000277555700007
+ER
+
+PT J
+AU Schrader, Bettina
+TI Corpus linguistics. An introduction
+SO ZEITSCHRIFT FUR SPRACHWISSENSCHAFT
+VL 26
+IS 2
+BP 373
+EP 378
+DT Book Review
+PD 2007
+PY 2007
+Z8 0
+ZB 0
+ZR 0
+ZA 0
+TC 0
+ZS 0
+Z9 0
+SN 0721-9067
+EI 1613-3706
+DA 2007-01-01
+UT WOS:000255525200011
+ER
+
+PT J
+AU Cermakova, Anna
+TI Perspectives on Corpus Linguistics.
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 19
+IS 2
+BP 280
+EP 291
+DI 10.1075/ijcl.19.2.06cer
+DT Book Review
+PD 2014
+PY 2014
+Z8 0
+ZS 0
+ZR 0
+TC 0
+ZA 0
+ZB 0
+Z9 0
+C1 Charles Univ Prague, CR-11636 Prague 1, Czech Republic
+SN 1384-6655
+EI 1569-9811
+DA 2014-07-23
+UT WOS:000337740900006
+ER
+
+PT J
+AU Sheng, Dandan
+TI Statistics in corpus linguistics: a practical guide
+SO SOCIAL SEMIOTICS
+VL 33
+IS 4
+BP 909
+EP 912
+DI 10.1080/10350330.2021.1969215
+EA AUG 2021
+DT Book Review
+PD AUG 8 2023
+PY 2023
+AB The book under review aims to help readers who do not have solid
+   statistical knowledge to apply basic and key statistical principles and
+   methods in corpus studies. It serves both as an overview of cutting-edge
+   statistical methods of linguistic analysis using corpora and a
+   step-by-step guide to conducting simple yet conclusive statistical
+   analysis of corpus data, using various new visualization techniques to
+   present research results with graphs and charts. This review introduces
+   the statistical methods, research procedures, visualization tools, and
+   case studies discussed in each chapter of the book and comments on its
+   merits and demerits.
+OI Sheng, Dandan/0000-0002-0529-0305
+TC 1
+Z8 0
+ZA 0
+ZR 0
+ZB 0
+ZS 0
+Z9 1
+C1 Shanghai Univ Engn Sci, Sch Foreign Languages, Shanghai, Peoples R China
+SN 1035-0330
+EI 1470-1219
+DA 2021-08-29
+UT WOS:000688355100001
+ER
+
+PT J
+AU Vasheghani Farahani, Mehrdad
+TI Introduction to Corpus Linguistics
+SO INTERNATIONAL JOURNAL OF APPLIED LINGUISTICS
+VL 31
+IS 2
+SI SI
+BP 317
+EP 319
+DI 10.1111/ijal.12356
+EA MAY 2021
+DT Book Review
+PD JUL 2021
+PY 2021
+ZA 0
+ZS 0
+ZB 0
+TC 0
+Z8 0
+ZR 0
+Z9 0
+C1 Univ Leipzig, Fac Philol, Leipzig, Germany
+SN 0802-6106
+EI 1473-4192
+DA 2021-05-22
+UT WOS:000646619000001
+ER
+
+PT J
+AU Durham, Mercedes
+TI Sociolinguistics and corpus linguistics
+SO LANGUAGE IN SOCIETY
+VL 41
+IS 1
+BP 127
+EP 130
+DI 10.1017/S0047404511000947
+DT Book Review
+PD FEB 2012
+PY 2012
+RI Durham, Mercedes/I-1441-2012
+OI Durham, Mercedes/0000-0002-9819-0687
+ZA 0
+Z8 0
+ZR 0
+ZB 0
+ZS 0
+TC 0
+Z9 0
+C1 Univ Aberdeen, Aberdeen AB24 3UB, Scotland
+SN 0047-4045
+EI 1469-8013
+DA 2012-02-28
+UT WOS:000299760500006
+ER
+
+PT J
+AU Cienki, Alan
+TI Metaphor and corpus linguistics.
+SO METAPHOR AND SYMBOL
+VL 22
+IS 2
+BP 195
+EP 200
+DI 10.1080/10926480701235494
+DT Book Review
+PD 2007
+PY 2007
+RI Cienki, Alan/ABG-6931-2020
+OI Cienki, Alan/0000-0003-2951-9722
+ZB 0
+TC 0
+ZA 0
+ZS 0
+ZR 0
+Z8 0
+Z9 0
+C1 Vrije Univ Amsterdam, Dept Language & Commun, NL-1081 HV Amsterdam,
+   Netherlands
+SN 1092-6488
+EI 1532-7868
+DA 2007-01-01
+UT WOS:000246667300004
+ER
+
+PT J
+AU Li, Shasha
+TI Corpus Linguistics
+SO MUTTERSPRACHE
+VL 130
+IS 3
+BP 286
+EP 288
+DT Book Review
+PD SEP 2020
+PY 2020
+Z8 0
+ZS 0
+ZB 0
+TC 0
+ZR 0
+ZA 0
+Z9 0
+C1 Tongji Univ, Deutschabt Fremdspracheninst, Siping Str 1239, Shanghai
+   200092, Peoples R China
+SN 0027-514X
+DA 2020-10-23
+UT WOS:000576804400009
+ER
+
+PT J
+AU Avila-Ledesma, Nancy E.
+TI Corpus Linguistics for Pragmatics
+SO JOURNAL OF PRAGMATICS
+VL 155
+BP 334
+EP 336
+DI 10.1016/j.pragma.2019.08.002
+DT Book Review
+PD JAN 2020
+PY 2020
+RI Avila-Ledesma, Nancy E./AAU-9681-2020
+ZS 0
+ZR 0
+Z8 0
+ZB 0
+TC 0
+ZA 0
+Z9 0
+C1 Univ Extremadura, Fac Filosofia & Letras, Off 132, Avda Univ S-N,
+   Caceres 10003, Spain
+SN 0378-2166
+EI 1879-1387
+DA 2020-03-09
+UT WOS:000514748300025
+ER
+
+PT J
+AU Chen, Ruina
+   Liu, Haitao
+TI Quantitative Aspects of <i>Journal of Quantitative Linguistics</i>
+SO JOURNAL OF QUANTITATIVE LINGUISTICS
+VL 21
+IS 4
+BP 299
+EP 340
+DI 10.1080/09296174.2014.944327
+DT Article
+PD 2014
+PY 2014
+AB As one of the most authoritative journals in the field of quantitative
+   linguistics, the Journal of Quantitative Linguistics has just passed its
+   20th birthday. In this paper, we collect information from the 20 volumes
+   of this journal published so far (1994-2013) to build a corpus, then
+   extract different categories of information using corpus tools. By
+   quantitative analysis of the corpus data, complemented with information
+   extracted from abstract and citation index databases such as Scopus and
+   Web of Knowledge as important references, we aim to explore the objects,
+   aims and methodologies of quantitative linguistics, its focuses and
+   shifts in different periods, representative achievements in the past 20
+   years, and possible directions for the future. During the process, the
+   role of JQL both in the development of quantitative linguistics and the
+   wider scientific community are located and evaluated with
+   quantitative-based evidence. The findings are that JQL contributes
+   greatly to the development of quantitative linguistics and is in many
+   aspects representative of changes in this field, keeping close pace with
+   trends in the discipline and the ever-evolving characteristics of
+   quantitative linguistics over the years.
+RI Liu, Haitao/HIR-1601-2022; Liu, Haitao/A-6053-2011
+OI Liu, Haitao/0000-0003-1724-4418
+ZA 0
+Z8 0
+TC 7
+ZR 0
+ZB 0
+ZS 0
+Z9 7
+C1 Zhejiang Univ, Dept Linguist, Hangzhou 310058, Zhejiang, Peoples R China
+C1 Guizhou Univ, Dept Foreign Languages, Guiyang 550003, Peoples R China
+C1 Zhejiang Univ, Ningbo Inst Technol, Ningbo, Zhejiang, Peoples R China
+SN 0929-6174
+EI 1744-5035
+DA 2014-09-17
+UT WOS:000341015900001
+ER
+
+PT J
+AU Adolphs, S
+TI Advances in corpus linguistics
+SO JOURNAL OF PRAGMATICS
+VL 38
+IS 2
+BP 292
+EP 296
+DI 10.1016/j.pragma.2005.02.008
+DT Book Review
+PD FEB 2006
+PY 2006
+Z8 0
+ZR 0
+TC 1
+ZS 0
+ZA 0
+ZB 0
+Z9 1
+C1 Univ Nottingham, Sch English Studies, Nottingham NG7 2RD, England
+SN 0378-2166
+EI 1879-1387
+DA 2006-02-01
+UT WOS:000234620500011
+ER
+
+PT J
+AU Curry, Niall
+TI Fundamental Principles of Corpus Linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 28
+IS 2
+BP 278
+EP 283
+DI 10.1075/ijcl.00052.cur
+DT Book Review
+PD MAY 15 2023
+PY 2023
+OI Curry, Niall/0000-0002-4471-6794
+TC 0
+ZS 0
+ZA 0
+ZB 0
+Z8 0
+ZR 0
+Z9 0
+C1 Coventry Univ, Coventry, W Midlands, England
+SN 1384-6655
+EI 1569-9811
+DA 2023-06-11
+UT WOS:000989410100007
+ER
+
+PT J
+AU Polzin-Haumann, Claudia
+TI Lexical semantics and corpus linguistics
+SO ROMANISCHE FORSCHUNGEN
+VL 121
+IS 2
+BP 247
+EP 249
+DT Book Review
+PD 2009
+PY 2009
+ZR 0
+ZB 0
+ZA 0
+TC 0
+ZS 0
+Z8 0
+Z9 0
+SN 0035-8126
+DA 2009-01-01
+UT WOS:000267232000012
+ER
+
+PT J
+AU Scott, Mike
+TI Corpus linguistics: Refinements and reassessments
+SO FUNCTIONS OF LANGUAGE
+VL 18
+IS 1
+BP 139
+EP 148
+DI 10.1075/fol.18.1.14sco
+DT Book Review
+PD 2011
+PY 2011
+Z8 0
+ZB 0
+ZR 0
+ZS 0
+ZA 0
+TC 0
+Z9 0
+C1 Aston Univ, Birmingham B4 7ET, W Midlands, England
+SN 0929-998X
+EI 1569-9765
+DA 2011-01-01
+UT WOS:000292656000009
+ER
+
+PT J
+AU Shenk, Elaine
+TI Sociolinguistics and Corpus Linguistics
+SO MODERN LANGUAGE JOURNAL
+VL 96
+IS 1
+BP 132
+EP 133
+DI 10.1111/j.1540-4781.2012.1307.x
+DT Book Review
+PD SPR 2012
+PY 2012
+TC 0
+ZS 0
+ZA 0
+ZB 0
+ZR 0
+Z8 0
+Z9 0
+C1 St Josephs Univ, Philadelphia, PA 19131 USA
+SN 0026-7902
+DA 2012-07-18
+UT WOS:000304832700009
+ER
+
+PT J
+AU Jowitt, David
+TI Corpus linguistics and African Englishes
+SO ENGLISH LANGUAGE & LINGUISTICS
+VL 25
+IS 2
+BP 435
+EP 442
+DI 10.1017/S1360674320000179
+DT Book Review
+PD JUN 2021
+PY 2021
+ZB 0
+ZA 0
+Z8 0
+ZR 0
+ZS 0
+TC 0
+Z9 0
+C1 Univ Jos, Dept English, PMB 2084, Jos 930001, Plateau State, Nigeria
+SN 1360-6743
+EI 1469-4379
+DA 2021-06-04
+UT WOS:000650323500012
+ER
+
+PT J
+AU Guan, Wei
+TI Corpus linguistics in Chinese contexts
+SO SYSTEM
+VL 61
+BP 118
+EP 120
+DI 10.1016/j.system.2016.06.013
+DT Book Review
+PD OCT 2016
+PY 2016
+TC 0
+ZB 0
+ZR 0
+ZA 0
+ZS 0
+Z8 0
+Z9 0
+C1 Zhejiang Univ Finance & Econ, Sch Foreign Languages, Hangzhou, Zhejiang,
+   Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2016-10-12
+UT WOS:000383308300016
+ER
+
+PT J
+AU Eufe, Rembert
+TI Lexical Semantics and Corpus Linguistics
+SO REVUE DE LINGUISTIQUE ROMANE
+VL 76
+IS 301
+BP 216
+EP 220
+DT Book Review
+PD JAN-JUN 2012
+PY 2012
+ZB 0
+ZR 0
+Z8 0
+ZS 0
+TC 0
+ZA 0
+Z9 0
+SN 0035-1458
+DA 2012-09-19
+UT WOS:000306981000007
+ER
+
+PT J
+AU Bestgen, Yves
+TI Inadequacy of the chi-squared test to examine vocabulary differences
+   between corpora
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 29
+IS 2
+BP 164
+EP 170
+DI 10.1093/llc/fqt020
+DT Article
+PD JUN 2014
+PY 2014
+AB Pearson's chi-squared test is probably the most popular statistical test
+   used in corpus linguistics, particularly for studying linguistic
+   variations between corpora. Oakes and Farrow (2007) proposed various
+   adaptations of this test to allow for the simultaneous comparison of
+   more than two corpora while also yielding an almost correct Type I error
+   rate (i.e. claiming that a word is most frequently found in a variety of
+   English, when in actuality this is not the case). By means of resampling
+   procedures, the present study shows that when used in this context, the
+   chi-squared test produces far too many significant results, even in its
+   modified version. Several potential approaches to circumventing this
+   problem are discussed in the conclusion.
+ZR 0
+Z8 0
+ZA 0
+ZS 0
+TC 12
+ZB 0
+Z9 12
+C1 Catholic Univ Louvain, B-1348 Louvain, Belgium
+SN 0268-1145
+EI 1477-4615
+DA 2014-07-02
+UT WOS:000337081700002
+ER
+
+PT J
+AU Hilpert, Martin
+TI Cluster Analysis for Corpus Linguistics
+SO International Journal of Corpus Linguistics
+VL 21
+IS 4
+BP 581
+EP 585
+DI 10.1075/ijcl.21.4.07hil
+DT Book Review
+PD 2016
+PY 2016
+TC 0
+Z8 0
+ZA 0
+ZB 0
+ZS 0
+ZR 0
+Z9 0
+C1 Univ Neuchatel, Neuchatel, Switzerland
+SN 1384-6655
+EI 1569-9811
+DA 2017-02-22
+UT WOS:000392851900007
+ER
+
+PT J
+AU Polzenhagen, Frank
+TI Corpus Linguistics and African Englishes
+SO JOURNAL OF ENGLISH LINGUISTICS
+VL 49
+IS 4
+BP 483
+EP 488
+AR 0075424221992101
+DI 10.1177/0075424221992101
+EA FEB 2021
+DT Book Review
+PD DEC 2021
+PY 2021
+Z8 0
+TC 0
+ZA 0
+ZB 0
+ZS 0
+ZR 0
+Z9 0
+C1 Univ Koblenz Landau, Mainz, Germany
+SN 0075-4242
+EI 1552-5457
+DA 2021-03-02
+UT WOS:000618509200001
+ER
+
+PT J
+AU Buregeya, Alfred
+TI Corpus Linguistics and African Englishes
+SO ENGLISH TODAY
+VL 36
+IS 4
+BP 53
+EP 55
+AR PII S026607841900049X
+DI 10.1017/S026607841900049X
+DT Book Review
+PD DEC 2020
+PY 2020
+ZS 0
+ZA 0
+ZB 0
+ZR 0
+Z8 0
+TC 0
+Z9 0
+C1 Univ Nairobi, Dept Linguist & Languages, Nairobi, Kenya
+SN 0266-0784
+EI 1474-0567
+DA 2020-12-24
+UT WOS:000597252000014
+ER
+
+PT J
+AU Rastier, Francois
+TI Measure and excess Quantity and quality in corpus linguistics
+SO FRANCAIS MODERNE
+VL 88
+IS 1
+BP 11
+EP 25
+DT Article
+PD 2020
+PY 2020
+AB When it goes beyond the search for attestations, corpus linguistics
+   seeks to characterize texts and to describe their semantic and
+   expressive forms. It must therefore finely articulate the quantitative
+   and quantitative factors, using the various instruments of textometry.
+   This supposes a critical perspective, which distinguishes it from the
+   emergentist program of "data science", but which brings it closer to the
+   other sciences of culture. They share the same comparatist program.
+ZB 0
+TC 0
+ZA 0
+Z8 0
+ZR 0
+ZS 0
+Z9 0
+C1 CNRS, Rech, Paris, France
+SN 0015-9409
+DA 2021-04-16
+UT WOS:000629648000002
+ER
+
+PT J
+AU Lu, Qian
+TI Cluster Analysis for Corpus Linguistics
+SO JOURNAL OF QUANTITATIVE LINGUISTICS
+VL 24
+IS 2-3
+BP 245
+EP 248
+DI 10.1080/09296174.2017.1290423
+DT Book Review
+PD 2017
+PY 2017
+OI Lu, Qian/0000-0003-2470-3598
+ZS 0
+TC 0
+ZA 0
+ZB 0
+Z8 0
+ZR 0
+Z9 0
+C1 Guangxi Normal Univ, Coll Language & Literature, 15 Yucai Rd, CN-541004
+   Guilin, Peoples R China
+SN 0929-6174
+EI 1744-5035
+DA 2017-05-10
+UT WOS:000399500000009
+ER
+
+PT J
+AU Luyckx, Kim
+TI Corpus Linguistics and the Web
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 23
+IS 2
+BP 246
+EP 248
+DI 10.1093/llc/fqn001
+DT Book Review
+PD JUN 2008
+PY 2008
+TC 0
+Z8 0
+ZS 0
+ZB 0
+ZR 0
+Z9 0
+C1 Univ Antwerp, Antwerp, Belgium
+SN 0268-1145
+DA 2008-06-01
+UT WOS:000207735400011
+ER
+
+PT J
+AU Rasekh-Mahand, Mohammad
+TI Understanding corpus linguistics
+SO ZEITSCHRIFT FUR SPRACHWISSENSCHAFT
+DI 10.1515/zfs-2023-2001
+EA JUN 2023
+DT Book Review; Early Access
+PY 2023
+OI Rasekh-Mahand, Mohammad/0000-0002-3109-7787
+ZR 0
+TC 0
+ZS 0
+ZB 0
+Z8 0
+ZA 0
+Z9 0
+C1 Bu Ali Sina Univ, Hamadan, Iran
+SN 0721-9067
+EI 1613-3706
+DA 2023-07-26
+UT WOS:001016452600001
+ER
+
+PT J
+AU Artstein, Ron
+   Poesio, Massimo
+TI Inter-Coder Agreement for Computational Linguistics
+SO COMPUTATIONAL LINGUISTICS
+VL 34
+IS 4
+BP 555
+EP 596
+DI 10.1162/coli.07-034-R2
+DT Review
+PD DEC 2008
+PY 2008
+AB This article is a survey of methods for measuring agreement among corpus
+   annotators. It exposes the mathematics and underlying assumptions of
+   agreement coefficients, covering Krippendorff's alpha as well as Scott's
+   pi and Cohen's kappa; discusses the use of coefficients in several
+   annotation tasks; and argues that weighted, alpha-like coefficients,
+   traditionally less used than kappa-like measures in computational
+   linguistics, may be more appropriate for many corpus annotation
+   tasks-but that their use makes the interpretation of the value of the
+   coefficient even harder.
+OI Poesio, Massimo/0000-0001-8469-2072
+Z8 13
+TC 648
+ZS 0
+ZA 0
+ZB 53
+ZR 4
+Z9 665
+C1 Univ Essex, Dept Comp & Elect Syst, Colchester CO4 3SQ, Essex, England
+C1 Univ Trento, CIMeC, I-38068 Rovereto, TN, Italy
+SN 0891-2017
+EI 1530-9312
+DA 2008-12-01
+UT WOS:000261404600004
+ER
+
+PT J
+AU Yanez-Bouza, Nuria
+   Gonzalez-Diaz, Victorina
+TI 'he liked to read, write, and whatch televishon'-The APU Writing and
+   Reading Corpus (1979-1988)
+SO DIGITAL SCHOLARSHIP IN THE HUMANITIES
+VL 34
+IS 2
+BP 449
+EP 469
+DI 10.1093/llc/fqy031
+DT Article
+PD JUN 2019
+PY 2019
+AB Recent research has demonstrated the potential of corpus linguistics as
+   a solid aid in children's understanding of how language works. However,
+   the availability of data from the UK is still somewhat limited. Most
+   corpora are either based on a small number of schools, synchronic in
+   nature, or focused on the post-National Curriculum era (cf. Lancaster
+   Corpus of Children's Project Writing, the Oxford Children's Corpus, the
+   Growth in Grammar Corpus); on the other hand, historical corpora are,
+   unfortunately, not publicly available in electronic format (cf. the
+   Child Language Survey or the Aspects of Writing in 16+ English
+   Examinations, Cambridge Assessment). This article introduces the APU
+   Writing and Reading Corpus 1979-1988, a new large electronic data set of
+   historical materials which are linguistically annotated. The aim is
+   two-fold. First, to describe the contents of the corpus and its
+   compilation procedure. Second, to illustrate its potential as a research
+   and pedagogical tool by presenting a number of research case studies and
+   teaching materials that are currently being developed based on the
+   corpus data. All in all, the Assessment Performance Unit (APU) Corpus
+   contributes to both Corpus Linguistics and Educational Linguistics by
+   presenting itself as a new resource tool with replicable methodology and
+   objective empirical evidence, which will be of interest to academics and
+   school teachers as well as to school material developers and
+   policymakers.
+ZA 0
+ZR 0
+TC 1
+Z8 0
+ZB 0
+ZS 0
+Z9 1
+C1 Univ Vigo, Fac Filoloxia & Traduc, Filoloxia Inglesa Francesa & Alema,
+   Vigo, Spain
+C1 Univ Liverpool, Dept English, Sch Arts, Liverpool, Merseyside, England
+SN 2055-7671
+EI 2055-768X
+DA 2019-08-27
+UT WOS:000481421400014
+ER
+
+PT J
+AU De Pauw, Guy
+TI Corpus Linguistics 25 Years on
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 23
+IS 1
+BP 121
+EP 123
+DI 10.1093/llc/fqm033
+DT Book Review
+PD APR 2008
+PY 2008
+ZS 0
+Z8 0
+ZB 0
+TC 0
+ZR 0
+ZA 0
+Z9 0
+C1 Univ Antwerp, Dept Linguist, CNTS Language Technol Grp, Antwerp, Belgium
+SN 0268-1145
+DA 2008-04-01
+UT WOS:000207735300014
+ER
+
+PT J
+AU [Anonymous]
+TI The origins and history of [h]-insertion and [h]-loss in English: A
+   corpus-based investigation
+SO ANGLIA-ZEITSCHRIFT FUR ENGLISCHE PHILOLOGIE
+BP 6
+EP 9
+DI 10.1515/east.2007.005
+SU S
+DT Book Review
+PD 2008
+PY 2008
+Z8 0
+ZS 0
+ZA 0
+TC 0
+ZR 0
+ZB 0
+Z9 0
+SN 0340-5222
+DA 2008-01-01
+UT WOS:000207524900004
+ER
+
+PT J
+AU Lange, Claudia
+TI Corpus Linguistics and African Englishes
+SO ENGLISH WORLD-WIDE
+VL 42
+IS 1
+BP 111
+EP 115
+DI 10.1075/eww.00062.lan
+DT Book Review
+PD 2021
+PY 2021
+ZB 0
+Z8 0
+ZR 0
+TC 1
+ZS 0
+ZA 0
+Z9 1
+C1 Tech Univ Dresden, Fac Linguist Literature & Cultural Studies, Inst
+   English & Amer Studies, Wiener Str 48, D-01069 Dresden, Germany
+SN 0172-8865
+EI 1569-9730
+DA 2021-04-20
+UT WOS:000635051100005
+ER
+
+PT J
+AU Meier, Nicole
+TI Corpus Linguistics 25 Years On
+SO ANGLIA-ZEITSCHRIFT FUR ENGLISCHE PHILOLOGIE
+VL 127
+IS 1
+BP 115
+EP 117
+DI 10.1515/angl.2009.008
+DT Book Review
+PD 2009
+PY 2009
+ZS 0
+ZA 0
+TC 0
+ZR 0
+ZB 0
+Z8 0
+Z9 0
+SN 0340-5222
+EI 1865-8938
+DA 2009-01-01
+UT WOS:000268482900007
+ER
+
+PT J
+AU Deng Xiangjun
+   Yip, Virginia
+TI A MULTIMEDIA CORPUS OF CHILD MANDARIN: THE TONG CORPUS
+SO JOURNAL OF CHINESE LINGUISTICS
+VL 46
+IS 1
+BP 69
+EP 92
+DI 10.1353/jcl.2017.0025
+DT Article
+PD JAN 2018
+PY 2018
+AB This article features a new multimedia corpus(i) with 22 hours of
+   recordings of a Mandarin-speaking child from the age of 1;7 to 3;4. We
+   review the state of the art in the use of corpora for first language
+   acquisition of Mandarin, and highlight the importance of corpus studies
+   in evaluating children's language developmental patterns vis-a-vis adult
+   input. The transcripts in our new corpus are annotated with a
+   morphological tier indicating parts of speech, and linked to audio or
+   video files. This corpus goes beyond existing published corpora of child
+   Mandarin in having more data for a single child, as well as media
+   linking. It contributes to a number of fields including language
+   acquisition, Chinese linguistics, corpus linguistics, developmental
+   psycholinguistics, education, and speech and language therapy.
+RI deng, xiangjun/HPH-5134-2023
+ZR 0
+TC 23
+ZS 0
+ZA 0
+Z8 0
+ZB 1
+Z9 23
+C1 Chinese Univ Hong Kong, Shatin, Hong Kong, Peoples R China
+C1 Shenzhen Univ, Res Ctr Language & Cognit, Sch Foreign Languages, 3688
+   Nanhai Ave, Shenzhen 518060, Guangdong, Peoples R China
+C1 Chinese Univ Hong Kong, Dept Linguist & Modern Languages, G-F,Leung Kau
+   Kui Bldg, Shatin, Hong Kong, Peoples R China
+SN 0091-3723
+DA 2018-12-28
+UT WOS:000424197400003
+ER
+
+PT J
+AU Hannah, E P
+   Engler, L
+TI Juncture phenomena and the segmentation of a linguistic corpus.
+SO Language and speech
+VL 10
+IS 4
+BP 228
+EP 33
+DI 10.1177/002383096701000402
+DT Journal Article
+PD 1967 Oct-Dec
+PY 1967
+ZS 0
+ZR 0
+ZB 0
+Z8 0
+TC 4
+ZA 0
+Z9 4
+SN 0023-8309
+DA 1967-10-01
+UT MEDLINE:5583756
+PM 5583756
+ER
+
+PT J
+AU Steiner, Petra C.
+TI The Changing Face of Corpus Linguistics
+SO JOURNAL OF QUANTITATIVE LINGUISTICS
+VL 16
+IS 2
+BP 185
+EP 216
+AR PII 910676301
+DI 10.1080/09296170902734248
+DT Book Review
+PD 2009
+PY 2009
+RI Steiner, Petra/AAE-7578-2020
+OI Steiner, Petra/0000-0001-8997-2620
+ZA 0
+ZB 0
+Z8 0
+ZS 0
+ZR 0
+TC 0
+Z9 0
+C1 Univ Erfurt, Dept English Linguist, Erfurt, Germany
+SN 0929-6174
+EI 1744-5035
+DA 2009-01-01
+UT WOS:000266277800004
+ER
+
+PT J
+AU Lei, Lei
+TI Exploring Corpus Linguistics: Language in Action
+SO ELT JOURNAL
+VL 67
+IS 4
+BP 503
+EP 505
+DI 10.1093/elt/cct044
+DT Book Review
+PD OCT 2013
+PY 2013
+RI Lei, Lei/K-9018-2019; lei, lei/HLG-2913-2023
+OI Lei, Lei/0000-0002-3366-1855; 
+ZA 0
+Z8 0
+ZR 0
+ZS 0
+ZB 0
+TC 1
+Z9 1
+C1 Huazhong Univ Sci & Technol, Sch Foreign Languages, Wuhan, Peoples R
+   China
+C1 Huazhong Univ Sci & Technol, MA Appl Linguist Programme, Wuhan, Peoples
+   R China
+SN 0951-0893
+EI 1477-4526
+DA 2014-01-01
+UT WOS:000328210700018
+ER
+
+PT J
+AU Kortmann, Bernd
+TI Reflecting on the quantitative turn in linguistics
+SO LINGUISTICS
+VL 59
+IS 5
+SI SI
+BP 1207
+EP 1226
+DI 10.1515/ling-2019-0046
+DT Article
+PD 2021
+PY 2021
+AB Linguistics, English linguistics in particular, has witnessed a
+   remarkable quantitative turn since the 1990s and the early 2000s. It was
+   a turn both in scale and in quality, a turn concerning the degree
+   (including the degree of so-phistication) to which quantitative
+   empirical studies, statistical techniques, and statistical modelling
+   have come to be used and determine linguistic research. Which role have
+   corpus linguistics and probabilistic linguistics, including usage-based
+   approaches, played in this development? Has this turn been to the
+   detriment of qualitative methods, or even of linguistic theorizing in
+   general? Has linguistics reached the point of a "quantitative crisis",
+   or is it still a discipline characterized by a healthy equilibrium, if
+   not mutual reinforcement, of quantitative and qualitative approaches?
+   What are, or should be, major repercussions of the strong quantitative
+   turn for the publication system of (English) linguistics? These are the
+   major overarching questions underlying the reflections offered in this
+   opinion paper.
+OI Kortmann, Bernd/0000-0001-5262-9482
+ZA 0
+ZB 0
+ZR 0
+TC 6
+Z8 0
+ZS 0
+Z9 6
+C1 Univ Freiburg, Freiburg, Germany
+SN 0024-3949
+EI 1613-396X
+DA 2021-09-28
+UT WOS:000697371400002
+ER
+
+PT J
+AU Geeraerts, Dirk
+TI Quantitative historical linguistics: A corpus framework
+SO LANGUAGE
+VL 95
+IS 1
+BP 190
+EP 191
+DI 10.1353/lan.2019.0022
+DT Book Review
+PD MAR 2019
+PY 2019
+OI McGillivray, Barbara/0000-0003-3426-8200
+ZR 0
+ZA 0
+TC 0
+ZB 0
+ZS 0
+Z8 0
+Z9 0
+C1 Univ Leuven, Dept Linguist, Blijde Inkomststr 21-3308, B-3000 Leuven,
+   Belgium
+SN 0097-8507
+EI 1535-0665
+DA 2019-04-10
+UT WOS:000462682500019
+ER
+
+PT J
+AU Lyu, Siqi
+   Wang, Yi-Na
+TI Advances in corpus-based contrastive linguistics
+SO JOURNAL OF LINGUISTICS
+VL 51
+IS 3
+BP 677
+EP 682
+DI 10.1017/S0022226715000250
+DT Book Review
+PD NOV 2015
+PY 2015
+ZS 0
+ZR 0
+Z8 0
+ZB 0
+TC 0
+ZA 0
+Z9 0
+C1 Beihang Univ, Sch Foreign Languages, Beijing 100191, Peoples R China
+SN 0022-2267
+EI 1469-7742
+DA 2015-11-04
+UT WOS:000362910700005
+ER
+
+PT J
+AU Hunston, Susan
+TI Corpus Linguistics: Method, Theory and Practice
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 18
+IS 2
+BP 290
+EP 294
+DI 10.1075/ijcl.18.2.06hun
+DT Book Review
+PD 2013
+PY 2013
+ZS 0
+ZA 0
+TC 3
+Z8 0
+ZR 0
+ZB 1
+Z9 3
+C1 Univ Birmingham, Birmingham B15 2TT, W Midlands, England
+SN 1384-6655
+EI 1569-9811
+DA 2013-11-14
+UT WOS:000325541000006
+ER
+
+PT J
+AU Kraif, Olivier
+   Tutin, Agnes
+TI Collocations and corpus linguistics: Do linguists' intuition and
+   quantitative criteria converge?
+SO FRANCAIS MODERNE
+VL 88
+IS 1
+BP 84
+EP 101
+DT Article
+PD 2020
+PY 2020
+AB In this article, we assume that collocations cannot be purely analysed
+   with the help of a qualitative analysis, in the usual sense of
+   qualitative methods in linguistics. In order to illustrate this
+   intermediate position of collocations half-way between qualitative and
+   quantitative criteria, we implement an empirical study with a task of
+   manual identification of collocations in a corpus. This allows to
+   compare the intersubjective judgment of some experts with the
+   quantitative data resulting from quantitative data (frequencies,
+   association measure, dispersion) in a reference corpus. The results of
+   the study largely confirm our hypothesis.
+TC 0
+ZA 0
+ZR 0
+Z8 0
+ZB 0
+ZS 0
+Z9 0
+C1 LIDILEM Linguist & Didact Langues Etrangeres & Ma, Grenoble, France
+C3 LIDILEM Linguist & Didact Langues Etrangeres & Ma
+SN 0015-9409
+DA 2021-04-16
+UT WOS:000629648000006
+ER
+
+PT J
+AU Szurawitzki, Michael
+TI Corpus Linguistics. An International Handbook
+SO STUDIA NEOPHILOLOGICA
+VL 81
+IS 2
+BP 246
+EP 247
+DI 10.1080/00393270903392342
+DT Book Review
+PD 2009
+PY 2009
+RI Szurawitzki, Michael/AAV-4317-2020
+OI Szurawitzki, Michael/0000-0002-7356-1410
+ZS 0
+TC 0
+ZA 0
+ZR 0
+Z8 0
+ZB 0
+Z9 0
+C1 Tech Univ Darmstadt, Inst Sprach & Literaturwissensch, D-64289
+   Darmstadt, Germany
+SN 0039-3274
+DA 2009-01-01
+UT WOS:000273881800013
+ER
+
+PT J
+AU Charles, Maggie
+TI The Routledge Handbook of Corpus Linguistics
+SO SYSTEM
+VL 39
+IS 1
+BP 113
+EP 115
+DI 10.1016/j.system.2011.01.004
+DT Book Review
+PD MAR 2011
+PY 2011
+Z8 0
+ZB 0
+ZR 0
+ZS 0
+TC 0
+ZA 0
+Z9 0
+C1 Univ Oxford, Language Ctr, Oxford OX2 6HT, England
+SN 0346-251X
+EI 1879-3282
+DA 2011-03-01
+UT WOS:000289606600010
+ER
+
+PT J
+AU Jin Bei
+   Zhang, Liulin
+TI Research on the Trends and Hot Topics of American Applied Linguistics:
+   Analysis of the Changes of Strands and High-Frequency Words in AAAL
+   Annual Conferences from 1999 to 2019
+SO CIRCULO DE LINGUISTICA APLICADA A LA COMUNICACION
+VL 87
+BP 143
+EP 151
+DI 10.5209/clac.76716
+DT Article
+PD SEP 2021
+PY 2021
+AB This paper aims to explore the trends and hot topics of American applied
+   linguistics by the content analysis of AAAL annual conferences'
+   handbooks. Making a diachronic research on topical strands of AAAL
+   Conference from 1999 to 2019, the paper studies the dynamics and the
+   trends of American applied linguistics by analyzing the changes of the
+   strands in the conferences under study in 20 years. Based on self-built
+   corpora of titles and abstracts of the presented papers in 2019 AAAL
+   Annual Conference, high-frequency vocabulary and their collocations are
+   detected by TagCrowd and AntConc in order to find the current hot topics
+   of applied linguistics research. The conclusion is that the development
+   of applied linguistics has speeded up in the past four years.
+   Educational linguistics, corpus linguistics, research methodology,
+   teacher education, lexical research, phonetics/phonology and oral
+   communication are the new trends in this field. The hot words of applied
+   linguistics in 2019 include academic writing, teacher education, Chinese
+   and translanguaging. Finally, the study found that retrospective review
+   study of international conferences could be a new research method in the
+   field of review study, providing scholars with a comprehensive
+   understanding of the discipline dynamics over a period of time.
+ZA 0
+ZS 0
+ZR 0
+ZB 0
+Z8 0
+TC 0
+Z9 0
+C1 Huazhong Agr Univ, Wuhan, Peoples R China
+C1 Soochow Univ, Suzhou, Peoples R China
+SN 1576-4737
+DA 2021-10-24
+UT WOS:000702913800010
+ER
+
+PT J
+AU Matsumoto, Noriko
+TI Developing one corpus-based grammar textbook about irregular multi-verb
+   sequences in English
+SO INTERNATIONAL JOURNAL OF APPLIED LINGUISTICS
+VL 31
+IS 2
+SI SI
+BP 264
+EP 282
+DI 10.1111/ijal.12322
+EA NOV 2020
+DT Article
+PD JUL 2021
+PY 2021
+AB This article addresses the development of a corpus-based grammar
+   textbook on four types of irregular multi-verb sequences in English-
+   V-V, V-and-V, V-to-V, and V-Ving. Since many current grammar textbooks
+   have seldom treated these four types of irregular multi-verb sequences,
+   this article empirically demonstrates the need to develop corpus-based
+   grammar textbooks. Our framework to develop the corpus-based grammar
+   textbook adopted in this article relies on two things: a combination of
+   corpora and descriptions of English grammar proposed by linguists
+   working in the field of theoretical linguistics. The corpus-based
+   grammar textbook in this article is a pilot scheme that can be extended
+   to other grammatical areas. This article thus claims that the
+   development of corpus-based grammar textbooks clearly makes a positive
+   contribution to grammatical instruction.
+OI Matsumoto, Noriko/0000-0002-2718-0588
+ZB 0
+ZR 0
+ZA 0
+Z8 0
+TC 1
+ZS 0
+Z9 1
+C1 Kobe Univ, Grad Sch Humanities, Kobe, Hyogo 6578501, Japan
+SN 0802-6106
+EI 1473-4192
+DA 2020-11-24
+UT WOS:000588427300001
+ER
+
+PT J
+AU Lopez Rodriguez, Clara Ines
+TI Understanding scientific communication through the extraction of the
+   conceptual and rhetorical information codified by verbs
+SO TERMINOLOGY
+VL 13
+IS 1
+BP 61
+EP 84
+DI 10.1075/term.13.1.04lop
+DT Article
+PD 2007
+PY 2007
+AB Both translation and terminology can benefit from English for specific
+   purposes and corpus linguistics in the study of the process of
+   extracting information from texts, in particular, medical abstracts
+   complying with the IMRAD (Introduction, Methods, Results, and
+   Discussions) format. This study focuses on verbs as instruments of
+   conceptual, textual and rhetorical activation in scientific discourse
+   and investigates the relation between the distribution of verbs, the
+   different rhetorical moves of abstracts and the activation of conceptual
+   areas. To that end, we propose a semantic classification of the most
+   frequent verbs in each rhetorical section and in abstracts as a whole,
+   and apply a method for the extraction of conceptual, textual and
+   rhetorical information based on the analysis of a POS-tagged corpus
+   within the framework of corpus linguistics and the Functional-Lexematic
+   Model.
+RI López Rodríguez, Clara Inés/B-7852-2008; Rodríguez, Clara Inés López/AAC-4898-2021
+OI López Rodríguez, Clara Inés/0000-0003-3670-9663; Rodríguez, Clara Inés
+   López/0000-0003-3670-9663
+ZA 0
+Z8 0
+ZS 1
+ZR 0
+ZB 0
+TC 7
+Z9 8
+C1 Univ Granada, Dept Traducc & Interpretac, E-18071 Granada, Spain
+SN 0929-9971
+EI 1569-9994
+DA 2007-01-01
+UT WOS:000253336500003
+ER
+
+PT J
+AU Qi, Huilei
+   Liu, Yingying
+TI Corpora in Applied Linguistics, 2nd ed
+SO SYSTEM
+VL 110
+AR 102905
+DI 10.1016/j.system.2022.102905
+EA SEP 2022
+DT Book Review
+PD NOV 2022
+PY 2022
+Z8 0
+ZB 0
+ZA 0
+TC 0
+ZS 0
+ZR 0
+Z9 0
+C1 Ocean Univ China, Coll Foreign Languages, Dept English, 238 Songling Rd,
+   Qingdao 266100, Shandong, Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2022-10-12
+UT WOS:000862317400011
+ER
+
+PT J
+AU Fernandez, Julieta
+TI Introduction to corpus linguistics in Spanish
+SO HISPANIA-A JOURNAL DEVOTED TO THE TEACHING OF SPANISH AND PORTUGUESE
+VL 105
+IS 3
+BP 477
+EP 479
+DI 10.1353/hpn.2022.0083
+DT Book Review
+PD SEP 2022
+PY 2022
+ZR 0
+ZA 0
+TC 0
+ZS 0
+ZB 0
+Z8 0
+Z9 0
+C1 Univ Arizona, Tucson, AZ 85721 USA
+SN 0018-2133
+EI 2153-6414
+DA 2022-10-29
+UT WOS:000865451000041
+ER
+
+PT J
+AU Xu, Lirong
+TI Quantitative Historical Linguistics: A Corpus Framework
+SO DIGITAL SCHOLARSHIP IN THE HUMANITIES
+VL 33
+IS 4
+BP 920
+EP 922
+DI 10.1093/llc/fqy046
+DT Book Review
+PD DEC 2018
+PY 2018
+Z8 0
+ZB 0
+TC 0
+ZR 0
+ZS 0
+ZA 0
+Z9 0
+C1 Zhejiang Univ, Sch Int Studies, Hangzhou, Zhejiang, Peoples R China
+SN 2055-7671
+EI 2055-768X
+DA 2018-12-28
+UT WOS:000452749800013
+ER
+
+PT J
+AU Dash, Niladri Sekhar
+TI Lexicology and corpus linguistics: An introduction
+SO LANGUAGE
+VL 83
+IS 2
+BP 460
+EP 460
+DI 10.1353/lan.2007.0064
+DT Book Review
+PD JUN 2007
+PY 2007
+RI Dash, Niladri Sekhar/AAI-3068-2020
+OI Dash, Niladri Sekhar/0000-0001-6465-671X
+TC 0
+Z8 0
+ZB 0
+ZA 0
+ZS 0
+ZR 0
+Z9 0
+C1 Indian Stat Inst, Kolkata 700035, W Bengal, India
+SN 0097-8507
+EI 1535-0665
+DA 2007-06-01
+UT WOS:000247708900031
+ER
+
+PT J
+AU Thompson, Paul
+TI Corpus Linguistics: Method, Theory and Practice
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 29
+IS 1
+BP 142
+EP 145
+DI 10.1093/llc/fqt010
+DT Book Review
+PD APR 2014
+PY 2014
+RI Thompson, Paul/C-3200-2014
+OI Thompson, Paul/0000-0002-9595-3757
+ZB 0
+ZA 0
+TC 0
+ZR 0
+ZS 0
+Z8 0
+Z9 0
+C1 Univ Birmingham, Ctr Corpus Res, Birmingham B15 2TT, W Midlands, England
+SN 0268-1145
+EI 1477-4615
+DA 2014-05-15
+UT WOS:000334162900014
+ER
+
+PT J
+AU Vongpumivitch, Viphavee
+   Huang, Ju-yu
+   Chang, Yu-Chia
+TI Frequency analysis of the words in the Academic Word List (AWL) and
+   non-AWL content words in applied linguistics research papers
+SO ENGLISH FOR SPECIFIC PURPOSES
+VL 28
+IS 1
+BP 33
+EP 41
+DI 10.1016/j.esp.2008.08.003
+DT Article
+PD JAN 2009
+PY 2009
+AB This study is a corpus-based lexical study that aims to explore the use
+   of words in Coxhead's (2000) Academic Word List (AWL) in journal
+   articles in the field of applied linguistics. A 1.5 million-word corpus
+   called the Applied Linguistics Research Articles Corpus (ALC) was
+   created for this study. The corpus consists of 200 research articles
+   that have been published in five applied linguistics journals, namely,
+   Applied Linguistics, Language Learning, The Modern Language Journal,
+   Second Language Research, and TESOL Quarter v. Results show that AWL
+   words account for 11.17% of the entire ALC. Using both frequency and
+   range as the criteria for word forms selection, this study identifies
+   475 AWL and 128 non-AWL word forms that are used more than 50 times in
+   the ALC and at least five times across the five journals. Most of the
+   AWL word forms belong to the word families included in Coxhead's first
+   and second sublists. The non-AWL word forms are specialized terms in
+   applied linguistics, terms related to language education and research
+   methodology, and adjectives/nouns indicating countries/languages.
+   Pedagogical implications are made for both teachers and learners of
+   academic English as a foreign language. (C) 2008 The American
+   University. Published by Elsevier Ltd. All rights reserved.
+ZR 0
+ZB 2
+Z8 1
+TC 59
+ZS 1
+ZA 0
+Z9 60
+C1 Natl Tsing Hua Univ, Dept Foreign Languages & Literature, Hsinchu,
+   Taiwan
+C1 Natl Tsing Hua Univ, Inst Informat Syst & Applicat, Natl Language Proc
+   Lab, Hsinchu, Taiwan
+SN 0889-4906
+DA 2009-01-01
+UT WOS:000263016700004
+ER
+
+PT J
+AU Wu, Chenghui
+TI The Fundamental Principles of Corpus Linguistics
+SO DIGITAL SCHOLARSHIP IN THE HUMANITIES
+VL 38
+IS 2
+BP 916
+EP 917
+AR fqad031
+DI 10.1093/llc/fqad031
+EA APR 2023
+DT Book Review
+PD MAY 31 2023
+PY 2023
+ZB 0
+ZA 0
+ZS 0
+ZR 0
+Z8 0
+TC 0
+Z9 0
+C1 Univ Int Business & Econ, Sch Int Studies, Beijing, Peoples R China
+SN 2055-7671
+EI 2055-768X
+DA 2023-05-21
+UT WOS:000974243200001
+ER
+
+PT J
+AU Scherer, Carmen
+TI German Corpus Linguistics: synchronic - diachronic - contrastive
+SO BEITRAGE ZUR GESCHICHTE DER DEUTSCHEN SPRACHE UND LITERATUR
+VL 131
+IS 1
+BP 133
+EP 141
+DI 10.1515/bgsl.2009.007
+DT Book Review
+PD 2009
+PY 2009
+Z8 0
+TC 0
+ZB 0
+ZR 0
+ZA 0
+ZS 0
+Z9 0
+SN 0005-8076
+DA 2009-01-01
+UT WOS:000268481900006
+ER
+
+PT J
+AU Vessey, Rachelle
+TI The Cambridge Handbook of Corpus Linguistics
+SO JOURNAL OF ENGLISH LINGUISTICS
+VL 44
+IS 3
+BP 276
+EP 279
+DI 10.1177/0075424216655380
+DT Book Review
+PD SEP 2016
+PY 2016
+Z8 0
+ZS 0
+ZB 0
+ZR 0
+TC 0
+ZA 0
+Z9 0
+C1 Birkbeck Univ London, London, England
+SN 0075-4242
+EI 1552-5457
+DA 2016-09-28
+UT WOS:000382469600004
+ER
+
+PT J
+AU Basboll, Hans
+TI Corpus analysis and variation in linguistics
+SO LANGUAGE
+VL 87
+IS 1
+BP 210
+EP 212
+DI 10.1353/lan.2011.0017
+DT Book Review
+PD MAR 2011
+PY 2011
+ZR 0
+TC 0
+ZA 0
+ZS 0
+ZB 0
+Z8 0
+Z9 0
+C1 Univ So Denmark, DK-5230 Odense M, Denmark
+SN 0097-8507
+DA 2011-03-01
+UT WOS:000300593400017
+ER
+
+PT J
+AU Zempel, Solveig
+TI Exploring Corpus Linguistics: Language in Action.
+SO MODERN LANGUAGE JOURNAL
+VL 97
+IS 4
+BP 1017
+EP 1018
+DI 10.1111/j.1540-4781.2013.12052_13.x
+DT Book Review
+PD DEC 2013
+PY 2013
+ZR 0
+ZB 0
+ZS 0
+Z8 0
+ZA 0
+TC 0
+Z9 0
+C1 St Olaf Coll, Northfield, MN 55057 USA
+SN 0026-7902
+EI 1540-4781
+DA 2013-12-11
+UT WOS:000327167200025
+ER
+
+PT J
+AU Cushing, Sara T.
+TI Corpus linguistics in language testing research
+SO LANGUAGE TESTING
+VL 34
+IS 4
+SI SI
+BP 441
+EP 449
+DI 10.1177/0265532217713044
+DT Editorial Material
+PD OCT 2017
+PY 2017
+TC 12
+ZR 0
+ZA 0
+Z8 0
+ZS 0
+ZB 1
+Z9 12
+C1 Georgia State Univ, POB 4099, Atlanta, GA 30302 USA
+SN 0265-5322
+EI 1477-0946
+DA 2017-10-01
+UT WOS:000418175600001
+ER
+
+PT J
+AU Pan, Mingwei
+   Fang, Xiucai
+TI Exploring Corpus Linguistics: Language in Action
+SO SYSTEM
+VL 41
+IS 3
+BP 889
+EP 891
+DI 10.1016/j.system.2013.07.002
+DT Book Review
+PD SEP 2013
+PY 2013
+ZA 0
+ZB 0
+ZR 0
+Z8 0
+ZS 0
+TC 0
+Z9 0
+C1 Hong Kong Polytech Univ, Dept English AG415, Kowloon, Hong Kong, Peoples
+   R China
+C1 Shanghai Int Studies Univ, Grad Sch, Shanghai, Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2013-12-04
+UT WOS:000326487200032
+ER
+
+PT J
+AU Kilgarriff, Adam
+TI Corpus Linguistics: Method, Theory and Practice
+SO INTERNATIONAL JOURNAL OF LEXICOGRAPHY
+VL 26
+IS 1
+BP 95
+EP 97
+DI 10.1093/ijl/ecs024
+DT Book Review
+PD MAR 2013
+PY 2013
+Z8 0
+ZB 0
+ZR 0
+ZA 0
+ZS 0
+TC 0
+Z9 0
+SN 0950-3846
+DA 2013-03-27
+UT WOS:000315418100006
+ER
+
+PT J
+AU Shang, Xin
+TI When Contrastive Analysis meets Translation Studies: A historical
+   perspective
+SO TARGET-INTERNATIONAL JOURNAL OF TRANSLATION STUDIES
+VL 35
+IS 2
+BP 186
+EP 214
+DI 10.1075/target.20027.sha
+DT Article
+PD FEB 6 2023
+PY 2023
+AB Contrastive Analysis and Translation Studies began to merge in the late
+   1990s through the bridging role of corpus linguistics. This
+   corpus-driven, contrastive-analysis approach to Translation Studies now
+   faces several challenges including the inappropriate use of corpora, a
+   disconnect in the logical relationship between Contrastive Analysis and
+   Translation Studies, and the potential for distorted results caused by
+   translational data. To overcome these difficulties, this article
+   proposes an alternative approach called the corpus-tested Contrastive
+   Analysis approach to Translation Studies, which draws on the typical
+   empirical cycle of observation, induction, deduction, testing, and
+   evaluation. The alternative approach proposed in this article requires
+   both comparable corpora and translational corpora to account for key
+   aspects of Contrastive Analysis and Translation Studies, and ensures the
+   internal logical connection between these two areas, which can be
+   attributed to the entailment law 'if p, then q'.
+Z8 0
+ZB 0
+TC 0
+ZS 0
+ZR 0
+ZA 0
+Z9 0
+C1 Shanghai Univ, Sch Foreign Languages, 99 Shangda Rd, Shanghai 200444,
+   Peoples R China
+SN 0924-1884
+EI 1569-9986
+DA 2023-08-15
+UT WOS:001031715500002
+ER
+
+PT J
+AU Romer, Ute
+TI Applied corpus linguistics for language acquisition, pedagogy, and
+   beyond
+SO LANGUAGE TEACHING
+VL 55
+IS 2
+BP 233
+EP 244
+AR PII S0261444821000392
+DI 10.1017/S0261444821000392
+EA DEC 2021
+DT Article
+PD APR 2022
+PY 2022
+AB This plenary speech provides an overview of applications of corpus
+   research in several core areas of applied linguistics, including second
+   language acquisition and language assessment. It does this by showcasing
+   a number of recent studies carried out by or with involvement of the
+   author. These studies all focus on phraseological aspects of language
+   and demonstrate the importance of studying its patterned nature. The
+   studies also illustrate how corpora and corpus-analytic techniques can
+   allow us as applied linguists to contribute to solving problems in other
+   disciplines (such as legal scholarship or music theory) and hope to
+   thereby encourage more interdisciplinary research collaborations between
+   corpus linguists and scholars from other fields.
+OI Romer, Ute/0000-0002-0896-3165
+ZA 0
+TC 2
+ZR 0
+ZB 0
+ZS 0
+Z8 0
+Z9 2
+C1 Georgia State Univ, Atlanta, GA 30303 USA
+SN 0261-4448
+EI 1475-3049
+DA 2021-12-12
+UT WOS:000727532500001
+ER
+
+PT J
+AU Love, Robbie
+   Brookes, Gavin
+   Curry, Niall
+TI Corpora in applied linguistics: Broadening the agenda
+SO LANGUAGE TEACHING
+VL 55
+IS 1
+BP 139
+EP 141
+AR PII S0261444821000331
+DI 10.1017/S0261444821000331
+DT Editorial Material
+PD JAN 2022
+PY 2022
+OI Curry, Niall/0000-0002-4471-6794; Love, Robbie/0000-0002-7212-1165;
+   Brookes, Gavin/0000-0003-0726-2559
+ZR 0
+Z8 0
+ZB 0
+ZS 0
+TC 0
+ZA 0
+Z9 0
+C1 Aston Univ, Birmingham, W Midlands, England
+SN 0261-4448
+EI 1475-3049
+DA 2021-12-28
+UT WOS:000732721500012
+ER
+
+PT J
+AU Zhao, Hongyan
+   Zhang, Jingyuan
+TI Corpus Linguistics for English for Academic Purposes
+SO JOURNAL OF ENGLISH FOR ACADEMIC PURPOSES
+VL 58
+AR 101132
+DI 10.1016/j.jeap.2022.101132
+EA MAY 2022
+DT Book Review
+PD JUL 2022
+PY 2022
+ZA 0
+TC 0
+ZR 0
+Z8 0
+ZS 0
+ZB 0
+Z9 0
+C1 Univ Sci & Technol Beijing, Sch Foreign Studies, Beijing, Peoples R
+   China
+SN 1475-1585
+EI 1878-1497
+DA 2022-08-20
+UT WOS:000837976600001
+ER
+
+PT J
+AU Granath, Solveig
+TI Corpus Linguistics and the Description of English
+SO MODERNA SPRAK
+VL 104
+IS 2
+BP 51
+EP 57
+DT Book Review
+PD 2010
+PY 2010
+ZR 0
+ZB 0
+ZS 0
+TC 0
+Z8 0
+ZA 0
+Z9 0
+SN 2000-3560
+DA 2010-01-01
+UT WOS:000285634800007
+ER
+
+PT J
+AU Ma, Qing
+   Chiu, Ming Ming
+   Lin, Shanru
+   Mendoza, Norman B.
+TI Teachers' perceived corpus literacy and their intention to integrate
+   corpora into classroom teaching: A survey study
+SO RECALL
+VL 35
+IS 1
+BP 19
+EP 39
+AR PII S0958344022000180
+DI 10.1017/S0958344022000180
+EA NOV 2022
+DT Article
+PD JAN 2023
+PY 2023
+AB Given the importance of corpus linguistics in language learning, there
+   have been calls for the integration of corpus training into teacher
+   education programmes. However, the question of what knowledge and skills
+   the training should target remains unclear. Hence, we advance our
+   understanding of measures and outcomes of teacher corpus training by
+   proposing and testing a five-component theoretical framework for
+   measuring teachers' perceived corpus literacy (CL) and its subskills:
+   understanding, search, analysis, and the advantages and limitations of
+   corpora. Also, we hypothesised that teacher CL is linked to their
+   intention to use corpora in classroom teaching. Specifically, 183
+   teachers and student teachers received corpus training to develop their
+   CL and then completed a survey to measure their CL and intention to use
+   corpora in teaching in Likert-scale items together with open-ended
+   questions. Confirmatory factor analysis indicated that a hierarchical
+   factor structure for CL using the aforementioned five subfactors best
+   fitted the data. Moreover, structural equation modelling indicated that
+   CL is positively linked to the participants' intention to integrate
+   corpora into classroom teaching. While all five subskills are important
+   for teachers, greater effort should be made to develop their corpus
+   search and analysis skills, which can be viewed as the "bread and
+   butter" of corpus training.
+RI Ma, Qing/HOH-7370-2023; Mendoza, Norman B./ABC-4666-2021; Amirkhanashvili, Giorgi/; Chiu, Ming/
+OI Ma, Qing/0000-0003-3125-3513; Mendoza, Norman B./0000-0003-0344-0709;
+   Amirkhanashvili, Giorgi/0000-0001-5450-0703; Chiu,
+   Ming/0000-0002-5721-1971
+ZR 0
+ZS 0
+Z8 0
+ZA 0
+ZB 0
+TC 2
+Z9 2
+C1 Educ Univ Hong Kong, Dept Linguist & Modern Language Studies, Hong Kong,
+   Peoples R China
+C1 Educ Univ Hong Kong, Dept Special Educ & Counselling, Analyt & Divers,
+   Hong Kong, Peoples R China
+C1 Educ Univ Hong Kong, Assessment Res Ctr, Hong Kong, Peoples R China
+C1 Educ Univ Hong Kong, Dept Curriculum & Instruction, Hong Kong, Peoples R
+   China
+SN 0958-3440
+EI 1474-0109
+DA 2022-12-10
+UT WOS:000889868400001
+ER
+
+PT J
+AU Huang, Sihong
+   Zhan, Hongwei
+TI Statistics in Corpus Linguistics: A practical guide
+SO SYSTEM
+VL 93
+AR 102290
+DI 10.1016/j.system.2020.102290
+DT Book Review
+PD OCT 2020
+PY 2020
+ZR 0
+ZB 0
+ZA 0
+TC 0
+Z8 0
+ZS 0
+Z9 0
+C1 Hangzhou Normal Univ, Hangzhou, Zhejiang, Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2020-09-21
+UT WOS:000566694900008
+ER
+
+PT J
+AU Sun, Shuyi Amelia
+   Yih, Tsy
+TI Corpus Linguistics for English for Academic Purposes
+SO SYSTEM
+VL 108
+AR 102827
+DI 10.1016/j.system.2022.102827
+DT Book Review
+PD AUG 2022
+PY 2022
+RI Sun, Shuyi/AAO-8403-2020
+OI Sun, Shuyi/0000-0002-7424-0002
+ZS 0
+ZB 0
+Z8 0
+ZA 0
+TC 0
+ZR 0
+Z9 0
+C1 Jilin Univ, Sch Foreign Language Educ, Jilin, Jilin, Peoples R China
+C1 Zhejiang Univ, Hangzhou, Zhejiang, Peoples R China
+SN 0346-251X
+EI 1879-3282
+DA 2022-07-22
+UT WOS:000826483000005
+ER
+
+PT J
+AU Phoocharoensil, Supakorn
+TI Corpus Linguistics and the Description of English
+SO AUSTRALIAN JOURNAL OF LINGUISTICS
+VL 37
+IS 1
+BP 86
+EP 90
+DI 10.1080/07268602.2015.1134264
+DT Book Review
+PD JAN 2017
+PY 2017
+Z8 0
+ZS 0
+TC 0
+ZA 0
+ZR 0
+ZB 0
+Z9 0
+C1 Thammasat Univ, Krung Thep Maha Nakhon, Thailand
+SN 0726-8602
+EI 1469-2996
+DA 2016-11-23
+UT WOS:000386711400012
+ER
+
+PT J
+AU Callies, Marcus
+TI Spoken corpus linguistics. From monomodal to multimodal
+SO JOURNAL OF PRAGMATICS
+VL 68
+BP 77
+EP 79
+DI 10.1016/j.pragma.2014.05.004
+DT Book Review
+PD JUL 2014
+PY 2014
+OI Callies, Marcus/0000-0002-7069-5819
+ZA 0
+ZS 0
+TC 0
+ZB 0
+Z8 0
+ZR 0
+Z9 0
+C1 Univ Bremen, D-28359 Bremen, Germany
+SN 0378-2166
+EI 1879-1387
+DA 2014-08-15
+UT WOS:000339146200005
+ER
+
+PT J
+AU Hundt, Marianne
+TI Corpus linguistics: Readings in a widening discipline
+SO MODERN LANGUAGE JOURNAL
+VL 91
+IS 3
+BP 487
+EP 488
+DI 10.1111/j.1540-4781.2007.00593_15.x
+DT Book Review
+PD FAL 2007
+PY 2007
+RI Hundt, Marianne/AAS-3584-2021
+OI Hundt, Marianne/0000-0001-6045-2314
+ZA 0
+Z8 0
+TC 0
+ZB 0
+ZS 0
+ZR 0
+Z9 0
+C1 Univ Heidelberg, D-6900 Heidelberg, Germany
+SN 0026-7902
+DA 2007-09-01
+UT WOS:000249349800022
+ER
+
+PT J
+AU Carrio Pastor, Maria Luisa
+   Hunston, Susan
+TI INTRODUCTION Converging ways of applying corpus linguistics
+SO REVISTA ESPANOLA DE LINGUISTICA APLICADA
+SI SI
+BP 11
+EP 14
+DT Editorial Material
+PD 2012
+PY 2012
+RI Carrio Pastor, Maria Luisa/L-6629-2014
+OI Carrio Pastor, Maria Luisa/0000-0002-3040-5362
+ZB 0
+ZS 0
+Z8 0
+TC 0
+ZR 0
+ZA 0
+Z9 0
+C1 Univ Politecn Valencia, Valencia 46022, Spain
+C1 Univ Birmingham, Birmingham B15 2TT, W Midlands, England
+SN 0213-2028
+EI 2254-6774
+DA 2012-01-01
+UT WOS:000318757200001
+ER
+
+PT J
+AU Meurers, Detmar
+   Dickinson, Markus
+TI Evidence and Interpretation in Language Learning Research: Opportunities
+   for Collaboration With Computational Linguistics
+SO LANGUAGE LEARNING
+VL 67
+SI SI
+BP 66
+EP 95
+DI 10.1111/lang.12233
+SU 1
+DT Review
+PD JUN 2017
+PY 2017
+AB This article discusses two types of opportunities for interdisciplinary
+   collaboration between computational linguistics (CL) and language
+   learning research. We target the connection between data and theory in
+   second language (L2) research and highlight opportunities to (a) enrich
+   the options for obtaining data and (b) support the identification and
+   valid interpretation of relevant learner data. We first characterize
+   options, limitations, and potential for obtaining rich data on learning:
+   from Web-based intervention studies supporting the collection of
+   experimentally controlled data to online workbooks facilitating
+   large-scale, longitudinal corpus collection for a range of learning
+   tasks and proficiency levels. We then turn to the question of how corpus
+   data can systematically be used for L2 research, focusing on the central
+   role that linguistic corpus annotation plays in that regard. We show
+   that learner language poses particular challenges to human and CL
+   analysis and requires more interdisciplinary discussion of analysis
+   frameworks and advances in annotation schemes.
+RI Meurers, Detmar/AAQ-6659-2020
+OI Meurers, Detmar/0000-0002-9740-7442
+ZA 0
+ZS 0
+ZR 0
+ZB 1
+Z8 0
+TC 30
+Z9 30
+C1 Univ Tubingen, Tubingen, Germany
+C1 Indiana Univ, Bloomington, IN 47405 USA
+SN 0023-8333
+EI 1467-9922
+DA 2017-07-04
+UT WOS:000403692200005
+ER
+
+PT J
+AU Gacic, Milica
+TI Corpus Linguistics: Readings in a Widening Discipline
+SO CORPUS LINGUISTICS AND LINGUISTIC THEORY
+VL 4
+IS 1
+BP 109
+EP 113
+DI 10.1515/CLLT.2008.004
+DT Book Review
+PD 2008
+PY 2008
+ZS 0
+ZR 0
+ZA 0
+Z8 0
+TC 0
+ZB 0
+Z9 0
+C1 Univ Zagreb, Fac Teacher Educ, Zagreb 41000, Croatia
+SN 1613-7027
+DA 2008-01-01
+UT WOS:000261806000004
+ER
+
+PT J
+AU Brezina, Vaclav
+TI Use of <i>Google Scholar</i> in corpus-driven EAP research
+SO JOURNAL OF ENGLISH FOR ACADEMIC PURPOSES
+VL 11
+IS 4
+BP 319
+EP 331
+DI 10.1016/j.jeap.2012.08.001
+DT Article
+PD DEC 2012
+PY 2012
+AB This primarily methodological article makes a proposition for linguistic
+   exploration of textual resources available through the Google Scholar
+   search engine. These resources (Google Scholar virtual corpus) are
+   significantly larger than any existing corpus of academic writing.
+   Google Scholar, however, was not designed for linguistic searches and
+   special attention therefore needs to be paid to maximising its
+   effectiveness in corpus linguistics research. The article discusses the
+   search capacity of Google Scholar and compares the Google Scholar
+   virtual corpus with the largest traditional corpus of written academic
+   English, COCA - academic. Finally, the article offers a case study on
+   the as-author-reporting verb structure (and its modifications). The
+   study demonstrates that Google Scholar can be employed effectively in
+   EAP research offering us new insights into reporting practices in two
+   disciplines, Applied Linguistics and Physics, which were chosen for
+   comparison. The benefits of using Google Scholar virtual corpus are the
+   following: 1) wide representativeness of written academic language, 2)
+   possibility of capturing subtle variation in academic patterns, and 3)
+   possibility of comparing linguistic patterns across different academic
+   fields. (C) 2012 Elsevier Ltd. All rights reserved.
+RI Ločičnik, Aleksandra/ABE-7348-2021; Brezina, Vaclav/
+OI Brezina, Vaclav/0000-0002-1613-6100
+ZS 2
+ZR 0
+ZA 0
+TC 14
+ZB 1
+Z8 0
+Z9 16
+C1 Vrije Univ Amsterdam, Fac Arts, Dept Language & Commun, NL-1081 HV
+   Amsterdam, Netherlands
+SN 1475-1585
+EI 1878-1497
+DA 2013-01-09
+UT WOS:000312279400005
+ER
+
+PT J
+AU Eskandarjouy, Maryam
+TI Statistics in corpus linguistics: A practical guide
+SO INTERNATIONAL JOURNAL OF APPLIED LINGUISTICS
+VL 32
+IS 3
+BP 533
+EP 536
+DI 10.1111/ijal.12430
+EA JUN 2022
+DT Book Review
+PD NOV 2022
+PY 2022
+OI Eskandarjouy, Maryam/0000-0002-7500-3818
+ZA 0
+ZS 0
+ZR 0
+Z8 0
+ZB 0
+TC 0
+Z9 0
+C1 Johannes Gutenberg Univ Mainz, Inst Northern European & Baltic Languages
+   SNEB, Dept English & Linguist, D-55099 Mainz, Germany
+SN 0802-6106
+EI 1473-4192
+DA 2022-06-26
+UT WOS:000813168900001
+ER
+
+PT J
+AU Feng, Haoda
+TI Corpus Linguistics for English for Academic Purposes
+SO IBERICA
+IS 45
+BP 345
+EP 349
+DI 10.17398/2340-2784.45.345
+DT Book Review
+PD 2023
+PY 2023
+TC 0
+ZS 0
+ZR 0
+ZA 0
+Z8 0
+ZB 0
+Z9 0
+C1 Dalian Maritime Univ, Ctr Intercultural Maritime Translat, Dalian,
+   Peoples R China
+SN 1139-7241
+EI 2340-2784
+DA 2023-08-08
+UT WOS:001027913500014
+ER
+
+PT J
+AU Andor, Jozsef
+TI The Cambridge Handbook of English Corpus Linguistics
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 22
+IS 4
+BP 583
+EP 594
+DI 10.1075/ijcl.00001.and
+DT Book Review
+PD 2017
+PY 2017
+ZS 0
+ZR 0
+ZB 0
+Z8 0
+TC 0
+ZA 0
+Z9 0
+C1 Univ Pecs, Pecs, Hungary
+SN 1384-6655
+EI 1569-9811
+DA 2017-12-20
+UT WOS:000417384300005
+ER
+
+PT J
+AU Maloutf, R
+TI Corpus linguistics: Readings in a widening discipline
+SO COMPUTATIONAL LINGUISTICS
+VL 32
+IS 1
+BP 153
+EP 154
+DI 10.1162/coli.2006.32.1.153
+DT Book Review
+PD MAR 2006
+PY 2006
+ZR 0
+TC 0
+ZB 0
+ZA 0
+ZS 0
+Z8 0
+Z9 0
+C1 San Diego State Univ, Dept Linguist & Oriental Languages, San Diego, CA
+   92182 USA
+SN 0891-2017
+DA 2006-03-01
+UT WOS:000237977900009
+ER
+
+PT J
+AU Han, Cunxin
+TI Statistics in Corpus Linguistics: A Practical Guide
+SO JOURNAL OF QUANTITATIVE LINGUISTICS
+VL 27
+IS 4
+BP 379
+EP 383
+DI 10.1080/09296174.2019.1646069
+EA JUL 2019
+DT Book Review
+PD OCT 1 2020
+PY 2020
+OI Han, Cunxin/0000-0003-1973-9334
+ZB 0
+ZS 0
+ZA 0
+ZR 0
+TC 1
+Z8 0
+Z9 1
+C1 Jimei Univ, Sch Foreign Languages, Xiamen, Fujian, Peoples R China
+SN 0929-6174
+EI 1744-5035
+DA 2019-08-13
+UT WOS:000478290400001
+ER
+
+PT J
+AU O'Donnell, Matthew Brook
+TI Corpus linguistics with BNCweb - a practical guide
+SO ENGLISH LANGUAGE & LINGUISTICS
+VL 15
+BP 558
+EP 564
+PN 3
+DT Book Review
+PD 2011
+PY 2011
+Z8 0
+ZS 0
+TC 0
+ZB 0
+ZR 0
+ZA 0
+Z9 0
+C1 Univ Michigan, English Language Inst, Ann Arbor, MI 48104 USA
+SN 1360-6743
+DA 2011-01-01
+UT WOS:000296420100007
+ER
+
+PT J
+AU Dai, Zheyuan
+TI Statistics in Corpus Linguistics: A New Approach
+SO NATURAL LANGUAGE ENGINEERING
+DI 10.1017/S1351324921000413
+EA JAN 2022
+DT Book Review; Early Access
+PY 2022
+OI Dai, Zheyuan/0000-0002-6553-9504
+ZB 0
+TC 0
+ZR 0
+ZS 0
+ZA 0
+Z8 0
+Z9 0
+C1 Zhejiang Univ, Dept Linguist, Hangzhou 310058, Peoples R China
+SN 1351-3249
+EI 1469-8110
+DA 2022-01-27
+UT WOS:000744913000001
+ER
+
+PT J
+AU Andersen, Gisle
+   Hardt, Daniel
+TI Introduction: Corpus linguistics and the Nordic languages
+SO NORDIC JOURNAL OF LINGUISTICS
+VL 37
+IS 2
+SI SI
+BP 135
+EP 139
+DI 10.1017/S0332586514000158
+DT Editorial Material
+PD OCT 2014
+PY 2014
+ZB 0
+ZA 0
+ZS 0
+Z8 0
+ZR 0
+TC 0
+Z9 0
+C1 NHH Norwegian Sch Econ, NO-5045 Bergen, Norway
+C1 Copenhagen Business Sch, Dept IT Management, DK-2000 Frederiksberg,
+   Denmark
+SN 0332-5865
+EI 1502-4717
+DA 2014-10-01
+UT WOS:000344015200001
+ER
+
+PT J
+AU Williams, Geoffrey
+TI Corpus linguistics: Readings in a widening discipline.
+SO INTERNATIONAL JOURNAL OF LEXICOGRAPHY
+VL 20
+IS 2
+BP 175
+EP 180
+DI 10.1093/ijl/ecl037
+DT Book Review
+PD JUN 2007
+PY 2007
+ZS 0
+ZA 0
+TC 0
+ZR 0
+Z8 0
+ZB 0
+Z9 0
+C1 Univ Bretagne Sud, Lorient, France
+C3 Univ Bretagne Sud
+SN 0950-3846
+DA 2007-06-01
+UT WOS:000247920600003
+ER
+
+PT J
+AU Ruehlemann, Christoph
+TI Corpus Linguistics with BNCweb - a Practical Guide
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 14
+IS 4
+BP 557
+EP 560
+DI 10.1075/ijcl.14.4.06ruh
+DT Book Review
+PD 2009
+PY 2009
+ZS 0
+ZB 0
+TC 1
+Z8 0
+ZA 0
+ZR 0
+Z9 1
+C1 Univ Munich, Munich, Germany
+SN 1384-6655
+DA 2009-01-01
+UT WOS:000275015100006
+ER
+
+PT J
+AU Gregory, Ian N.
+   Hardie, Andrew
+TI Visual GISting: bringing together corpus linguistics and Geographical
+   Information Systems
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 26
+IS 3
+SI SI
+BP 297
+EP 314
+DI 10.1093/llc/fqr022
+DT Article
+PD SEP 2011
+PY 2011
+AB Corpus linguistics and Geographical Information Systems (GIS) are
+   approaches exploiting computer-based methodologies in the study of,
+   respectively, language and language usage, and spatial patterns in
+   geographical databases. We present an approach that uses corpus methods
+   to bridge the gap between the textual content of a corpus (and, thus,
+   the typically textual concerns of many branches of the humanities) and
+   the geo-referenced database at the heart of a GIS. Using part-of-speech
+   tagging to extract instances of proper nouns from a corpus, and a
+   gazetteer to limit these instances to those representing place-names, a
+   database of the places mentioned in a corpus can be created, visualized,
+   and analysed using GIS technology. It is also possible to visualize the
+   meanings associated with particular place-names, by building GIS
+   databases on the collocation of place-names with particular semantic
+   categories in their immediate context. In this way, we can create maps
+   that visualize the geographical distribution of mentions of concepts
+   such as war, government, or money in a particular data set. The approach
+   cannot be entirely automated and some manual intervention is required.
+   Nevertheless, the method is clearly valuable for the interpretation of
+   spatial phenomena in text corpora.
+OI Hardie, Andrew/0000-0002-2952-2545; Gregory, Ian/0000-0001-8745-2242
+ZB 1
+ZA 0
+ZS 0
+TC 44
+Z8 0
+ZR 0
+Z9 44
+C1 Univ Lancaster, Dept Hist, Lancaster LA1 4YG, England
+C1 Univ Lancaster, Dept Linguist & English Language, Lancaster LA1 4YL,
+   England
+SN 0268-1145
+EI 1477-4615
+DA 2011-09-01
+UT WOS:000294122100007
+ER
+
+PT J
+AU Shirazizadeh, Mohsen
+TI Corpus Linguistics for English for Academic Purposes
+SO ENGLISH FOR SPECIFIC PURPOSES
+VL 72
+BP 65
+EP 67
+DI 10.1016/j.esp.2023.08.004
+DT Book Review
+PD OCT 2023
+PY 2023
+Z8 0
+TC 0
+ZS 0
+ZR 0
+ZA 0
+ZB 0
+Z9 0
+C1 Alzahra Univ, Fac Literature, Dept English, Tehran, Iran
+SN 0889-4906
+EI 1873-1937
+DA 2023-10-06
+UT WOS:001069522800001
+ER
+
+PT J
+AU Kleiber, Ingo
+TI Statistics in Corpus Linguistics: A Practical Guide
+SO INTERNATIONAL JOURNAL OF CORPUS LINGUISTICS
+VL 24
+IS 1
+BP 131
+EP 135
+DI 10.1075/ijcl.00008.kle
+DT Book Review
+PD 2019
+PY 2019
+OI Kleiber, Ingo/0000-0001-7231-2714
+ZA 0
+TC 0
+Z8 0
+ZB 0
+ZR 0
+ZS 0
+Z9 0
+C1 Heidelberg Univ, Heidelberg, Germany
+SN 1384-6655
+EI 1569-9811
+DA 2019-07-24
+UT WOS:000474379400006
+ER
+
+PT J
+AU Loureiro-Porto, Lucia
+TI Diachrony and Synchrony in English Corpus Linguistics
+SO ATLANTIS-JOURNAL OF THE SPANISH ASSOCIATION OF ANGLO-AMERICAN STUDIES
+VL 37
+IS 2
+BP 259
+EP 264
+DT Book Review
+PD DEC 2015
+PY 2015
+RI Loureiro-Porto, Lucía/E-3440-2017
+OI Loureiro-Porto, Lucía/0000-0001-9502-6112
+ZB 0
+Z8 0
+ZA 0
+ZR 0
+ZS 0
+TC 0
+Z9 0
+C1 Univ Balearic Isl, English Linguist, Palma de Mallorca, Spain
+SN 0210-6124
+EI 1989-6840
+DA 2016-02-10
+UT WOS:000368520000019
+ER
+
+PT J
+AU Feng, Haoda
+TI Corpus Linguistics for English for Academic Purposes
+SO IBERICA
+IS 45
+BP 345
+EP 349
+DI 10.17398/2340-2784.45.346
+DT Book Review
+PD 2023
+PY 2023
+ZS 0
+ZB 0
+ZR 0
+TC 0
+ZA 0
+Z8 0
+Z9 0
+C1 Dalian Maritime Univ, Ctr Intercultural Maritime Translat, Dalian,
+   Peoples R China
+SN 1139-7241
+EI 2340-2784
+DA 2023-08-08
+UT WOS:001024966100001
+ER
+
+PT J
+AU Dong, Zhen
+   Pan, Fan
+TI Corpus linguistics: A guide to the methodology
+SO LINGUA
+VL 279
+AR 103430
+DI 10.1016/j.lingua.2022.103430
+EA OCT 2022
+DT Book Review
+PD NOV 2022
+PY 2022
+ZS 0
+ZB 0
+ZR 0
+Z8 0
+ZA 0
+TC 0
+Z9 0
+C1 Huazhong Univ Sci & Technol, Sch Foreign Languages, Luoyu Rd 1037, Wuhan
+   430074, Peoples R China
+SN 0024-3841
+EI 1872-6135
+DA 2022-11-07
+UT WOS:000873955700002
+ER
+
+PT J
+AU Casal, Elliott
+   Yoon, Jungwan
+TI Frame-based formulaic features in L2 writing pedagogy: Variants,
+   functions, and student writer perceptions in academic writing
+SO ENGLISH FOR SPECIFIC PURPOSES
+VL 71
+BP 102
+EP 114
+DI 10.1016/j.esp.2023.03.004
+EA APR 2023
+DT Article
+PD JUL 2023
+PY 2023
+AB This paper analyzes formulaic language in conference abstracts in
+   Applied Linguistics and tracks an application of the findings to a
+   second language English academic writing context. Specifically, the
+   authors identify and profile phrase-frames (a form of discontin-uous
+   formulaic sequence) in terms of their frequency, internal variation,
+   predictability, structure, and rhetorical functions in a corpus of
+   approximately 1,600 conference abstracts in Applied Linguistics. The
+   analysis informed a corpus-and genre-based second language writing
+   pedagogical intervention on formulaic language, and the paper also
+   presents the experiences of learners through sample student writing,
+   survey, and interview data. Overall, findings highlight the pedagogical
+   potential for including frame-based formulaic language in second
+   language writing pedagogy due to the prevalence and inherent
+   pro-ductivity of such features, the clear role they play in signaling
+   functional intentions in rhetoric, and their ability to stimulate
+   reflection and discussion of formulaicity in writing more broadly. (c)
+   2023 Elsevier Ltd. All rights reserved.
+RI Casal, J. Elliott/AAJ-1551-2020
+OI Casal, J. Elliott/0000-0002-8920-9120
+ZS 0
+Z8 0
+TC 0
+ZB 0
+ZR 0
+ZA 0
+Z9 0
+C1 Univ Memphis, Dept English, Patterson Hall, Memphis, TN 38152 USA
+C1 Carnegie Mellon Univ, Dept English, 262 Posner,5000 Forbes Ave,
+   Pittsburgh, PA 15213 USA
+SN 0889-4906
+EI 1873-1937
+DA 2023-04-30
+UT WOS:000967704700001
+ER
+
+PT J
+AU Knoblock, Natalia
+   Malkin, Ryan
+TI The Ultraviolet Bleach corpus
+SO LINGUISTICS VANGUARD
+DI 10.1515/lingvan-2020-0145
+EA APR 2022
+DT Article; Early Access
+PY 2022
+AB This paper presents a new corpus of computer-mediated communication on
+   the topic of Trump's comments about household disinfectants and
+   ultraviolet light as cures for COVID-19. The corpus, named the
+   Ultraviolet Bleach (UVB) corpus, contains message board comments devoted
+   to Trump's suggestions. It was collected in May 2020 and consists of
+   twenty-six files, with a total size of 2,344,164 word tokens. The paper
+   includes frequency lists of words and clusters, keywords, and keywords
+   in context, identified with the help of the corpus management software
+   Sketch Engine. The corpus highlights the "receiving end" of political
+   communication since it involves reactions to Trump's televised briefing,
+   and it will be of interest to researchers of political communication,
+   populist and conspiratorial discourse, public opinion, and language
+   aggression.
+TC 0
+Z8 0
+ZR 0
+ZS 0
+ZA 0
+ZB 0
+Z9 0
+C1 Sagainaw Valley State Univ, English, University Ctr, MI 48710 USA
+C3 Sagainaw Valley State Univ
+SN 2199-174X
+DA 2022-04-17
+UT WOS:000780354200001
+ER
+
+PT J
+AU Ji, Meng
+TI A corpus-based study of lexical periodization in historical Chinese
+SO LITERARY AND LINGUISTIC COMPUTING
+VL 25
+IS 2
+BP 199
+EP 213
+DI 10.1093/llc/fqq002
+DT Article
+PD JUN 2010
+PY 2010
+AB The use of corpus material and methods represents a major methodological
+   innovation in Chinese historical linguistics. The very exciting findings
+   uncovered in this article may be seen as the first systematic
+   large-scale investigation of the various morpho-syntactic patterns
+   underpinning the evolution of Chinese lexis. In this article, we have
+   made a ground-breaking investigation into the diverse lexical modes and
+   patterns which have emerged and developed in each major period in
+   Chinese history, in which the generation of corpus linguistic data and
+   the subsequent computational statistical modelling have been essential.
+RI Ji, Meng/E-7549-2013; Ji, Meng/
+OI Ji, Meng/0000-0002-7463-9208
+ZR 0
+ZA 0
+TC 5
+ZS 0
+ZB 0
+Z8 0
+Z9 5
+C1 Tohoku Univ, Sch Law, Sendai, Miyagi 980, Japan
+SN 0268-1145
+DA 2010-06-01
+UT WOS:000284758300005
+ER
+
+PT J
+AU Sanchez Nieto, Maria Teresa
+TI SECONDARY SAMPLE CORPORA IN CONTRASTIVE LINGUISTICS AND TRANSLATION
+   STUDIES
+SO ACROSS LANGUAGES AND CULTURES
+VL 19
+IS 1
+BP 121
+EP 137
+DI 10.1556/084.2018.19.1.6
+DT Article
+PD JUN 2018
+PY 2018
+AB The aim of this paper is to show that conceptualizing and defining those
+   subsets of data that the researcher extracts from an online searchable
+   corpus constitutes a step forward towards more methodological
+   transparency, especially in those settings where researchers do not
+   build their own corpora, but use those that can be searched online. To
+   that end, in Section 2 a succinct typology of online searchable corpora
+   for the study of language-pair related or translation-related phenomena
+   will be drawn. In Section 3, the concept of secondary sample corpus will
+   be put forward, which, in turn, will shed new light on the status of
+   web-based parallel (and parallelized) corpora. Section 4 will be devoted
+   to general methodological requirements and to requirements of the
+   quantitative approach as the main - but not the only - approach shaping
+   the research work in the fields of Corpus-based Descriptive Translation
+   Studies and Corpus-based Contrastive Linguistics; the focus will lie on
+   issues of replicability, comparability, availability and usability. In
+   Section 5, some brief conclusions will be drawn.
+RI Nieto, María Teresa Sánchez/ABF-4945-2020
+OI Nieto, María Teresa Sánchez/0000-0002-0378-3720
+ZA 0
+ZS 0
+TC 0
+ZB 0
+ZR 0
+Z8 0
+Z9 0
+C1 Univ Valladolid, Fac Translat & Interpreting, Valladolid, Spain
+SN 1585-1923
+EI 1588-2519
+DA 2018-12-28
+UT WOS:000439779700006
+ER
+
+PT J
+AU Arndt, Rebeca
+TI Corpus linguistics for vocabulary: A guide for research
+SO LANGUAGE LEARNING & TECHNOLOGY
+VL 23
+IS 3
+SI SI
+BP 41
+EP 43
+DT Book Review
+PD OCT 2019
+PY 2019
+ZA 0
+ZS 0
+TC 0
+ZR 0
+ZB 0
+Z8 0
+Z9 0
+C1 Univ Cent Florida, Orlando, FL 32816 USA
+SN 1094-3501
+DA 2019-11-07
+UT WOS:000492743000004
+ER
+
+PT J
+AU Mehl, Seth
+TI Corpus linguistics for grammar: A guide for research
+SO JOURNAL OF ENGLISH LINGUISTICS
+VL 44
+IS 2
+BP 189
+EP 192
+DI 10.1177/0075424216633734
+DT Book Review
+PD JUN 2016
+PY 2016
+ZS 0
+TC 0
+ZA 0
+ZB 0
+Z8 0
+ZR 0
+Z9 0
+C1 Univ Sheffield, Sheffield, S Yorkshire, England
+SN 0075-4242
+EI 1552-5457
+DA 2016-06-08
+UT WOS:000376187300004
+ER
+
+PT J
+AU Morrish, Liz
+   Sauntson, Helen
+TI Discourse and identity in a corpus of lesbian erotica.
+SO Journal of lesbian studies
+VL 15
+IS 1
+BP 122
+EP 39
+DI 10.1080/10894160.2010.490519
+DT Journal Article
+PD 2011
+PY 2011
+AB This article uses corpus linguistic methodologies to explore
+   representations of lesbian desires and identities in a corpus of lesbian
+   erotica from the 1980s and 1990s. We provide a critical examination of
+   the ways in which "lesbian gender," power, and desire are represented,
+   (re-)produced, and enacted, often in ways that challenge hegemonic
+   discourses of gender and sexuality. By examining word frequencies and
+   collocations, we critically analyze some of the themes, processes, and
+   patterns of representation in the texts. Although rooted in linguistics,
+   we hope this article provides an accessible, interdisciplinary, and
+   timely contribution toward developing understandings of discursive
+   practices surrounding gender and sexuality.
+RI Sauntson, Helen/JCD-9840-2023
+Z8 0
+ZB 0
+ZA 0
+ZR 0
+ZS 0
+TC 0
+Z9 0
+C1 School of Arts and Humanities, Nottingham Trent University, Nottingham,
+   UK. liz.morrish@ntu.ac.uk
+EI 1540-3548
+DA 2011-01-01
+UT MEDLINE:21279918
+PM 21279918
+ER
+
+EF

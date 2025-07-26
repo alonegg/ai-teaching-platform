@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Skill Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .app-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .view-container {
+            padding: 30px;
+            min-height: 500px;
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Camp Selection View */
+        .camps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .camp-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 3px solid transparent;
+        }
+        
+        .camp-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            border-color: #3498db;
+        }
+        
+        .camp-card h3 {
+            background: #2980b9;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .camp-card .camp-content {
+            padding: 20px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .camp-card ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        .camp-card li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+            font-size: 0.95rem;
+        }
+        
+        .camp-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .camp-card .camp-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+            color: #2980b9;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        
+        .custom-camp {
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+        }
+        
+        .custom-camp h3 {
+            background: #8e44ad;
+        }
+        
+        .camp-input {
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .camp-input input {
+            padding: 12px;
+            width: 100%;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .camp-input button {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .camp-input button:hover {
+            background: #219653;
+            transform: scale(1.03);
+        }
+        
+        /* Skill Planning View */
+        .skill-planning-container {
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+        
+        .planning-table {
+            width: 100%;
+            display: table;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 30px 0;
+        }
+        
+        .planning-row {
+            display: table-row;
+            transition: background-color 0.2s;
+        }
+        
+        .planning-row:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .phrase-cell {
+            display: table-cell;
+            padding: 18px 15px;
+            text-align: left;
+            vertical-align: middle;
+            font-weight: 600;
+            color: #2980b9;
+            min-width: 170px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+        
+        .phrase-cell.strikethrough::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #e74c3c;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        
+        .phrase-cell.strikethrough {
+            color: #95a5a6;
+        }
+        
+        .content-cell {
+            display: table-cell;
+            width: 50%;
+            padding: 12px 15px;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .icon-cell {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .input-cell {
+            padding: 10px;
+        }
+        
+        .input-cell input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .input-cell input:focus {
+            border-color: #e74c3c;
+            outline: none;
+            box-shadow: 0 0 8px rgba(231, 76, 60, 0.4);
+        }
+        
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 14px 30px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #2980b9, #2471a3);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(41, 128, 185, 0.5);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(to right, #e74c3c, #c0392b);
+            color: white;
+            box-shadow: 0 4px 6px rgba(231, 76, 60, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(to right, #c0392b, #a93226);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(192, 57, 43, 0.5);
+        }
+        
+        .section-title {
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin: 20px 0 10px;
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+            text-align: center;
+        }
+        
+        .instructions p {
+            margin-bottom: 10px;
+        }
+        
+        .instructions li {
+            margin-bottom: 5px;
+        }
+        
+        .feature-panel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        .feature-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .camps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .camp-card {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .page-title {
+                font-size: 1.7rem;
+            }
+            
+            .phrase-cell, 
+            .content-cell {
+                padding: 15px 10px;
+                font-size: 0.9rem;
+            }
+            
+            .icon-cell {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+            
+            .planning-table {
+                margin: 15px 0;
+            }
+            
+            .feature-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1><i class="fas fa-campground"></i> Camp Skill Planner</h1>
+            <p>Create personalized learning plans using English expressions</p>
+        </div>
+        
+        <div class="view-container">
+            <!-- Camp Selection View -->
+            <div id="campSelectionView">
+                <h2 class="page-title">Select Your Camp Program</h2>
+                
+                <div class="camps-container">
+                    <!-- Adventure Camp Card -->
+                    <div class="camp-card" onclick="selectCamp('Adventure Camp')">
+                        <h3>Adventure Camp</h3>
+                        <div class="camp-content">
+                            <ul>
+                                <li>Fire-making skills</li>
+                                <li>Shelter building</li>
+                                <li>Wildlife identification</li>
+                                <li>Rope techniques</li>
+                                <li>Whitewater rafting</li>
+                                <li>Wilderness rescue</li>
+                                <li>Making new friends</li>
+                            </ul>
+                        </div>
+                        <div class="camp-footer">
+                            <i class="fas fa-arrow-circle-right"></i> Click to create plan
+                        </div>
+                    </div>
+                    
+                    <!-- International Youth Camp Card -->
+                    <div class="camp-card" onclick="selectCamp('International Youth Camp')">
+                        <h3>International Youth Camp</h3>
+                        <div class="camp-content">
+                            <ul>
+                                <li>Cultural exchange</li>
+                                <li>Language improvement</li>
+                                <li>UN simulation contest</li>
+                                <li>Sharing home specialties</li>
+                                <li>Self-care skills</li>
+                                <li>Making new friends</li>
+                                <li>Knowledge expansion</li>
+                            </ul>
+                        </div>
+                        <div class="camp-footer">
+                            <i class="fas fa-arrow-circle-right"></i> Click to create plan
+                        </div>
+                    </div>
+                    
+                    <!-- Custom Camp Card -->
+                    <div class="camp-card custom-camp">
+                        <h3>Custom Camp</h3>
+                        <div class="camp-content">
+                            <div class="camp-input">
+                                <input type="text" id="customCampName" placeholder="Enter camp name (e.g., Art Camp)">
+                                <button onclick="selectCustomCamp()">Create Camp Plan</button>
+                            </div>
+                        </div>
+                        <div class="camp-footer">
+                            <i class="fas fa-edit"></i> Create your own camp
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-panel">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <div class="feature-title">Smart Phrase Tracking</div>
+                        <div>Automatically tracks phrase usage in plans</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <div class="feature-title">Theme-based Skills</div>
+                        <div>Custom camps generate relevant skills</div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="feature-title">Interactive Interface</div>
+                        <div>Click phrases to mark as used</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skill Planning View (Hidden by default) -->
+            <div id="skillPlanningView" style="display:none">
+                <h2 class="page-title" id="currentCampTitle">Adventure Camp - Learning Plan</h2>
+                
+                <div class="instructions">
+                    <p><strong>How to use:</strong></p>
+                    <ul>
+                        <li><b>Click</b> on phrases in the first column to mark them as used</li>
+                        <li>Type your plans in the third column - phrases will be automatically crossed out when used</li>
+                        <li>Each expression should be used by only one participant</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-planning-container">
+                    <div class="planning-table" id="planningTable">
+                        <!-- Table will be generated here -->
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <button class="btn btn-secondary" onclick="goBackToSelection()">
+                        <i class="fas fa-arrow-left"></i> Back to Selection
+                    </button>
+                    <button class="btn btn-primary" onclick="submitPlan()">
+                        <i class="fas fa-check-circle"></i> Submit Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // All 9 phrases to be used
+        const allPhrases = [
+            'be going to do',
+            'will do',
+            'plan to do',
+            'hope to do',
+            'intend to do',
+            'want to do',
+            'wish to do',
+            'would like to do',
+            'schedule to do'
+        ];
+        
+        // Select 7 random phrases from the list
+        function getRandomPhrases() {
+            const shuffled = [...allPhrases].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, 7);
+        }
+        
+        // Skill icons and names for Adventure Camp
+        const adventureSkills = [
+            { icon: '<i class="fas fa-fire"></i>', name: 'Fire-making' },
+            { icon: '<i class="fas fa-home"></i>', name: 'Shelter building' },
+            { icon: '<i class="fas fa-hands-helping"></i>', name: 'Making friends' },
+            { icon: '<i class="fas fa-tree"></i>', name: 'Wildlife identification' },
+            { icon: '<i class="fas fa-first-aid"></i>', name: 'Wilderness rescue' },
+            { icon: '<i class="fas fa-route"></i>', name: 'Rope skills' },
+            { icon: '<i class="fas fa-water"></i>', name: 'Whitewater rafting' }
+        ];
+        
+        // Skill icons and names for International Youth Camp
+        const youthSkills = [
+            { icon: '<i class="fas fa-globe-americas"></i>', name: 'Cultural understanding' },
+            { icon: '<i class="fas fa-language"></i>', name: 'Language improvement' },
+            { icon: '<i class="fas fa-user-friends"></i>', name: 'Building friendships' },
+            { icon: '<i class="fas fa-user-cog"></i>', name: 'Self-care techniques' },
+            { icon: '<i class="fas fa-book-reader"></i>', name: 'Knowledge expansion' },
+            { icon: '<i class="fas fa-flag"></i>', name: 'Home specialty sharing' },
+            { icon: '<i class="fas fa-gavel"></i>', name: 'UN simulation contest' }
+        ];
+        
+        // Skill icons and names for Art Camp
+        const artSkills = [
+            { icon: '<i class="fas fa-paint-brush"></i>', name: 'Painting' },
+            { icon: '<i class="fas fa-pencil-alt"></i>', name: 'Drawing' },
+            { icon: '<i class="fas fa-camera"></i>', name: 'Photography' },
+            { icon: '<i class="fas fa-clay"></i>', name: 'Sculpture' },
+            { icon: '<i class="fas fa-palette"></i>', name: 'Color Theory' },
+            { icon: '<i class="fas fa-laptop"></i>', name: 'Digital Art' },
+            { icon: '<i class="fas fa-history"></i>', name: 'Art History' }
+        ];
+        
+        // Skill icons for Science Camp
+        const scienceSkills = [
+            { icon: '<i class="fas fa-flask"></i>', name: 'Chemistry' },
+            { icon: '<i class="fas fa-atom"></i>', name: 'Physics' },
+            { icon: '<i class="fas fa-dna"></i>', name: 'Biology' },
+            { icon: '<i class="fas fa-robot"></i>', name: 'Robotics' },
+            { icon: '<i class="fas fa-rocket"></i>', name: 'Astronomy' },
+            { icon: '<i class="fas fa-code"></i>', name: 'Programming' },
+            { icon: '<i class="fas fa-magnet"></i>', name: 'Electronics' }
+        ];
+        
+        // Skill icons for Music Camp
+        const musicSkills = [
+            { icon: '<i class="fas fa-guitar"></i>', name: 'Guitar' },
+            { icon: '<i class="fas fa-drum"></i>', name: 'Percussion' },
+            { icon: '<i class="fas fa-piano"></i>', name: 'Piano' },
+            { icon: '<i class="fas fa-microphone"></i>', name: 'Vocal Training' },
+            { icon: '<i class="fas fa-headphones"></i>', name: 'Music Theory' },
+            { icon: '<i class="fas fa-music"></i>', name: 'Composition' },
+            { icon: '<i class="fas fa-sliders-h"></i>', name: 'Sound Engineering' }
+        ];
+        
+        // Skill icons for default custom camp
+        const defaultSkills = [
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 1' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 2' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 3' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 4' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 5' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 6' },
+            { icon: '<i class="fas fa-star"></i>', name: 'Skill 7' }
+        ];
+
+        // Function to select camp and show planning view
+        function selectCamp(campName) {
+            // Set the camp title
+            document.getElementById('currentCampTitle').textContent = campName + ' - Learning Plan';
+            
+            // Hide selection view, show planning view
+            document.getElementById('campSelectionView').style.display = 'none';
+            document.getElementById('skillPlanningView').style.display = 'block';
+            
+            // Prepare the planning table
+            const planningTable = document.getElementById('planningTable');
+            planningTable.innerHTML = '';
+            
+            // Determine which set of icons and skills to use
+            let skills = [];
+            
+            if (campName === 'Adventure Camp') {
+                skills = adventureSkills;
+            } else if (campName === 'International Youth Camp') {
+                skills = youthSkills;
+            } else {
+                skills = defaultSkills;
+            }
+            
+            // Get 7 random phrases
+            const selectedPhrases = getRandomPhrases();
+            
+            // Create table rows for each skill
+            for (let i = 0; i < 7; i++) {
+                const row = document.createElement('div');
+                row.className = 'planning-row';
+                
+                // Phrase cell (first column)
+                const phraseCell = document.createElement('div');
+                phraseCell.className = 'phrase-cell';
+                phraseCell.dataset.phrase = selectedPhrases[i];
+                phraseCell.dataset.rowIndex = i;
+                phraseCell.textContent = selectedPhrases[i];
+                
+                // Add click event to phrase cell
+                phraseCell.addEventListener('click', function() {
+                    this.classList.toggle('strikethrough');
+                });
+                
+                // Icon cell (second column)
+                const iconCell = document.createElement('div');
+                iconCell.className = 'content-cell icon-cell';
+                iconCell.innerHTML = skills[i].icon;
+                
+                // Input cell (third column)
+                const inputCell = document.createElement('div');
+                inputCell.className = 'content-cell input-cell';
+                
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = 'Enter your plan';
+                input.dataset.rowIndex = i;
+                
+                // Add oninput event to check for phrase usage
+                input.oninput = function() {
+                    checkPhraseUsage(this);
+                };
+                
+                inputCell.appendChild(input);
+                
+                // Append cells to row
+                row.appendChild(phraseCell);
+                row.appendChild(iconCell);
+                row.appendChild(inputCell);
+                
+                // Append row to table
+                planningTable.appendChild(row);
+            }
+        }
+        
+        // Function to get skills for custom camp
+        function getSkillsForCustomCamp(campName) {
+            campName = campName.toLowerCase();
+            
+            if (campName.includes('art')) {
+                return artSkills;
+            } else if (campName.includes('science')) {
+                return scienceSkills;
+            } else if (campName.includes('music')) {
+                return musicSkills;
+            } else if (campName.includes('adventure') || campName.includes('outdoor')) {
+                return adventureSkills;
+            } else if (campName.includes('international') || campName.includes('culture')) {
+                return youthSkills;
+            } else {
+                return defaultSkills;
+            }
+        }
+        
+        // Function to select custom camp
+        function selectCustomCamp() {
+            const customCampName = document.getElementById('customCampName').value;
+            if (!customCampName) {
+                alert('Please enter a camp name');
+                return;
+            }
+            
+            // Set the camp title
+            document.getElementById('currentCampTitle').textContent = customCampName + ' - Learning Plan';
+            
+            // Hide selection view, show planning view
+            document.getElementById('campSelectionView').style.display = 'none';
+            document.getElementById('skillPlanningView').style.display = 'block';
+            
+            // Prepare the planning table
+            const planningTable = document.getElementById('planningTable');
+            planningTable.innerHTML = '';
+            
+            // Get skills based on camp name
+            const skills = getSkillsForCustomCamp(customCampName);
+            
+            // Get 7 random phrases
+            const selectedPhrases = getRandomPhrases();
+            
+            // Create table rows for each skill
+            for (let i = 0; i < 7; i++) {
+                const row = document.createElement('div');
+                row.className = 'planning-row';
+                
+                // Phrase cell
+                const phraseCell = document.createElement('div');
+                phraseCell.className = 'phrase-cell';
+                phraseCell.dataset.phrase = selectedPhrases[i];
+                phraseCell.dataset.rowIndex = i;
+                phraseCell.textContent = selectedPhrases[i];
+                
+                // Add click event to phrase cell
+                phraseCell.addEventListener('click', function() {
+                    this.classList.toggle('strikethrough');
+                });
+                
+                // Icon cell
+                const iconCell = document.createElement('div');
+                iconCell.className = 'content-cell icon-cell';
+                iconCell.innerHTML = skills[i].icon;
+                
+                // Input cell
+                const inputCell = document.createElement('div');
+                inputCell.className = 'content-cell input-cell';
+                
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = 'Enter your plan';
+                input.dataset.rowIndex = i;
+                
+                // Add oninput event to check for phrase usage
+                input.oninput = function() {
+                    checkPhraseUsage(this);
+                };
+                
+                inputCell.appendChild(input);
+                
+                // Append cells to row
+                row.appendChild(phraseCell);
+                row.appendChild(iconCell);
+                row.appendChild(inputCell);
+                
+                // Append row to table
+                planningTable.appendChild(row);
+            }
+        }
+        
+        // Function to check if input contains the phrase
+        function checkPhraseUsage(inputElement) {
+            const rowIndex = inputElement.dataset.rowIndex;
+            const phraseElement = document.querySelector(`.phrase-cell[data-row-index="${rowIndex}"]`);
+            const phrase = phraseElement.dataset.phrase;
+            const inputValue = inputElement.value.toLowerCase();
+            
+            // Check if input contains the phrase
+            if (inputValue.includes(phrase.toLowerCase())) {
+                phraseElement.classList.add('strikethrough');
+            } else {
+                phraseElement.classList.remove('strikethrough');
+            }
+        }
+        
+        // Go back to camp selection view
+        function goBackToSelection() {
+            document.getElementById('skillPlanningView').style.display = 'none';
+            document.getElementById('campSelectionView').style.display = 'block';
+        }
+        
+        // Submit the learning plan
+        function submitPlan() {
+            // Collect all inputs
+            const inputs = document.querySelectorAll('#skillPlanningView input');
+            let completed = true;
+            
+            // Check if all inputs are filled
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    completed = false;
+                }
+            });
+            
+            if (!completed) {
+                alert('Please complete all plans before submitting');
+                return;
+            }
+            
+            alert('Learning plan submitted successfully!');
+            goBackToSelection();
+        }
+    </script>
+</body>
+</html>

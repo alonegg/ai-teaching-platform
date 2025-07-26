@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI提示词库 - AI教学资源整合平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .prompts-page {
+            padding-top: 100px;
+            min-height: 100vh;
+            background: #f9fafb;
+        }
+        
+        .search-section {
+            background: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .search-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .search-box {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6b7280;
+            font-size: 1.2rem;
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .filter-tag {
+            padding: 8px 16px;
+            background: #f3f4f6;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-tag:hover,
+        .filter-tag.active {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+        }
+        
+        .prompt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .prompt-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prompt-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        .prompt-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0;
+        }
+        
+        .prompt-category {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .prompt-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .prompt-content {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .prompt-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .copy-btn {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .copy-btn:hover {
+            background: #1d4ed8;
+        }
+        
+        .expand-btn {
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .expand-btn:hover {
+            background: #e5e7eb;
+        }
+        
+        .use-btn {
+            background: #10b981;
+            color: white;
+        }
+        
+        .use-btn:hover {
+            background: #059669;
+        }
+        
+        .prompt-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .prompt-tag {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #6b7280;
+        }
+        
+        .no-results i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
+        
+        @media (max-width: 768px) {
+            .prompt-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-tags {
+                justify-content: flex-start;
+            }
+            
+            .prompt-actions {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                AI教学资源平台
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="prompts.html" class="nav-link">提示词库</a></li>
+                <li><a href="index.html#tools" class="nav-link">AI工具</a></li>
+                <li><a href="index.html#resources" class="nav-link">教学资源</a></li>
+                <li><a href="index.html#projects" class="nav-link">项目案例</a></li>
+                <li><a href="index.html#docs" class="nav-link">文档</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 提示词库页面 -->
+    <div class="prompts-page">
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" class="search-input" id="promptSearch" placeholder="搜索提示词...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active" data-category="all">全部</span>
+                    <span class="filter-tag" data-category="学术写作">学术写作</span>
+                    <span class="filter-tag" data-category="教学设计">教学设计</span>
+                    <span class="filter-tag" data-category="内容创作">内容创作</span>
+                    <span class="filter-tag" data-category="数据分析">数据分析</span>
+                    <span class="filter-tag" data-category="语言学习">语言学习</span>
+                    <span class="filter-tag" data-category="研究辅助">研究辅助</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 提示词网格 -->
+        <div class="container">
+            <div class="prompt-grid" id="promptGrid">
+                <!-- 学术写作类提示词 -->
+                <div class="prompt-card" data-category="学术写作">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">学术英语写作反馈助手</h3>
+                        <span class="prompt-category">学术写作</span>
+                    </div>
+                    <p class="prompt-description">专业的学术英语写作指导，提供详细的语法、结构和表达建议。</p>
+                    <div class="prompt-content">你是一位专业的学术英语写作导师，具有丰富的英语教学和学术写作指导经验。你的任务是帮助学生提高他们的学术英语写作能力。
+
+请按照以下步骤进行：
+1. 仔细阅读学生提交的英语学术写作文本
+2. 从语法、词汇、句式结构、逻辑连贯性、学术规范性等方面进行全面分析
+3. 提供具体的修改建议和改进方案
+4. 给出修改后的示例文本
+5. 解释修改的原因和学术写作的相关规范</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">英语写作</span>
+                        <span class="prompt-tag">学术规范</span>
+                        <span class="prompt-tag">语法检查</span>
+                    </div>
+                </div>
+
+                <!-- 教学设计类提示词 -->
+                <div class="prompt-card" data-category="教学设计">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">课程设计助手</h3>
+                        <span class="prompt-category">教学设计</span>
+                    </div>
+                    <p class="prompt-description">帮助教师设计完整的课程计划，包括学习目标、教学活动和评估方法。</p>
+                    <div class="prompt-content">你是一位经验丰富的教学设计专家，擅长创建有效的课程计划和教学活动。
+
+请帮我设计一个课程，包括：
+1. 明确的学习目标和预期成果
+2. 详细的教学内容和知识点
+3. 多样化的教学活动和互动环节
+4. 适当的评估方法和标准
+5. 课程时间安排和进度规划
+6. 所需的教学资源和材料
+
+课程主题：[请输入具体主题]
+目标学生：[请描述学生群体]
+课程时长：[请指定时间]</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">课程规划</span>
+                        <span class="prompt-tag">教学活动</span>
+                        <span class="prompt-tag">学习评估</span>
+                    </div>
+                </div>
+
+                <!-- 内容创作类提示词 -->
+                <div class="prompt-card" data-category="内容创作">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">教学材料创作助手</h3>
+                        <span class="prompt-category">内容创作</span>
+                    </div>
+                    <p class="prompt-description">协助创建各种教学材料，如练习题、案例研究、教学视频脚本等。</p>
+                    <div class="prompt-content">你是一位创意教学内容开发专家，能够创建引人入胜且教育价值高的教学材料。
+
+请帮我创建以下类型的教学材料：
+
+材料类型：[选择：练习题/案例研究/教学视频脚本/互动游戏/实验指导]
+学科领域：[请指定]
+难度级别：[初级/中级/高级]
+目标学生：[年级/专业]
+
+要求：
+1. 内容准确且符合教学目标
+2. 形式新颖，能激发学生兴趣
+3. 难度适中，循序渐进
+4. 包含清晰的指导说明
+5. 提供参考答案或评分标准</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">内容开发</span>
+                        <span class="prompt-tag">创意教学</span>
+                        <span class="prompt-tag">互动设计</span>
+                    </div>
+                </div>
+
+                <!-- 数据分析类提示词 -->
+                <div class="prompt-card" data-category="数据分析">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">教学数据分析师</h3>
+                        <span class="prompt-category">数据分析</span>
+                    </div>
+                    <p class="prompt-description">分析学生学习数据，提供个性化的教学建议和改进方案。</p>
+                    <div class="prompt-content">你是一位教育数据分析专家，擅长从学习数据中提取有价值的洞察。
+
+请分析以下教学数据并提供建议：
+
+数据类型：[成绩数据/学习行为/参与度/作业完成情况]
+
+分析要求：
+1. 识别学习模式和趋势
+2. 发现学生的强项和薄弱环节
+3. 提供个性化学习建议
+4. 推荐教学策略调整
+5. 预测学习成果
+6. 生成可视化图表说明
+
+请提供：
+- 数据摘要和关键发现
+- 详细的分析报告
+- 具体的改进建议
+- 后续跟踪计划</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">数据分析</span>
+                        <span class="prompt-tag">学习评估</span>
+                        <span class="prompt-tag">个性化教学</span>
+                    </div>
+                </div>
+
+                <!-- 语言学习类提示词 -->
+                <div class="prompt-card" data-category="语言学习">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">多语言学习导师</h3>
+                        <span class="prompt-category">语言学习</span>
+                    </div>
+                    <p class="prompt-description">提供个性化的语言学习指导，包括发音、语法、词汇和文化背景。</p>
+                    <div class="prompt-content">你是一位专业的多语言教学专家，精通多种语言的教学方法。
+
+学习语言：[请指定目标语言]
+学习者水平：[初学者/初级/中级/高级]
+学习目标：[日常交流/商务/学术/考试]
+
+请提供：
+1. 个性化学习计划
+2. 核心语法点讲解
+3. 实用词汇和短语
+4. 发音指导和练习
+5. 文化背景知识
+6. 互动练习和对话
+7. 学习进度评估
+
+教学风格：
+- 循序渐进，由浅入深
+- 结合实际应用场景
+- 提供记忆技巧
+- 鼓励主动练习</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">语言教学</span>
+                        <span class="prompt-tag">文化交流</span>
+                        <span class="prompt-tag">口语练习</span>
+                    </div>
+                </div>
+
+                <!-- 研究辅助类提示词 -->
+                <div class="prompt-card" data-category="研究辅助">
+                    <div class="prompt-header">
+                        <h3 class="prompt-title">学术研究助手</h3>
+                        <span class="prompt-category">研究辅助</span>
+                    </div>
+                    <p class="prompt-description">协助进行学术研究，包括文献综述、研究设计、数据收集和分析。</p>
+                    <div class="prompt-content">你是一位经验丰富的学术研究顾问，擅长指导各个阶段的研究工作。
+
+研究领域：[请指定]
+研究类型：[定量/定性/混合方法]
+研究阶段：[选题/文献综述/方法设计/数据分析/论文写作]
+
+请协助：
+1. 研究问题的精确化
+2. 文献搜索和综述策略
+3. 研究方法的选择和设计
+4. 数据收集工具的开发
+5. 统计分析方法的建议
+6. 结果解释和讨论
+7. 学术写作的规范指导
+
+输出要求：
+- 提供具体可操作的建议
+- 推荐相关的研究工具和资源
+- 指出潜在的研究局限性
+- 建议后续研究方向</div>
+                    <div class="prompt-actions">
+                        <button class="action-btn copy-btn" onclick="copyPrompt(this)"><i class="fas fa-copy"></i>复制</button>
+                        <button class="action-btn expand-btn" onclick="expandPrompt(this)"><i class="fas fa-expand"></i>展开</button>
+                        <button class="action-btn use-btn" onclick="usePrompt(this)"><i class="fas fa-play"></i>使用</button>
+                    </div>
+                    <div class="prompt-tags">
+                        <span class="prompt-tag">学术研究</span>
+                        <span class="prompt-tag">文献综述</span>
+                        <span class="prompt-tag">研究方法</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 无结果提示 -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>未找到匹配的提示词</h3>
+                <p>请尝试使用不同的关键词或选择其他分类</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="promptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">提示词详情</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // 提示词页面特定功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('promptSearch');
+            const filterTags = document.querySelectorAll('.filter-tag');
+            const promptCards = document.querySelectorAll('.prompt-card');
+            const noResults = document.getElementById('noResults');
+
+            // 搜索功能
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                filterPrompts(searchTerm, getActiveCategory());
+            });
+
+            // 分类过滤
+            filterTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    filterTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const category = this.getAttribute('data-category');
+                    filterPrompts(searchInput.value.toLowerCase(), category);
+                });
+            });
+
+            function getActiveCategory() {
+                const activeTag = document.querySelector('.filter-tag.active');
+                return activeTag ? activeTag.getAttribute('data-category') : 'all';
+            }
+
+            function filterPrompts(searchTerm, category) {
+                let visibleCount = 0;
+
+                promptCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    const cardText = card.textContent.toLowerCase();
+                    
+                    const matchesSearch = !searchTerm || cardText.includes(searchTerm);
+                    const matchesCategory = category === 'all' || cardCategory === category;
+
+                    if (matchesSearch && matchesCategory) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        });
+
+        // 复制提示词
+        function copyPrompt(button) {
+            const card = button.closest('.prompt-card');
+            const content = card.querySelector('.prompt-content').textContent;
+            
+            navigator.clipboard.writeText(content).then(() => {
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i>已复制';
+                button.style.background = '#10b981';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('复制失败:', err);
+                showNotification('复制失败，请手动选择文本', 'error');
+            });
+        }
+
+        // 展开提示词
+        function expandPrompt(button) {
+            const card = button.closest('.prompt-card');
+            const content = card.querySelector('.prompt-content');
+            const title = card.querySelector('.prompt-title').textContent;
+            
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalContent').innerHTML = `
+                <div style="background: #f9fafb; padding: 1.5rem; border-radius: 8px; font-family: monospace; white-space: pre-wrap; line-height: 1.6;">
+                    ${content.textContent}
+                </div>
+                <div style="margin-top: 1rem; text-align: right;">
+                    <button class="btn btn-primary" onclick="copyPrompt(this)" style="margin-right: 1rem;">
+                        <i class="fas fa-copy"></i> 复制提示词
+                    </button>
+                    <button class="btn btn-outline" onclick="document.getElementById('promptModal').style.display='none'">
+                        关闭
+                    </button>
+                </div>
+            `;
+            
+            document.getElementById('promptModal').style.display = 'block';
+        }
+
+        // 使用提示词
+        function usePrompt(button) {
+            const card = button.closest('.prompt-card');
+            const content = card.querySelector('.prompt-content').textContent;
+            const title = card.querySelector('.prompt-title').textContent;
+            
+            // 这里可以集成到具体的AI工具中
+            showNotification(`正在准备使用「${title}」提示词...`, 'info');
+            
+            // 示例：打开ChatGPT或其他AI工具
+            setTimeout(() => {
+                const encodedPrompt = encodeURIComponent(content);
+                window.open(`https://chat.openai.com/?q=${encodedPrompt}`, '_blank');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

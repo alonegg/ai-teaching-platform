@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI教学资源整合平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI教学资源平台</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#prompts" class="nav-link">提示词库</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tools" class="nav-link">AI工具</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">教学资源</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">项目案例</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#docs" class="nav-link">文档</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">AI驱动的教学资源</span>
+                        <br>整合平台
+                    </h1>
+                    <p class="hero-description">
+                        集成AI提示词库、教学工具、学术资源和实践案例，为现代教育提供全方位的AI辅助解决方案
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#prompts" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            开始探索
+                        </a>
+                        <a href="AI教学资源整合手册.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            下载手册
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-comments"></i>
+                            <span>智能提示词</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-chart-line"></i>
+                            <span>数据分析</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>教学应用</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能特色 -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">平台特色</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>智能提示词库</h3>
+                        <p>精心设计的AI提示词模板，涵盖学术写作、语篇分析、教学设计等多个领域</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>实用工具集成</h3>
+                        <p>整合多种AI工具链接，包括DeepSeek、Kimi、通义千问等主流平台</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>项目案例展示</h3>
+                        <p>提供完整的项目开发案例，从课程设计到软件开发的全流程指导</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>丰富教学资源</h3>
+                        <p>包含样本文本、教学图片、视频材料等多媒体教学资源</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 提示词库 -->
+        <section id="prompts" class="prompts-section">
+            <div class="container">
+                <h2 class="section-title">AI提示词库</h2>
+                <div class="prompts-categories">
+                    <div class="category-card">
+                        <div class="category-header">
+                            <i class="fas fa-pen-fancy"></i>
+                            <h3>学术写作反馈</h3>
+                        </div>
+                        <p>用于分析学生写作样本，提供个性化反馈和改进建议</p>
+                        <div class="category-tags">
+                            <span class="tag">写作分析</span>
+                            <span class="tag">个性化反馈</span>
+                            <span class="tag">进步追踪</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showPromptDetails('writing')">
+                            查看详情
+                        </button>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-header">
+                            <i class="fas fa-search"></i>
+                            <h3>语篇分析标注</h3>
+                        </div>
+                        <p>课堂话语分析、概念隐喻标注等语言学研究工具</p>
+                        <div class="category-tags">
+                            <span class="tag">话语分析</span>
+                            <span class="tag">隐喻标注</span>
+                            <span class="tag">语言学研究</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showPromptDetails('analysis')">
+                            查看详情
+                        </button>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>学术体裁分析</h3>
+                        </div>
+                        <p>基于CARS模型和Dos Santos框架的学术文本结构分析</p>
+                        <div class="category-tags">
+                            <span class="tag">体裁分析</span>
+                            <span class="tag">修辞结构</span>
+                            <span class="tag">学术写作</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showPromptDetails('genre')">
+                            查看详情
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI工具 -->
+        <section id="tools" class="tools-section">
+            <div class="container">
+                <h2 class="section-title">AI工具链接</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>DeepSeek</h3>
+                        <p>强大的代码生成能力，支持多种编程语言</p>
+                        <a href="https://chat.deepseek.com/" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            访问工具
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3>Kimi</h3>
+                        <p>超长文本处理能力，优秀的中文理解</p>
+                        <a href="https://kimi.moonshot.cn/" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            访问工具
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>PromptBank</h3>
+                        <p>专业教育提示词库，外语教学专用资源</p>
+                        <a href="https://promptbank.unipus.cn/" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            访问工具
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-logo">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>通义千问</h3>
+                        <p>阿里巴巴开发，强大的中文处理能力</p>
+                        <a href="https://www.tongyi.com/qianwen/" target="_blank" class="tool-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            访问工具
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教学资源 -->
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <h2 class="section-title">教学资源</h2>
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <div class="resource-header">
+                            <i class="fas fa-images"></i>
+                            <h3>教学图片</h3>
+                        </div>
+                        <div class="resource-gallery">
+                            <div class="gallery-item">
+                                <img src="Image01_Ball games.jpg" alt="体育活动">
+                                <div class="gallery-overlay">
+                                    <span>体育活动</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="Image02_Plucking fruit.jpg" alt="农业活动">
+                                <div class="gallery-overlay">
+                                    <span>农业活动</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="Image03_A man leading a goat.png" alt="日常生活">
+                                <div class="gallery-overlay">
+                                    <span>日常生活</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <img src="Image04_Expo.jpeg" alt="展览活动">
+                                <div class="gallery-overlay">
+                                    <span>展览活动</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resource-category">
+                        <div class="resource-header">
+                            <i class="fas fa-file-text"></i>
+                            <h3>样本文本</h3>
+                        </div>
+                        <div class="sample-texts">
+                            <div class="text-item">
+                                <h4>学习者作文样本</h4>
+                                <p>用于写作分析和错误识别的真实学生作文</p>
+                                <span class="text-type">初级水平</span>
+                            </div>
+                            <div class="text-item">
+                                <h4>社会活动阅读材料</h4>
+                                <p>适合阅读理解和讨论的社会话题文本</p>
+                                <span class="text-type">中级水平</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目案例 -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">项目案例</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>课程设计与游戏</h3>
+                        <p>AI辅助的课堂游戏设计，包括词汇游戏、语法练习等互动教学活动</p>
+                        <div class="project-features">
+                            <span class="feature">互动游戏</span>
+                            <span class="feature">课程设计</span>
+                            <span class="feature">提示词模板</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProjectDetails('games')">
+                            查看详情
+                        </button>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>学术研究应用</h3>
+                        <p>学术写作反馈系统、文献分析工具和研究方法指导</p>
+                        <div class="project-features">
+                            <span class="feature">写作反馈</span>
+                            <span class="feature">文献分析</span>
+                            <span class="feature">研究指导</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProjectDetails('academic')">
+                            查看详情
+                        </button>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>情感分析工具</h3>
+                        <p>基于Python的文本情感分析工具，包含GUI界面和可视化功能</p>
+                        <div class="project-features">
+                            <span class="feature">Python开发</span>
+                            <span class="feature">GUI界面</span>
+                            <span class="feature">数据可视化</span>
+                        </div>
+                        <button class="btn btn-outline" onclick="showProjectDetails('sentiment')">
+                            查看详情
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文档区域 -->
+        <section id="docs" class="docs-section">
+            <div class="container">
+                <h2 class="section-title">文档与指南</h2>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>AI教学资源整合手册</h3>
+                        <p>完整的AI教学资源使用指南，包含所有工具和方法的详细说明</p>
+                        <div class="doc-actions">
+                            <a href="AI教学资源整合手册.pdf" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-download"></i>
+                                下载PDF
+                            </a>
+                            <button class="btn btn-outline" onclick="showHandbook()">
+                                在线阅读
+                            </button>
+                        </div>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>实用操作手册</h3>
+                        <p>详细的操作步骤和最佳实践指南</p>
+                        <div class="doc-actions">
+                            <button class="btn btn-outline" onclick="showOperationManual()">
+                                在线阅读
+                            </button>
+                            <a href="Practical_Operation_Manual.md" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-download"></i>
+                                下载MD
+                            </a>
+                        </div>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h3>项目说明</h3>
+                        <p>项目概述、使用说明和技术文档</p>
+                        <div class="doc-actions">
+                            <button class="btn btn-outline" onclick="showProjectReadme()">
+                                在线阅读
+                            </button>
+                            <a href="README.md" target="_blank" class="btn btn-secondary">
+                                <i class="fas fa-download"></i>
+                                下载MD
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI教学资源平台</h4>
+                    <p>致力于为现代教育提供AI驱动的教学解决方案</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#prompts">提示词库</a></li>
+                        <li><a href="#tools">AI工具</a></li>
+                        <li><a href="#resources">教学资源</a></li>
+                        <li><a href="#projects">项目案例</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>文档资源</h4>
+                    <ul>
+                        <li><a href="AI教学资源整合手册.pdf" target="_blank">使用手册</a></li>
+                        <li><a href="README.md" target="_blank">项目说明</a></li>
+                        <li><a href="浏览器查看指南.html" target="_blank">浏览指南</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>版本：v2.0</p>
+                    <p>更新：2025.7.26</p>
+                    <p>编制：SWUFE</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI教学资源平台. 仅供教育教学使用.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

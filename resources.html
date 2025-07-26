@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学资源 - AI教学资源整合平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resources-page {
+            padding-top: 100px;
+            min-height: 100vh;
+            background: #f9fafb;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .resource-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        .category-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .resource-item:hover {
+            background: #f3f4f6;
+        }
+        
+        .resource-icon {
+            width: 40px;
+            height: 40px;
+            background: #dbeafe;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2563eb;
+        }
+        
+        .resource-info {
+            flex: 1;
+        }
+        
+        .resource-name {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        
+        .resource-meta {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .resource-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .action-btn {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 0.875rem;
+        }
+        
+        .action-btn.download {
+            background: #2563eb;
+        }
+        
+        .action-btn.download:hover {
+            background: #1d4ed8;
+        }
+        
+        .action-btn.view {
+            background: #059669;
+        }
+        
+        .action-btn.view:hover {
+            background: #047857;
+        }
+        
+        .action-btn.preview {
+            background: #7c3aed;
+        }
+        
+        .action-btn.preview:hover {
+            background: #6d28d9;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .image-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-preview {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+        .image-info {
+            padding: 1rem;
+        }
+        
+        .image-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .image-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .stats-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stats-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9fafb;
+            border-radius: 12px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .search-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .search-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .search-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #10b981;
+        }
+        
+        .search-btn {
+            padding: 12px 24px;
+            background: #10b981;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            background: #059669;
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .filter-tag {
+            padding: 0.5rem 1rem;
+            background: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.875rem;
+        }
+        
+        .filter-tag:hover,
+        .filter-tag.active {
+            background: #10b981;
+            color: white;
+            border-color: #10b981;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .modal-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .resource-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .filter-tags {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-brain"></i>
+                AI教学资源平台
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="prompts.html" class="nav-link">提示词库</a></li>
+                <li><a href="index.html#tools" class="nav-link">AI工具</a></li>
+                <li><a href="resources.html" class="nav-link">教学资源</a></li>
+                <li><a href="projects.html" class="nav-link">项目案例</a></li>
+                <li><a href="index.html#docs" class="nav-link">文档</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">教学资源中心</h1>
+            <p class="page-subtitle">丰富的AI教学资源，助力教育创新与实践</p>
+        </div>
+    </div>
+
+    <!-- 搜索区域 -->
+    <div class="resources-page">
+        <div class="container">
+            <div class="search-section">
+                <h2 class="search-title">资源搜索</h2>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="搜索教学资源..." id="searchInput">
+                    <button class="search-btn" onclick="searchResources()">搜索</button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active" data-filter="all">全部</span>
+                    <span class="filter-tag" data-filter="documents">文档资料</span>
+                    <span class="filter-tag" data-filter="images">教学图片</span>
+                    <span class="filter-tag" data-filter="projects">项目案例</span>
+                    <span class="filter-tag" data-filter="tools">AI工具</span>
+                    <span class="filter-tag" data-filter="manuals">操作手册</span>
+                </div>
+            </div>
+
+            <!-- 统计信息 -->
+            <div class="stats-section">
+                <h2 class="stats-title">资源统计</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">156</div>
+                        <div class="stat-label">教学文档</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">89</div>
+                        <div class="stat-label">AI提示词</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">项目案例</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">67</div>
+                        <div class="stat-label">教学图片</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">AI工具</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 资源分类 -->
+            <div class="resource-categories">
+                <!-- 核心文档 -->
+                <div class="category-card" data-category="documents">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="category-title">核心文档</h3>
+                    </div>
+                    <p class="category-description">完整的AI教学资源整合手册和相关文档资料</p>
+                    <ul class="resource-list">
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">AI教学资源整合手册</div>
+                                <div class="resource-meta">PDF • 1.2MB • 完整版</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn download" onclick="downloadFile('AI教学资源整合手册.pdf')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="action-btn view" onclick="openInNewTab('AI教学资源整合手册.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-readme"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">项目说明文档</div>
+                                <div class="resource-meta">Markdown • 45KB • 使用指南</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn download" onclick="downloadFile('README.md')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="action-btn view" onclick="openInNewTab('README.md')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">浏览器查看指南</div>
+                                <div class="resource-meta">HTML • 12KB • 使用说明</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn download" onclick="downloadFile('浏览器查看指南.html')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="action-btn view" onclick="openInNewTab('浏览器查看指南.html')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">整理完成报告</div>
+                                <div class="resource-meta">Markdown • 8KB • 项目总结</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn download" onclick="downloadFile('整理完成报告.md')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="action-btn view" onclick="openInNewTab('整理完成报告.md')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 操作手册 -->
+                <div class="category-card" data-category="manuals">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">操作手册</h3>
+                    </div>
+                    <p class="category-description">详细的操作指南和实践手册</p>
+                    <ul class="resource-list">
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">实践操作手册</div>
+                                <div class="resource-meta">Markdown • 25KB • 操作指南</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn download" onclick="downloadFile('Practical_Operation_Manual.md')">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="action-btn view" onclick="openInNewTab('Practical_Operation_Manual.md')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- AI工具 -->
+                <div class="category-card" data-category="tools">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="category-title">AI工具链接</h3>
+                    </div>
+                    <p class="category-description">精选的AI教学工具和平台</p>
+                    <ul class="resource-list">
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">ChatGPT</div>
+                                <div class="resource-meta">对话式AI • 免费/付费</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn view" onclick="openInNewTab('https://chat.openai.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">Claude</div>
+                                <div class="resource-meta">AI助手 • 免费/付费</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn view" onclick="openInNewTab('https://claude.ai')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">Midjourney</div>
+                                <div class="resource-meta">AI绘图 • 付费</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn view" onclick="openInNewTab('https://midjourney.com')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="resource-info">
+                                <div class="resource-name">GitHub Copilot</div>
+                                <div class="resource-meta">代码助手 • 付费</div>
+                            </div>
+                            <div class="resource-actions">
+                                <button class="action-btn view" onclick="openInNewTab('https://github.com/features/copilot')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 教学图片库 -->
+            <div class="category-card" data-category="images" style="grid-column: 1 / -1;">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3 class="category-title">教学图片库</h3>
+                </div>
+                <p class="category-description">丰富的教学图片资源，支持多种教学场景</p>
+                
+                <div class="image-gallery">
+                    <div class="image-card">
+                        <img src="Image01_Ball games.jpg" alt="球类运动" class="image-preview" onclick="openImageModal(this)">
+                        <div class="image-info">
+                            <h4 class="image-title">球类运动</h4>
+                            <p class="image-description">体育教学相关图片，展示各种球类运动场景</p>
+                            <div class="image-actions">
+                                <button class="action-btn download" onclick="downloadFile('Image01_Ball games.jpg')">
+                                    <i class="fas fa-download"></i> 下载
+                                </button>
+                                <button class="action-btn preview" onclick="openImageModal(document.querySelector('[src=&quot;Image01_Ball games.jpg&quot;]'))">
+                                    <i class="fas fa-search-plus"></i> 预览
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card">
+                        <img src="Image02_Plucking fruit.jpg" alt="采摘水果" class="image-preview" onclick="openImageModal(this)">
+                        <div class="image-info">
+                            <h4 class="image-title">采摘水果</h4>
+                            <p class="image-description">农业教学图片，展示水果采摘的过程和场景</p>
+                            <div class="image-actions">
+                                <button class="action-btn download" onclick="downloadFile('Image02_Plucking fruit.jpg')">
+                                    <i class="fas fa-download"></i> 下载
+                                </button>
+                                <button class="action-btn preview" onclick="openImageModal(document.querySelector('[src=&quot;Image02_Plucking fruit.jpg&quot;]'))">
+                                    <i class="fas fa-search-plus"></i> 预览
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card">
+                        <img src="Image03_A man leading a goat.png" alt="牧羊人" class="image-preview" onclick="openImageModal(this)">
+                        <div class="image-info">
+                            <h4 class="image-title">牧羊人</h4>
+                            <p class="image-description">传统农业生活场景，适用于文化和历史教学</p>
+                            <div class="image-actions">
+                                <button class="action-btn download" onclick="downloadFile('Image03_A man leading a goat.png')">
+                                    <i class="fas fa-download"></i> 下载
+                                </button>
+                                <button class="action-btn preview" onclick="openImageModal(document.querySelector('[src=&quot;Image03_A man leading a goat.png&quot;]'))">
+                                    <i class="fas fa-search-plus"></i> 预览
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card">
+                        <img src="Image04_Expo.jpeg" alt="博览会" class="image-preview" onclick="openImageModal(this)">
+                        <div class="image-info">
+                            <h4 class="image-title">博览会</h4>
+                            <p class="image-description">展览会场景，适用于商业和社会学教学</p>
+                            <div class="image-actions">
+                                <button class="action-btn download" onclick="downloadFile('Image04_Expo.jpeg')">
+                                    <i class="fas fa-download"></i> 下载
+                                </button>
+                                <button class="action-btn preview" onclick="openImageModal(document.querySelector('[src=&quot;Image04_Expo.jpeg&quot;]'))">
+                                    <i class="fas fa-search-plus"></i> 预览
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片模态框 -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // 搜索功能
+        function searchResources() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const resourceItems = document.querySelectorAll('.resource-item, .image-card');
+            
+            resourceItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+        
+        // 过滤功能
+        document.querySelectorAll('.filter-tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                // 移除所有active类
+                document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+                // 添加active类到当前标签
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const categories = document.querySelectorAll('.category-card');
+                
+                if (filter === 'all') {
+                    categories.forEach(cat => cat.style.display = 'block');
+                } else {
+                    categories.forEach(cat => {
+                        if (cat.dataset.category === filter) {
+                            cat.style.display = 'block';
+                        } else {
+                            cat.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+        
+        // 图片模态框
+        function openImageModal(img) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        }
+        
+        function closeImageModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+        
+        // 点击模态框外部关闭
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeImageModal();
+            }
+        });
+        
+        // ESC键关闭模态框
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+        
+        // 搜索框回车事件
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchResources();
+            }
+        });
+    </script>
+</body>
+</html>
