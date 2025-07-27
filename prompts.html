@@ -1046,15 +1046,190 @@
             const content = card.querySelector('.prompt-content').textContent;
             const title = card.querySelector('.prompt-title').textContent;
             
-            // 这里可以集成到具体的AI工具中
-            showNotification(`正在准备使用「${title}」提示词...`, 'info');
-            
-            // 示例：打开ChatGPT或其他AI工具
-            setTimeout(() => {
-                const encodedPrompt = encodeURIComponent(content);
-                window.open(`https://chat.openai.com/?q=${encodedPrompt}`, '_blank');
-            }, 1000);
+            // 显示AI平台选择模态框
+            showAIPlatformModal(content, title);
         }
+
+        // 显示AI平台选择模态框
+        function showAIPlatformModal(content, title) {
+            const modal = document.getElementById('promptModal');
+            document.getElementById('modalTitle').textContent = `选择AI平台 - ${title}`;
+            
+            const aiPlatforms = [
+                 {
+                     name: 'ChatGPT',
+                     icon: 'fas fa-robot',
+                     url: 'https://chat.openai.com/',
+                     urlWithPrompt: (prompt) => `https://chat.openai.com/?q=${encodeURIComponent(prompt)}`,
+                     color: '#10a37f',
+                     description: 'OpenAI开发的强大对话AI',
+                     supportsPrompt: true
+                 },
+                 {
+                     name: 'Kimi',
+                     icon: 'fas fa-star',
+                     url: 'https://kimi.moonshot.cn/',
+                     urlWithPrompt: (prompt) => `https://kimi.moonshot.cn/?q=${encodeURIComponent(prompt)}`,
+                     color: '#6366f1',
+                     description: 'Moonshot AI开发的智能助手',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: 'DeepSeek',
+                     icon: 'fas fa-brain',
+                     url: 'https://chat.deepseek.com/',
+                     urlWithPrompt: (prompt) => `https://chat.deepseek.com/`,
+                     color: '#0ea5e9',
+                     description: 'DeepSeek开发的深度思考AI',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: '通义千问',
+                     icon: 'fas fa-comments',
+                     url: 'https://tongyi.aliyun.com/qianwen/',
+                     urlWithPrompt: (prompt) => `https://tongyi.aliyun.com/qianwen/`,
+                     color: '#f59e0b',
+                     description: '阿里云开发的大语言模型',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: 'ChatGLM',
+                     icon: 'fas fa-lightbulb',
+                     url: 'https://chatglm.cn/',
+                     urlWithPrompt: (prompt) => `https://chatglm.cn/`,
+                     color: '#8b5cf6',
+                     description: '智谱AI开发的对话模型',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: '文心一言',
+                     icon: 'fas fa-heart',
+                     url: 'https://yiyan.baidu.com/',
+                     urlWithPrompt: (prompt) => `https://yiyan.baidu.com/`,
+                     color: '#ef4444',
+                     description: '百度开发的知识增强大语言模型',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: '豆包',
+                     icon: 'fas fa-seedling',
+                     url: 'https://www.doubao.com/',
+                     urlWithPrompt: (prompt) => `https://www.doubao.com/`,
+                     color: '#22c55e',
+                     description: '字节跳动开发的AI助手',
+                     supportsPrompt: false
+                 },
+                 {
+                     name: '海螺AI',
+                     icon: 'fas fa-shell',
+                     url: 'https://hailuoai.com/',
+                     urlWithPrompt: (prompt) => `https://hailuoai.com/`,
+                     color: '#06b6d4',
+                     description: 'MiniMax开发的多模态AI',
+                     supportsPrompt: false
+                 }
+             ];
+            
+            const platformsHTML = aiPlatforms.map(platform => `
+                 <div class="ai-platform-item" onclick="openAIPlatform('${platform.url}', '${encodeURIComponent(content)}', '${platform.name}', ${platform.supportsPrompt}, '${platform.urlWithPrompt ? platform.urlWithPrompt(content) : platform.url}')" style="
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem;
+                    margin: 0.5rem 0;
+                    border: 2px solid #e5e7eb;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    background: white;
+                " onmouseover="this.style.borderColor='${platform.color}'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.1)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    <div style="
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 12px;
+                        background: ${platform.color};
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1rem;
+                        color: white;
+                        font-size: 1.2rem;
+                    ">
+                        <i class="${platform.icon}"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h4 style="margin: 0 0 0.25rem 0; color: #1f2937; font-size: 1.1rem; font-weight: 600;">${platform.name}</h4>
+                        <p style="margin: 0; color: #6b7280; font-size: 0.9rem;">${platform.description}</p>
+                    </div>
+                    <i class="fas fa-arrow-right" style="color: #9ca3af; font-size: 1.2rem;"></i>
+                </div>
+            `).join('');
+            
+            document.getElementById('modalContent').innerHTML = `
+                <div style="margin-bottom: 1.5rem;">
+                     <h4 style="color: #374151; margin-bottom: 0.5rem;">选择您喜欢的AI平台来使用此提示词：</h4>
+                     <p style="color: #6b7280; font-size: 0.9rem;">点击下方任意平台，系统将自动处理提示词并打开对应网站</p>
+                     <div style="background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 0.75rem; margin-top: 0.75rem;">
+                         <p style="margin: 0; color: #0369a1; font-size: 0.85rem;"><i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i><strong>提示：</strong>ChatGPT支持自动填入提示词，其他平台会复制到剪贴板供您粘贴使用</p>
+                     </div>
+                 </div>
+                <div style="max-height: 400px; overflow-y: auto;">
+                    ${platformsHTML}
+                </div>
+                <div style="margin-top: 1.5rem; text-align: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                    <button class="btn btn-outline" onclick="document.getElementById('promptModal').style.display='none'" style="
+                        padding: 0.75rem 1.5rem;
+                        border: 2px solid #d1d5db;
+                        background: white;
+                        color: #374151;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-weight: 500;
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.borderColor='#9ca3af'; this.style.background='#f9fafb'" onmouseout="this.style.borderColor='#d1d5db'; this.style.background='white'">
+                        <i class="fas fa-times"></i> 取消
+                    </button>
+                </div>
+            `;
+            
+            modal.style.display = 'block';
+        }
+
+        // 打开AI平台
+         function openAIPlatform(url, encodedContent, platformName, supportsPrompt, urlWithPrompt) {
+             // 复制提示词到剪贴板
+             const content = decodeURIComponent(encodedContent);
+             
+             navigator.clipboard.writeText(content).then(() => {
+                 if (supportsPrompt && urlWithPrompt) {
+                     showNotification(`提示词已自动填入${platformName}，正在打开...`, 'success');
+                     // 关闭模态框
+                     document.getElementById('promptModal').style.display = 'none';
+                     // 延迟打开新窗口，使用带提示词的URL
+                     setTimeout(() => {
+                         window.open(decodeURIComponent(urlWithPrompt), '_blank');
+                     }, 500);
+                 } else {
+                     showNotification(`提示词已复制到剪贴板，正在打开${platformName}...`, 'success');
+                     // 关闭模态框
+                     document.getElementById('promptModal').style.display = 'none';
+                     // 延迟打开新窗口
+                     setTimeout(() => {
+                         window.open(url, '_blank');
+                     }, 500);
+                 }
+             }).catch(err => {
+                 console.error('复制失败:', err);
+                 if (supportsPrompt && urlWithPrompt) {
+                     showNotification(`正在打开${platformName}并尝试填入提示词...`, 'warning');
+                     document.getElementById('promptModal').style.display = 'none';
+                     window.open(decodeURIComponent(urlWithPrompt), '_blank');
+                 } else {
+                     showNotification(`无法复制提示词，但仍将打开${platformName}`, 'warning');
+                     document.getElementById('promptModal').style.display = 'none';
+                     window.open(url, '_blank');
+                 }
+             });
+         }
     </script>
 </body>
 </html>
